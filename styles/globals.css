@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+h1, li {
+  padding: .3rem;
+}
+

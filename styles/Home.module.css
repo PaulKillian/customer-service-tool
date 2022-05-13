@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heightButton {
+  height: fit-content;
+}
+
 .footer {
   display: flex;
   flex: 1;
