@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
-import duster from '../public/duster.jpeg'
 
 export default function Home() {
   const [currentYear, setCurrentYear] = useState('')
@@ -17,10 +16,13 @@ export default function Home() {
   ];
 
   const models = [
-    'Barracuda(E)', 'Camaro', 'Cuda(E)', 'Challenger', 'Charger(B)',
-    'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 'Regal',
-    'Road Runner', 'Satellite', 'Trans Am', 'Valiant'
+    'Barracuda', 'Bel Air', 'Camaro', 'Cuda', 'Challenger', 
+    'Charger', 'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 
+    'Regal', 'Road Runner', 'Satellite', 'Trans Am', 'Valiant',
+    '210', '150', 'Nomad', 'Truck'
   ]
+
+  //t
 
   const showYear = (event) => {
     setCurrentYear(event.target.innerText)
@@ -41,7 +43,10 @@ export default function Home() {
         <main className={styles.main}>
           <ul className={styles.flex}>
             {years.map((year) => (
-              <li onClick={showYear}>{year}</li>
+              <li 
+                key={year} 
+                onClick={showYear}>{year}
+              </li>
           ))}
           </ul>
         </main>
@@ -55,6 +60,7 @@ export default function Home() {
           <h1>{currentModel}</h1>
           <div className={styles.img} >
             <Image 
+              alt={currentModel}
               src={`/../public/${currentModel}.jpeg`} 
               width={150} 
               height={100}>
@@ -72,7 +78,10 @@ export default function Home() {
         <h1>{currentYear}</h1>
         <ul className={styles.flex}>
             {models.map((model) => (
-              <li onClick={showModel}>{model}</li>
+              <li 
+                key={model} 
+                onClick={showModel}>{model}
+              </li>
           ))}
         </ul>
         <button onClick={clear}>Clear</button>
