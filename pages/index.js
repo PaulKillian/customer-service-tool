@@ -43,7 +43,10 @@ export default function Home() {
         <main className={styles.main}>
           <ul className={styles.flex}>
             {years.map((year) => (
-              <li onClick={showYear}>{year}</li>
+              <li 
+                key={year} 
+                onClick={showYear}>{year}
+              </li>
           ))}
           </ul>
         </main>
@@ -57,6 +60,7 @@ export default function Home() {
           <h1>{currentModel}</h1>
           <div className={styles.img} >
             <Image 
+              alt={currentModel}
               src={`/../public/${currentModel}.jpeg`} 
               width={150} 
               height={100}>
@@ -74,7 +78,10 @@ export default function Home() {
         <h1>{currentYear}</h1>
         <ul className={styles.flex}>
             {models.map((model) => (
-              <li onClick={showModel}>{model}</li>
+              <li 
+                key={model} 
+                onClick={showModel}>{model}
+              </li>
           ))}
         </ul>
         <button onClick={clear}>Clear</button>
