@@ -3,15 +3,17 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import 'animate.css';
+import Charger  from '../public/Charger.png'
+import Camaro from '../public/Camaro.png'
+import Barracuda from '../public/Barracuda.png'
 
 export default function Home() {
 
   useEffect(() => {
-    if (currentYear) {
       const get = document.getElementById('ul')
-      console.log(get)
-    }
+      console.log(Camaro)
   })
+
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
   const [currentImage, setCurrentImage] = useState('')
@@ -30,7 +32,13 @@ export default function Home() {
     'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
   ]
 
-  //t
+  const images = [
+    { model: { name: 'Charger', modelName: Charger } },
+    { model: { name: 'Camaro', modelName: Camaro } },
+    { model: { name: 'Barracuda', modelName: Barracuda } }
+  ]
+
+  console.log(images)
 
   const showYear = (event) => {
     setCurrentYear(event.target.innerText)
@@ -38,6 +46,11 @@ export default function Home() {
 
   const showModel = (event) => {
     setCurrentModel(event.target.innerText)
+    images.map((image) => {
+      if(image.model.name == event.target.innerText) {
+        setCurrentImage(image.model.modelName)
+      }
+    })
   }
 
   const clear = () => {
@@ -66,15 +79,12 @@ export default function Home() {
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
-          <div className={styles.img} >
             <Image 
               alt={currentModel}
-              src={`/../public/${currentModel}.png`} 
+              src={currentImage} 
               width={150} 
               height={100}>
             </Image>
-          </div>
-          
         </div>
         <button onClick={clear}>Clear</button>
       </main>
