@@ -3,16 +3,14 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import 'animate.css';
-import Charger  from '../public/Charger.png'
-import Camaro from '../public/Camaro.png'
-import Barracuda from '../public/Barracuda.png'
+import { images } from '../components/images.js'
 
 export default function Home() {
 
-  useEffect(() => {
-      const get = document.getElementById('ul')
-      console.log(Camaro)
-  })
+  // useEffect(() => {
+  //     const get = document.getElementById('ul')
+  //     console.log(Camaro)
+  // })
 
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
@@ -32,12 +30,6 @@ export default function Home() {
     'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
   ]
 
-  const images = [
-    { model: { name: 'Charger', modelName: Charger } },
-    { model: { name: 'Camaro', modelName: Camaro } },
-    { model: { name: 'Barracuda', modelName: Barracuda } }
-  ]
-
   console.log(images)
 
   const showYear = (event) => {
@@ -47,8 +39,9 @@ export default function Home() {
   const showModel = (event) => {
     setCurrentModel(event.target.innerText)
     images.map((image) => {
-      if(image.model.name == event.target.innerText) {
-        setCurrentImage(image.model.modelName)
+      debugger
+      if(image.model.name === event.target.innerText) {
+        setCurrentImage(image.model.modelImage)
       }
     })
   }
