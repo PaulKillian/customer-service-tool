@@ -3,14 +3,20 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import 'animate.css';
-import { images } from '../components/images.js'
+import Charger  from '../public/Charger.png'
+import Camaro from '../public/Camaro.png'
+import Nomad from '../public/Nomad.png'
+import RoadRunner from '../public/RoadRunner.png'
+import Nova from '../public/Nova.png'
+import BelAir from '../public/BelAir.png'
+import Barracuda from '../public/Barracuda.png'
 
 export default function Home() {
 
-  // useEffect(() => {
-  //     const get = document.getElementById('ul')
-  //     console.log(Camaro)
-  // })
+  useEffect(() => {
+      const get = document.getElementById('ul')
+      console.log(Camaro)
+  })
 
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
@@ -28,6 +34,32 @@ export default function Home() {
     'Charger', 'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 
     'Impala', 'Nova', 'Regal', 'Road Runner', 'Satellite', 
     'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
+  ]
+
+  const images = [
+    { model: 
+      { name: 'Charger', modelImage: Charger } 
+    },
+    { 
+      model: 
+      { name: 'Camaro', modelImage: Camaro } 
+    },
+    { 
+      model: 
+      { name: 'Barracuda', modelImage: Barracuda } 
+    },
+    { 
+      model: 
+      { name: 'Nomad', modelImage: Nomad } 
+    },
+    { 
+      model: 
+      { name: 'Road Runner', modelImage: RoadRunner } 
+    },
+    { 
+      model: 
+      { name: 'Nova', modelImage: Nova } 
+    }
   ]
 
   console.log(images)
