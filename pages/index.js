@@ -16,9 +16,10 @@ export default function Home() {
   ];
 
   const models = [
-    'Barracuda', 'Camaro', 'Cuda', 'Challenger', 'Charger',
-    'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 'Regal',
-    'Road Runner', 'Satellite', 'Trans Am', 'Valiant'
+    'Barracuda', 'Bel Air', 'Camaro', 'Cuda', 'Challenger', 
+    'Charger', 'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 
+    'Regal', 'Road Runner', 'Satellite', 'Trans Am', 'Valiant',
+    '210', '150', 'Nomad', 'Truck'
   ]
 
   const showYear = (event) => {
