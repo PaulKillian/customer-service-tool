@@ -15,15 +15,16 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .img {
   padding: 1rem;
 }
 
-.heightButton {
+/* .heightButton {
   height: fit-content;
-}
+} */
 
 .footer {
   display: flex;
