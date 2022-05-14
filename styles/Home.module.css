@@ -17,6 +17,10 @@
   flex-wrap: wrap;
 }
 
+.img {
+  padding: 1rem;
+}
+
 .heightButton {
   height: fit-content;
 }
