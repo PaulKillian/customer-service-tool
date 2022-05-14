@@ -22,6 +22,8 @@ export default function Home() {
     '210', '150', 'Nomad', 'Truck'
   ]
 
+  //t
+
   const showYear = (event) => {
     setCurrentYear(event.target.innerText)
   }
