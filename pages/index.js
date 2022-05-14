@@ -2,8 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
+import 'animate.css';
 
 export default function Home() {
+
+  useEffect(() => {
+    if (currentYear) {
+      const get = document.getElementById('ul')
+      console.log(get)
+    }
+  })
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
   const [currentImage, setCurrentImage] = useState('')
@@ -18,8 +26,8 @@ export default function Home() {
   const models = [
     'Barracuda', 'Bel Air', 'Camaro', 'Cuda', 'Challenger', 
     'Charger', 'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 
-    'Regal', 'Road Runner', 'Satellite', 'Trans Am', 'Valiant',
-    '210', '150', 'Nomad', 'Truck'
+    'Impala', 'Nova', 'Regal', 'Road Runner', 'Satellite', 
+    'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
   ]
 
   //t
@@ -43,7 +51,7 @@ export default function Home() {
         <main className={styles.main}>
           <ul className={styles.flex}>
             {years.map((year) => (
-              <li 
+              <li
                 key={year} 
                 onClick={showYear}>{year}
               </li>
@@ -61,7 +69,7 @@ export default function Home() {
           <div className={styles.img} >
             <Image 
               alt={currentModel}
-              src={`/../public/${currentModel}.jpeg`} 
+              src={`/../public/${currentModel}.png`} 
               width={150} 
               height={100}>
             </Image>
@@ -75,7 +83,7 @@ export default function Home() {
   } else if (currentYear) {
     return (
       <main className={styles.main}>
-        <h1>{currentYear}</h1>
+        <h1 id={'ul'}>{currentYear}</h1>
         <ul className={styles.flex}>
             {models.map((model) => (
               <li 
