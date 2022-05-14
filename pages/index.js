@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
-import duster from '../public/duster.jpeg'
 
 export default function Home() {
   const [currentYear, setCurrentYear] = useState('')
@@ -17,7 +16,7 @@ export default function Home() {
   ];
 
   const models = [
-    'Barracuda(E)', 'Camaro', 'Cuda(E)', 'Challenger', 'Charger(B)',
+    'Barracuda', 'Camaro', 'Cuda', 'Challenger', 'Charger',
     'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 'Regal',
     'Road Runner', 'Satellite', 'Trans Am', 'Valiant'
   ]
