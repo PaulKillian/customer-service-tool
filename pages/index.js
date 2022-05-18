@@ -55,6 +55,7 @@ export default function Home() {
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
+          <h1>{currentBody}</h1>
           <Image 
             alt={currentImage}
             src={currentImage}
