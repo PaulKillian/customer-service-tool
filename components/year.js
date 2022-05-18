@@ -1,4 +1,3 @@
-import { propNames } from '@chakra-ui/styled-system';
 import styles from '../styles/Home.module.css'
 
 export const RenderYear = (props) => {
