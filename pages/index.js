@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import 'animate.css';
+import { RenderYear } from '../components/year.js'
+import { RenderModel } from '../components/model.js'
 import Charger  from '../public/Charger.png'
 import Camaro from '../public/Camaro.png'
 import Nomad from '../public/Nomad.png'
@@ -12,123 +14,147 @@ import BelAir from '../public/BelAir.png'
 import Barracuda from '../public/Barracuda.png'
 
 export default function Home() {
-
   useEffect(() => {
-      const get = document.getElementById('ul')
-      console.log(Camaro)
+    const engineUl = document.getElementById('engine')
+    if(currentEngine) {
+      engineUl.innerHTML = ''
+    }
   })
 
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
   const [currentImage, setCurrentImage] = useState('')
-  
-  const years = [
-    47, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 60,
-    61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
-    75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88,
-    89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
-  ];
+  const [currentBody, setCurrentBody] = useState('')
+  const [currentEngine, setCurrentEngine] = useState('')
 
-  const models = [
-    'Barracuda', 'Bel Air', 'Camaro', 'Cuda', 'Challenger', 
-    'Charger', 'Coronet', 'Dart', 'Duster', 'Firebird', 'GTX', 
-    'Impala', 'Nova', 'Regal', 'Road Runner', 'Satellite', 
-    'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
-  ]
 
   const images = [
     { model: 
-      { name: 'Charger', modelImage: Charger } 
-    },
+      { 
+        name: 'Charger', 
+        modelImage: Charger, 
+        body: 'B-Body'} 
+      },
     { 
       model: 
-      { name: 'Camaro', modelImage: Camaro } 
-    },
+      { 
+        name: 'Camaro', 
+        modelImage: Camaro, 
+        body: 'B-Body' } 
+      },
     { 
       model: 
-      { name: 'Barracuda', modelImage: Barracuda } 
-    },
+      { 
+        name: 'Barracuda', 
+        modelImage: Barracuda, 
+        body: 'B-Body' } 
+      },
     { 
       model: 
-      { name: 'Nomad', modelImage: Nomad } 
-    },
+      { 
+        name: 'Nomad', 
+        modelImage: Nomad, 
+        body: 'B-Body' } 
+      },
     { 
       model: 
-      { name: 'Road Runner', modelImage: RoadRunner } 
-    },
+      { 
+        name: 'Road Runner', 
+        modelImage: RoadRunner, 
+        body: 'B-Body' } 
+      },
     { 
       model: 
-      { name: 'Nova', modelImage: Nova } 
-    }
+      { 
+        name: 'Nova', 
+        modelImage: Nova, 
+        body: 'B-Body' } 
+      }
   ]
 
-  console.log(images)
+  const engines = [272, 383, 400, 440]
 
-  const showYear = (event) => {
-    setCurrentYear(event.target.innerText)
+  const showYear = (year) => {
+    setCurrentYear(year)
   }
 
-  const showModel = (event) => {
-    setCurrentModel(event.target.innerText)
+  const showModel = (model) => {
+    setCurrentModel(model)
     images.map((image) => {
-      debugger
-      if(image.model.name === event.target.innerText) {
+      if(image.model.name === model) {
         setCurrentImage(image.model.modelImage)
+        setCurrentBody(image.model.body)
       }
     })
+  }
+
+  const showEngine = (event) => {
+    setCurrentEngine(event.target.innerText)
   }
 
   const clear = () => {
     setCurrentModel('')
     setCurrentYear('')
+    setCurrentBody('')
+    setCurrentEngine('')
   }
 
-  if(!currentYear) {
-    return (
-      <div className={styles.container}>
+  // if(!currentYear) {
+  //   return (
+  //     <div className={styles.container}>
+  //       <main className={styles.main}>
+  //         <ul className={styles.flex}>
+  //           {years.map((year) => (
+  //             <li
+  //               key={year} 
+  //               onClick={showYear}>{year}
+  //             </li>
+  //         ))}
+  //         </ul>
+  //       </main>
+  //     </div>
+  //   )
+  // } else if (currentYear && currentModel) {
+    if(currentYear && currentModel) {
+      return (
         <main className={styles.main}>
-          <ul className={styles.flex}>
-            {years.map((year) => (
-              <li
-                key={year} 
-                onClick={showYear}>{year}
-              </li>
-          ))}
-          </ul>
-        </main>
-      </div>
-    )
-  } else if (currentYear && currentModel) {
-    return (
-      <main className={styles.main}>
-        <div className={styles.flex}>
-          <h1>{currentYear}</h1>
-          <h1>{currentModel}</h1>
+          <div className={styles.flex}>
+            <h1>{currentYear}</h1>
+            <h1>{currentModel}</h1>
             <Image 
-              alt={currentModel}
-              src={currentImage} 
-              width={150} 
-              height={100}>
-            </Image>
-        </div>
-        <button onClick={clear}>Clear</button>
-      </main>
-      
-    )
-  } else if (currentYear) {
-    return (
-      <main className={styles.main}>
-        <h1 id={'ul'}>{currentYear}</h1>
-        <ul className={styles.flex}>
-            {models.map((model) => (
-              <li 
-                key={model} 
-                onClick={showModel}>{model}
-              </li>
-          ))}
-        </ul>
-        <button onClick={clear}>Clear</button>
-      </main>
-    )
-  }
-}
+              alt={currentImage}
+              src={currentImage}
+              height={100}
+              width={150}
+            />
+          </div>
+          <button onClick={clear}>Clear</button>
+        </main> 
+      )
+    } if(currentYear) {
+      return (
+        <main className={styles.main}>
+          <h1>{currentYear}</h1>
+          <RenderModel showModel={showModel} />
+          <button onClick={clear}>Clear</button>
+        </main> 
+      )
+    }
+      else {
+      return (
+        <main className={styles.main}>
+          <RenderYear showYear={showYear} />
+          <button onClick={clear}>Clear</button>
+        </main>
+      )
+    }
+  } 
+
+  // <ul id={'engine'} className={styles.flex}>
+  //           {engines.map((engine) => (
+  //             <li 
+  //               key={engine} 
+  //               onClick={showEngine}>{engine}
+  //             </li>
+  //           ))}
+  //       </ul>
