@@ -5,6 +5,8 @@ import RoadRunner from '../public/RoadRunner.png'
 import Nova from '../public/Nova.png'
 import BelAir from '../public/BelAir.png'
 import Barracuda from '../public/Barracuda.png'
+import Dart from '../public/Dart.png'
+import Impala from '../public/Impala.jpeg'
 
 export const images = [
     { model: 
@@ -18,14 +20,14 @@ export const images = [
       { 
         name: 'Camaro', 
         modelImage: Camaro, 
-        body: 'B-Body' } 
+        body: 'F-Body' } 
       },
     { 
       model: 
       { 
         name: 'Barracuda', 
         modelImage: Barracuda, 
-        body: 'B-Body' } 
+        body: 'A-Body' } 
       },
     { 
       model: 
@@ -47,5 +49,19 @@ export const images = [
         name: 'Nova', 
         modelImage: Nova, 
         body: 'B-Body' } 
-      }
+      },
+    { 
+      model: 
+        { 
+            name: 'Dart', 
+            modelImage: Dart, 
+            body: 'B-Body'} 
+        },
+    { 
+      model: 
+        { 
+            name: 'Impala', 
+            modelImage: Impala, 
+            body: 'B-Body'} 
+        }
   ]
