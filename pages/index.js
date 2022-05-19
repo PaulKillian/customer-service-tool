@@ -6,6 +6,8 @@ import 'animate.css';
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
+import { EditBlogForm } from '../components/editabelBock.js'
+import { initializeApp } from "firebase/app";
 
 export default function Home() {
   useEffect(() => {
@@ -52,7 +54,8 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
-        <div className={styles.flex}>
+        <textarea rows="4" cols="50"></textarea>
+        <div className={styles.flexCenter}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
@@ -93,3 +96,5 @@ export default function Home() {
   //             </li>
   //           ))}
   //       </ul>
+
+  //test
