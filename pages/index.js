@@ -8,6 +8,8 @@ import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
+import { colors } from '../components/pallette.js'
+
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +24,8 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState('')
   const [currentBody, setCurrentBody] = useState('')
   const [currentEngine, setCurrentEngine] = useState('')
+  const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
+  const [currentText, setCurrentText] = useState('')
 
 
   const engines = [272, 383, 400, 440]
@@ -44,16 +48,23 @@ export default function Home() {
     setCurrentEngine(event.target.innerText)
   }
 
+  const updateText = () => {
+    const text = document.getElementById('text')
+    setCurrentText(text.value)
+  }
+
   const clear = () => {
     setCurrentModel('')
     setCurrentYear('')
     setCurrentBody('')
     setCurrentEngine('')
+    setCurrentText('')
   }
 
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
+        <h2>{currentText}</h2>
         <textarea rows="4" cols="50"></textarea>
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
@@ -71,9 +82,12 @@ export default function Home() {
     )
   } if(currentYear) {
     return (
-      <main className={styles.main}>
+      <main >
+        <RenderModel 
+          showModel={showModel} 
+          currentText={currentText}
+        />
         <h1>{currentYear}</h1>
-        <RenderModel showModel={showModel} />
         <button onClick={clear}>Clear</button>
       </main> 
     )
@@ -81,6 +95,14 @@ export default function Home() {
     else {
     return (
       <main className={styles.main}>
+        <h2>{currentText}</h2> 
+        <textarea 
+          id={'text'} 
+          onChange={updateText} 
+          rows="4" 
+          cols="50">
+        </textarea>
+        <select>{'year'}</select>
         <RenderYear showYear={showYear} />
         <button onClick={clear}>Clear</button>
       </main>
