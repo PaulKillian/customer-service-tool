@@ -58,14 +58,47 @@ export default function Home() {
     setCurrentYear('')
     setCurrentBody('')
     setCurrentEngine('')
-    setCurrentText('')
+    const text = document.getElementById('text')
+    text.value = ''
   }
 
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
-        <h2>{currentText}</h2>
-        <textarea rows="4" cols="50"></textarea>
+        <div className={styles.flex}>
+          <textarea 
+          id={'text'} 
+          rows="4" 
+          cols="50">
+          </textarea>
+          <select>
+            <option>Engine size</option>
+            <option>285</option>
+            <option>327</option>
+            <option>400</option>
+            <option>440</option>
+          </select>
+          <select>
+            <option>Type</option>
+            <option>Convertible</option>
+            <option>Coupe</option>
+            <option>Fastback</option>
+            <option>Hardtop</option>
+            <option>Notchback</option>
+            <option>Sedan</option>
+            <option>Wagon</option>
+          </select>
+          <select>
+            <option>Model</option>
+            <option>SS</option>
+            <option>Custom</option>
+            <option>Caprice</option>
+            <option>Hardtop</option>
+            <option>Notchback</option>
+            <option>Sedan</option>
+            <option>Wagon</option>
+          </select>
+        </div>    
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
@@ -82,27 +115,30 @@ export default function Home() {
     )
   } if(currentYear) {
     return (
-      <main >
-        <RenderModel 
-          showModel={showModel} 
-          currentText={currentText}
-        />
-        <h1>{currentYear}</h1>
-        <button onClick={clear}>Clear</button>
-      </main> 
-    )
-  }
-    else {
-    return (
       <main className={styles.main}>
-        <h2>{currentText}</h2> 
         <textarea 
           id={'text'} 
           onChange={updateText} 
           rows="4" 
           cols="50">
         </textarea>
-        <select>{'year'}</select>
+        <RenderModel 
+          showModel={showModel} 
+        />
+        <button onClick={clear}>Clear</button>
+      </main> 
+    )
+  }
+    else {
+    return (
+      <main className={styles.main}> 
+        <textarea 
+          id={'text'} 
+          onChange={updateText} 
+          rows="4" 
+          cols="50">
+        </textarea>
+        {/* <select>{'year'}</select> */}
         <RenderYear showYear={showYear} />
         <button onClick={clear}>Clear</button>
       </main>

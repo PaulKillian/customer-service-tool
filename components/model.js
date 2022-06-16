@@ -30,49 +30,58 @@ export const RenderModel = (props) => {
         // 'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
 
     return (
-        <div>
-            {/* <h1 id={'ul'}>{currentYear}</h1> */}
-            <h2>{props.currentText}</h2>  
-            <div className={styles.flexModel}>
+        <div className={styles.flexModel}>
+            <h4>B</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
+            </ul>
+            <h4>C</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{c.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{c.b}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{c.c}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{c.d}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{c.e}</li>
+            </ul>
+            <h4>D</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{d.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{d.b}</li>
+            </ul>
+            <h4>F</h4>
+            <ul>      
+                <li onClick={e => props.showModel(e.target.innerText)}>{f.a}</li>
                 <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{c.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{c.b}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{c.c}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{c.d}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{c.e}</li>
+                  <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>  
                 </ul>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{d.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{d.b}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{f.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{i.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{m.a}</li>
-                </ul>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{n.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{n.b}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{r.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{r.b}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{s.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{t.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{t.b}</li>
-                </ul>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{v.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
-                </ul>
-                {/* {models.map((model) => (
-                <li 
-                    key={model}
-                    onClick={e => props.showModel(e.target.innerText)}
-                    >{model}
-                </li> */}
-            {/* ))} */}
-            </div>
+            </ul>
+            <h4>I</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{i.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{m.a}</li>
+            </ul>
+            <h4>N</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{n.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{n.b}</li>
+            </ul>
+            <h4>R</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{r.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{r.b}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{s.a}</li>
+            </ul>
+            <h4>T</h4>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{t.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{t.b}</li>
+            </ul>
+            <ul>
+                <li onClick={e => props.showModel(e.target.innerText)}>{v.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
+                <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
+            </ul>
         </div>
     )
 }
