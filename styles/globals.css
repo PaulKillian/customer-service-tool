@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+body {
+ background-color: #F3F2EF;
+}
+
 a {
   color: inherit;
   text-decoration: none;
