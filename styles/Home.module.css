@@ -13,8 +13,10 @@
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: between;
+  flex-direction: column;
 }
+
 .block {
     display: block;
 }
