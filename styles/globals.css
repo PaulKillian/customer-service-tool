@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-body {
-  background-color: #5a995e;
-}
-
-li {
-  margin: 40px auto;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  color: #121212;
-  text-align: center;
-  letter-spacing: 5px;
-  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -43,10 +27,6 @@ li:hover {
 
 h1 {
   padding-right: .5rem;
-}
-
-li {
-  color: #3D96F5;
 }
 
 h2 {
