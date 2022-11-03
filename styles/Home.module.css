@@ -11,9 +11,7 @@
 }
 
 .main2 {
-  display: flex;
-  justify-content: center;
-  align-contents: center;
+  margin: auto;
 }
 
 .flex {
@@ -23,7 +21,9 @@
 }
 
 .flex2 {
-  margin: auto;
+  display: flex;
+  justify-content: between;
+  flex-direction: column;
 }
 
 .block {
