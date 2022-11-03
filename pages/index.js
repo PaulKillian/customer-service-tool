@@ -65,12 +65,13 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
-        <div className={styles.flex}>
+        <div>
           <textarea 
           id={'text'} 
           rows="4" 
           cols="50">
           </textarea>
+  <div className={styles.flex>
           <select>
             <option>Engine size</option>
             <option>285</option>
@@ -88,6 +89,7 @@ export default function Home() {
             <option>Sedan</option>
             <option>Wagon</option>
           </select>
+  </div>
           <select>
             <option>Model</option>
             <option>SS</option>
