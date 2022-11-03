@@ -76,6 +76,7 @@ export default function Home() {
             <option>Engine size</option>
             <option>285</option>
             <option>327</option>
+            <option>350</option>
             <option>400</option>
             <option>440</option>
           </select>
@@ -105,8 +106,8 @@ export default function Home() {
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
+         <button onClick={clear}>Clear</button>
         </div>
-        <button onClick={clear}>Clear</button>
       </>
     )
   } if(currentYear) {
