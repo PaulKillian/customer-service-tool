@@ -18,6 +18,11 @@
     align-items: center;
 }
 
+.pAnd {
+  display: flex;
+  justify-content: around;
+}
+
 .flex {
   display: flex;
   justify-content: between;
