@@ -103,9 +103,9 @@ export default function Home() {
         </div>    
       </main> 
         <div className={styles.main2}>
-          <h1>{currentYear}</h1>
-          <h1>{currentModel}</h1>
-          <h1>{currentBody}</h1>
+          <p>{currentYear}</p>
+          <p>{currentModel}</p>
+          <p>{currentBody}</p>
          <button className={styles.heightButton} onClick={clear}>Clear</button>
         </div>
       </>
