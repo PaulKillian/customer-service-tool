@@ -101,7 +101,7 @@ export default function Home() {
           </select>
         </div>    
       </main> 
-        <div className={styles.flex}>
+        <div className={styles.main2}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
@@ -127,7 +127,7 @@ export default function Home() {
   }
     else {
     return (
-      <main className={styles.main2}> 
+      <main className={styles.main}> 
         <textarea 
           id={'text'} 
           onChange={updateText} 
