@@ -14,6 +14,11 @@
 .flex {
   display: flex;
   justify-content: between;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: between;
   flex-direction: column;
 }
 
