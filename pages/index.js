@@ -127,7 +127,7 @@ export default function Home() {
   }
     else {
     return (
-      <main className={styles.main}> 
+      <main className={styles.main2}> 
         <textarea 
           id={'text'} 
           onChange={updateText} 
