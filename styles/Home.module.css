@@ -14,9 +14,8 @@
   display: flex;
   justify-content: center;
   align-contents: center;
+  flex-direction: column;
 }
-
-
 
 .flex {
   display: flex;
