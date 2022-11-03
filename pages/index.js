@@ -66,7 +66,7 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <div className={styles.flex}>
+        <div className={styles.flex2}>
           <textarea 
             id={'text'} 
             rows="4" 
