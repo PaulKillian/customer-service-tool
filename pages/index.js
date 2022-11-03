@@ -98,7 +98,6 @@ export default function Home() {
             <option>Sedan</option>
             <option>Wagon</option>
           </select>
-         <div>
         </div>    
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
