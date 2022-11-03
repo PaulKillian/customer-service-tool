@@ -99,13 +99,13 @@ export default function Home() {
             <option>Wagon</option>
           </select>
         </div>    
+      </main> 
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
         </div>
         <button onClick={clear}>Clear</button>
-      </main> 
     )
   } if(currentYear) {
     return (
