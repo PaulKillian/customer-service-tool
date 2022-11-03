@@ -65,7 +65,6 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
-        <div>
         <div className={styles.flex>
           <textarea 
           id={'text'} 
