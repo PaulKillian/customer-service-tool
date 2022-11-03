@@ -66,12 +66,12 @@ export default function Home() {
     return (
       <main className={styles.main}>
         <div>
+        <div className={styles.flex>
           <textarea 
           id={'text'} 
           rows="4" 
           cols="50">
           </textarea>
-  <div className={styles.flex>
           <select>
             <option>Engine size</option>
             <option>285</option>
@@ -89,7 +89,6 @@ export default function Home() {
             <option>Sedan</option>
             <option>Wagon</option>
           </select>
-  </div>
           <select>
             <option>Model</option>
             <option>SS</option>
@@ -100,6 +99,7 @@ export default function Home() {
             <option>Sedan</option>
             <option>Wagon</option>
           </select>
+         <div>
         </div>    
         <div className={styles.flex}>
           <h1>{currentYear}</h1>
