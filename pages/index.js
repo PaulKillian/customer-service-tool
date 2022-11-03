@@ -65,11 +65,11 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <main className={styles.main}>
-        <div className={styles.flex>
+        <div className={styles.flex}>
           <textarea 
-          id={'text'} 
-          rows="4" 
-          cols="50">
+            id={'text'} 
+            rows="4" 
+            cols="50">
           </textarea>
           <select>
             <option>Engine size</option>
@@ -103,12 +103,6 @@ export default function Home() {
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
-          {/* <Image 
-            alt={currentImage}
-            src={currentImage}
-            height={100}
-            width={150}
-          /> */}
         </div>
         <button onClick={clear}>Clear</button>
       </main> 
