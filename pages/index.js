@@ -106,7 +106,7 @@ export default function Home() {
           <h1>{currentYear}</h1>
           <h1>{currentModel}</h1>
           <h1>{currentBody}</h1>
-         <button onClick={clear}>Clear</button>
+         <button className={styles.heightButton} onClick={clear}>Clear</button>
         </div>
       </>
     )
