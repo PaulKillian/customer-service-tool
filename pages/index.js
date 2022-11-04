@@ -65,7 +65,7 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <div style={{
-        backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url(${bigB.src})`,
         width: '100%',
         height: '100%',
       }}>
