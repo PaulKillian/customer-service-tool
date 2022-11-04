@@ -107,6 +107,7 @@ export default function Home() {
             <p>{currentBody}</p>
           </div>
          <button className={styles.heightButton} onClick={clear}>Clear</button>
+       </div>
      </div>
     )
   } if(currentYear) {
