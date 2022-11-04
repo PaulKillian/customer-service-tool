@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body {
-    display:table;
-    width:100%;
+    width: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Dart.png');
     background-position:center top;
-    height: 100vh;
+    height: auto;
     color: white;
 }
 
