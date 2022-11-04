@@ -6,6 +6,7 @@ body {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/RookResize_1d4918b690533b77d404975c01e860cf.jpg');
     background-position:center top;
     height: 100vh;
+    color: white;
 }
 
 a {
