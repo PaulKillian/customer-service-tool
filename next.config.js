@@ -1,19 +1,6 @@
 /** @type {import('next').NextConfig} */
-const withCSS = require('@zeit/next-css');
-const withSass = require('@zeit/next-sass');
-const withImages = require('next-images');
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-module.exports = withCSS( withSass( withImages({
-    module: {
-        rules: [
-            {
-                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                    },
-                ],
-            },
-        ],
-    },
-})));
+module.exports = nextConfig
