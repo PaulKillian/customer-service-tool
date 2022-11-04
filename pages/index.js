@@ -9,7 +9,7 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-
+import bigB from '../public/RookResize_1d4918b690533b77d404975c01e860cf.jpg'
 
 export default function Home() {
   useEffect(() => {
@@ -64,7 +64,11 @@ export default function Home() {
 
   if(currentYear && currentModel) {
     return (
-      <>
+      <div style={{
+        backgroundImage: `url(${bg.src})`,
+        width: '100%',
+        height: '100%',
+      }}>
       <main className={styles.main}>
         <div className={styles.flex2}>
           <textarea 
@@ -110,7 +114,7 @@ export default function Home() {
           </div>
          <button className={styles.heightButton} onClick={clear}>Clear</button>
         </div>
-      </>
+      </div>
     )
   } if(currentYear) {
     return (
