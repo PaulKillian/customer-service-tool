@@ -64,11 +64,6 @@ export default function Home() {
 
   if(currentYear && currentModel) {
     return (
-      <div style={{
-        backgroundImage: `url(${bigB.src})`,
-        width: '100%',
-        height: '100%',
-      }}>
       <main className={styles.main}>
         <div className={styles.flex2}>
           <textarea 
@@ -113,8 +108,7 @@ export default function Home() {
             <p>{currentBody}</p>
           </div>
          <button className={styles.heightButton} onClick={clear}>Clear</button>
-        </div>
-      </div>
+     </div>
     )
   } if(currentYear) {
     return (
