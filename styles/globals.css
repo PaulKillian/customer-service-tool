@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-import bigB from '../public/RookResize_1d4918b690533b77d404975c01e860cf.jpg'
 
 body {
     display:table;
     width:100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bigB);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('RookResize_1d4918b690533b77d404975c01e860cf.jpg');
     background-position:center top;
     height: 100vh;
 }
