@@ -29,7 +29,7 @@ li, h4 {
 
 li:hover {
   transform: scale(1.2);
-  color: #37BF82
+  color: #800000
 }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 h4 {
- color: #FF2E2E
+ color: #800000
 }
 
 button {
