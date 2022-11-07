@@ -3,7 +3,6 @@
 body {
     width: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Dart.png');
-    background-position:center top;
     height: auto;
     color: white;
 }
