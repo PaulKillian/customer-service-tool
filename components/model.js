@@ -22,13 +22,6 @@ export const RenderModel = (props) => {
     const [v, setV] = useState({a: 'Valiant'})
     const [num, setNum] = useState({a: '150', b: '210'})
 
-
-        
-           
-        //  'Firebird', 'GTX', 
-        // 'Impala', 'Nova', 'Regal', 'Road Runner', 'Satellite', 
-        // 'Trans Am', 'Valiant', '210', '150', 'Nomad', 'Truck'
-
     return (
         <div className={styles.flexModel}>
             <h4>B</h4>
