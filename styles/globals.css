@@ -7,6 +7,7 @@ body {
     width: 100%;
     overflow: hidden;
     font-family: 'Slabo 27px', serif;
+    height: 100vh;
 }
 
 a {
