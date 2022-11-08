@@ -7,6 +7,7 @@ body {
     font-family: 'Slabo 27px', serif;
     display:block;
     width:100%;
+    background-repeat: no-repeat;
 }
 
 a {
