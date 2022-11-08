@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/ezgif.com-gif-maker.jpg');
@@ -6,6 +6,7 @@ body {
     color: white;
     width: 100%;
     overflow: hidden;
+    font-family: 'Slabo 27px', serif;
 }
 
 a {
@@ -67,7 +68,7 @@ textarea {
 
 input[type="text"], textarea {
     background-color : #F6F6F6;
-    font-family: 'Ubuntu';
+    font-family: 'Slabo 27px', serif;
 }
 
 select {
