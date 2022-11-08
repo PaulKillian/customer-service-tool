@@ -22,8 +22,8 @@ ul {
 }
 
 li, h4 {
-  padding: .2rem;
-  font-size: 38px;
+  padding: .4rem;
+  font-size: 33px;
   list-style: none;
   cursor: pointer;
 }
