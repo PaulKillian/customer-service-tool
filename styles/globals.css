@@ -6,6 +6,7 @@ body {
     color: white;
     background-repeat: no-repeat;
     background-size: auto;
+    height: 100vh;
 }
 
 a {
