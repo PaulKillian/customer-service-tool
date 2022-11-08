@@ -34,7 +34,6 @@ export const images = [
       { 
         name: 'Nomad', 
         modelImage: Nomad, 
-        body: 'B-Body' } 
       },
     { 
       model: 
@@ -48,7 +47,6 @@ export const images = [
       { 
         name: 'Nova', 
         modelImage: Nova, 
-        body: 'B-Body' } 
       },
     { 
       model: 
@@ -61,7 +59,5 @@ export const images = [
       model: 
         { 
             name: 'Impala', 
-            modelImage: Impala, 
-            body: 'B-Body'} 
         }
   ]
