@@ -65,6 +65,10 @@ textarea {
   color: #MD2333
 }
 
+input[type="text"], textarea {
+    background-color : #F6F6F6; 
+}
+
 select {
   height: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
