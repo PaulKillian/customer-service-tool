@@ -71,34 +71,6 @@ export default function Home() {
             rows="4" 
             cols="50">
           </textarea>
-          <select>
-            <option>Engine size</option>
-            <option>285</option>
-            <option>327</option>
-            <option>350</option>
-            <option>400</option>
-            <option>440</option>
-          </select>
-          <select>
-            <option>Type</option>
-            <option>Convertible</option>
-            <option>Coupe</option>
-            <option>Fastback</option>
-            <option>Hardtop</option>
-            <option>Notchback</option>
-            <option>Sedan</option>
-            <option>Wagon</option>
-          </select>
-          <select>
-            <option>Model</option>
-            <option>SS</option>
-            <option>Custom</option>
-            <option>Caprice</option>
-            <option>Hardtop</option>
-            <option>Notchback</option>
-            <option>Sedan</option>
-            <option>Wagon</option>
-          </select>
         </div>    
       </main> 
       <div className={styles.main2}>
