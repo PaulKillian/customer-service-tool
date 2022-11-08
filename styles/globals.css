@@ -5,10 +5,7 @@ body {
     color: white;
     overflow: hidden;
     font-family: 'Slabo 27px', serif;
-    display:block;
-    width:100%;
-    background-repeat: no-repeat;
-}
+    background-size: 100% 100%;
 
 a {
   color: inherit;
