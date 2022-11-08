@@ -49,10 +49,15 @@ button {
   background-color: #37BF82;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 38px;
+  padding: 3px
 }
+
+/* button:hover {
+  
+} */
 
 textarea {
   width: 600px;
