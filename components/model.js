@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
 
 export const RenderModel = (props) => {
-    const [b, setB] = useState({a: 'Barr', b: 'Bel Air'})
+    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air'})
     const [c, setC] = useState({
             a: 'Camaro',
             b: 'Charger',
@@ -16,7 +16,7 @@ export const RenderModel = (props) => {
     const [i, setI] = useState({a: 'Impala'})
     const [m, setM] = useState({a: 'Mustang'})
     const [n, setn] = useState({a: 'Nova', b: 'Nomad'})
-    const [r, setR] = useState({a: 'Regal', b: 'Road Runr'})
+    const [r, setR] = useState({a: 'Regal', b: 'Road Runner'})
     const [s, setS] = useState({a: 'Satellite'})
     const [t, setT] = useState({a: 'Trans Am', b: 'Truck'})
     const [v, setV] = useState({a: 'Valiant'})
