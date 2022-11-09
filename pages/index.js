@@ -64,15 +64,6 @@ export default function Home() {
     setCurrentText(text.value)
   }
 
-  const clear = () => {
-    setCurrentModel('')
-    setCurrentYear('')
-    setCurrentBody('')
-    setCurrentEngine('')
-    const text = document.getElementById('text')
-    text.value = ''
-  }
-
   if(currentYear && currentModel) {
     return (
       <>
@@ -91,7 +82,12 @@ export default function Home() {
           <p>{currentModel}</p>
           <p>{currentBody}</p>
         </div>
-      <Button clear={clear}/>
+      <Button 
+        currentYear={currentYear}
+        setCurrentYear={setCurrentYear}
+        currentModel={currentModel}
+        setCurrentModel={setCurrentModel}
+      />
       </div>
     </>
     )
@@ -107,7 +103,12 @@ export default function Home() {
         <RenderModel 
           showModel={showModel} 
         />
-        <Button clear={clear}/>
+        <Button 
+          currentYear={currentYear}
+          setCurrentYear={setCurrentYear}
+          currentModel={currentModel}
+          setCurrentModel={setCurrentModel}
+        />
       </main> 
     )
   }
@@ -122,7 +123,12 @@ export default function Home() {
         </textarea>
         {/* <select>{'year'}</select> */}
         <RenderYear showYear={showYear} />
-        <Button clear={clear}/>
+        <Button 
+          currentYear={currentYear}
+          setCurrentYear={setCurrentYear}
+          currentModel={currentModel}
+          setCurrentModel={setCurrentModel}
+        />
       </main>
     )
   }

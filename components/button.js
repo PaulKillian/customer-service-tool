@@ -1,7 +1,18 @@
 import styles from '../styles/Home.module.css'
 
 export const Button = (props) => {
+  console.log(props)
+  const clear = () => {
+    props.setCurrentModel('')
+    props.setCurrentYear('')
+    const text = document.getElementById('text')
+    text.value = ''
+  }
+
   return (
-    <button onClick=(props.clear) className={styles.button30}>clear</button>
+    <button 
+      className={styles.button30} 
+      onClick={clear} >clear
+    </button>
   )
 }

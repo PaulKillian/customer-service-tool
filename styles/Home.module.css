@@ -61,11 +61,13 @@
 
 .button30:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  background-image: linear-gradient(to right top, #053726, #11604a, #1a8b74, #1dbaa4, #12ebd8);
 }
 
 .button30:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+  cursor: pointer;
+  background-image: linear-gradient(to right top, #12ebd8, #1dbaa4, #1a8b74, #11604a, #053726);
+
 }
 
 .button30:active {
