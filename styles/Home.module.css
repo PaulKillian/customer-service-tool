@@ -125,6 +125,7 @@
 }
 
 .outline {
-  -webkit-text-stroke-width: .5px;
+  color: #E2931C
+  -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: white;
 }
