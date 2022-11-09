@@ -125,6 +125,6 @@
 }
 
 .outline {
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: white;
 }
