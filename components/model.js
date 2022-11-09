@@ -29,6 +29,8 @@ export const RenderModel = (props) => {
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
                 </ul>
             </div>
             <div>
@@ -95,10 +97,6 @@ export const RenderModel = (props) => {
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{t.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{t.b}</li>
-                </ul>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
                 </ul>
             </div>
              <div>
