@@ -24,11 +24,13 @@ export const RenderModel = (props) => {
 
     return (
         <div className={styles.flexModel}>
-            <h4>B</h4>
-            <ul>
-                <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
-                <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
-            </ul>
+            <div>
+                <h4>B</h4>
+                <ul>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
+                </ul>
+            </div>
             <h4>C</h4>
             <ul>
                 <li onClick={e => props.showModel(e.target.innerText)}>{c.a}</li>
