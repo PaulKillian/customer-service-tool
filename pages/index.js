@@ -75,8 +75,8 @@ export default function Home() {
             currentModel={currentModel}
             setCurrentModel={setCurrentModel}
           />
-      </div>
-    </main>
+       </div>
+     </main>
     </>
     )
   } if(currentYear) {
