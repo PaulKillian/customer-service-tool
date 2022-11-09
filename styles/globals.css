@@ -49,11 +49,6 @@ h2 {
 }
 
 h4 {
- background: hsla(34, 100%, 70%, 1);
- background: linear-gradient(90deg, hsla(34, 100%, 70%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
- background: -moz-linear-gradient(90deg, hsla(34, 100%, 70%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
- background: -webkit-linear-gradient(90deg, hsla(34, 100%, 70%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
- filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFBE68", endColorstr="#FFFFFF", GradientType=1 );
  margin-bottom: 0;
  padding-bottom: 0;
  font-size: 25px;
