@@ -57,28 +57,26 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <div className={styles.flex2}>
-          <textarea 
-            id={'text'} 
-            onChange={updateText} 
-            rows="4" 
-            cols="50">
-          </textarea>
-        </div>    
-      </main> 
-      <div className={styles.main2}>
-        <div className={styles.pAnd}>
-          <p>{currentYear}</p>
-          <p>{currentModel}</p>
-          <p>{currentBody}</p>
-        </div>
-      <Button 
-        currentYear={currentYear}
-        setCurrentYear={setCurrentYear}
-        currentModel={currentModel}
-        setCurrentModel={setCurrentModel}
-      />
+        <textarea 
+          id={'text'} 
+          onChange={updateText} 
+          rows="4" 
+          cols="50">
+        </textarea>
+        <div className={styles.main2}>
+          <div className={styles.pAnd}>
+            <p>{currentYear}</p>
+            <p>{currentModel}</p>
+            <p>{currentBody}</p>
+          </div>
+          <Button 
+            currentYear={currentYear}
+            setCurrentYear={setCurrentYear}
+            currentModel={currentModel}
+            setCurrentModel={setCurrentModel}
+          />
       </div>
+    </main>
     </>
     )
   } if(currentYear) {
