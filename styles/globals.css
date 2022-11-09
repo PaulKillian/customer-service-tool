@@ -43,8 +43,12 @@ h1 {
 }
 
 h2 {
+  background: #FFBE68;
+  background: radial-gradient(ellipse farthest-side at top center, #FFBE68 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
-  color: #FFBE68;
+/*   color: #FFBE68; */
   margin-bottom: 0;
 }
 
