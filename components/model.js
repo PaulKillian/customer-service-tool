@@ -97,9 +97,14 @@ export const RenderModel = (props) => {
                     <li onClick={e => props.showModel(e.target.innerText)}>{t.b}</li>
                 </ul>
                 <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{v.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
+                </ul>
+            </div>
+             <div>
+                <h4>V</h4>
+                <ul>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{v.a}</li>
                 </ul>
             </div>
         </div>
