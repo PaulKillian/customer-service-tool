@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   background: #FFBE68;
-  background: radial-gradient(ellipse farthest-side at top center, #FFBE68 0%, #FFFFFF 100%);
+  background: radial-gradient(ellipse farthest-side at top center, #FFBE68 75%, #38A15C 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
