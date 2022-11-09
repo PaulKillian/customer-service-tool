@@ -11,11 +11,11 @@
 }
 
 .main2 {
-   flex-direction: column;
-   display: flex;
- width: 100%;
-    align-content: center;
-    align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  align-items: center;
 }
 
 .pAnd {
