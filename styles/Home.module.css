@@ -29,11 +29,11 @@
   flex-wrap: wrap;
 }
 
-.flex2 {
+/* .flex2 {
   display: flex;
   justify-content: between;
   flex-direction: column;
-}
+} */
 
 .block {
     display: block;
