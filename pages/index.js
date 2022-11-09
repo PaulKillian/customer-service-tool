@@ -60,6 +60,7 @@ export default function Home() {
         <div className={styles.flex2}>
           <textarea 
             id={'text'} 
+            onChange={updateText} 
             rows="4" 
             cols="50">
           </textarea>
