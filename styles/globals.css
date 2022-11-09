@@ -59,6 +59,7 @@ button {
 
 button:hover {
   background-image: linear-gradient(to right top, #12ebd8, #1dbaa4, #1a8b74, #11604a, #053726);
+  transform: scale(1.25);
 } 
 
 textarea {
