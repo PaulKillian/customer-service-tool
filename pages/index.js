@@ -9,6 +9,7 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
+import { Button } from '../components/button.js'
 
 export default function Home() {
   useEffect(() => {
@@ -90,7 +91,7 @@ export default function Home() {
           <p>{currentModel}</p>
           <p>{currentBody}</p>
         </div>
-      <button className={styles.heightButton} onClick={clear}>Clear</button>
+      <Button clear={clear}/>
       </div>
     </>
     )
@@ -106,7 +107,7 @@ export default function Home() {
         <RenderModel 
           showModel={showModel} 
         />
-        <button onClick={clear}>Clear</button>
+        <Button clear={clear}/>
       </main> 
     )
   }
@@ -121,7 +122,7 @@ export default function Home() {
         </textarea>
         {/* <select>{'year'}</select> */}
         <RenderYear showYear={showYear} />
-        <button onClick={clear}>Clear</button>
+        <Button clear={clear}/>
       </main>
     )
   }
