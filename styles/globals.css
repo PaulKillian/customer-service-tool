@@ -56,9 +56,9 @@ button {
   font-family: 'Bowlby One SC', cursive;
 }
 
-/* button:hover {
-  
-} */
+button:hover {
+  background-color: #0A171E;
+} 
 
 textarea {
   width: 600px;
