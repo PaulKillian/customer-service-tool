@@ -52,7 +52,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 33px;
-  padding: 0px 8px
+  padding: 0px 8px 0px 8px;
   font-family: 'Bowlby One SC', cursive;
 }
 
