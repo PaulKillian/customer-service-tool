@@ -72,8 +72,10 @@ textarea {
 }
 
 input[type="text"], textarea {
-    background-color : #F3F2EF;
     font-family: 'Bowlby One SC', cursive;
+    background-color: transparent;
+    color: white;
+    border-color: white;
 }
 
 select {
