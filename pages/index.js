@@ -57,7 +57,7 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <textarea 
+        <textarea placeholder="notes..."
           id={'text'} 
           onChange={updateText} 
           rows="4" 
@@ -82,7 +82,7 @@ export default function Home() {
   } if(currentYear) {
     return (
       <main className={styles.main}>
-        <textarea 
+        <textarea placeholder="notes..."
           id={'text'} 
           onChange={updateText} 
           rows="4" 
@@ -103,7 +103,7 @@ export default function Home() {
     else {
     return (
       <main className={styles.main}> 
-        <textarea 
+        <textarea placeholder="notes..."
           id={'text'} 
           onChange={updateText} 
           rows="4" 
