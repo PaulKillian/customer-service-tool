@@ -43,7 +43,9 @@ h2 {
 }
 
 h4 {
- color: #38A15C
+ color: #38A15C;
+ margin-bottom: 0;
+ padding-bottom: 0;
 }
 
 /* button {
