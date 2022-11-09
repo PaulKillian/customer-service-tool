@@ -108,6 +108,8 @@
   font-size: 20px;
   font-family: 'Bowlby One SC', cursive;
   border-color: white;
+  background-color: #38A15C;
+  color: white;
 }
 
 .button30:hover {
