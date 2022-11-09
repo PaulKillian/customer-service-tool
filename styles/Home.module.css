@@ -123,3 +123,8 @@
 .button30:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+.outline {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
