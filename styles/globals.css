@@ -19,6 +19,7 @@ a {
 
 ul {
   padding: 3px;
+  margin-top: 0;
 }
 
 li, h4 {
@@ -44,6 +45,7 @@ h1 {
 h2 {
   text-align: center;
   color: #FFBE68;
+  margin-bottom: 0;
 }
 
 h4 {
