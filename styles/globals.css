@@ -26,6 +26,7 @@ li, h4 {
   font-size: 20px;
   list-style: none;
   cursor: pointer;
+  color: #ebf2fa;
 }
 
 li:hover {
@@ -74,7 +75,7 @@ textarea {
 input[type="text"], textarea {
     font-family: 'Bowlby One SC', cursive;
     background-color: transparent;
-    color: white;
+    color: #ebf2fa;
     border-color: #38A15C;
 }
 
