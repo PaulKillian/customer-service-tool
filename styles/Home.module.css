@@ -80,8 +80,7 @@
 
 .button30 {
   align-self: center;
-  background-color: #fff;
-  background-image: none;
+  background-image: linear-gradient(to right top, #053726, #11604a, #1a8b74, #1dbaa4, #12ebd8);
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
   background-size: 4px 3px;
@@ -90,7 +89,7 @@
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #41403e;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
