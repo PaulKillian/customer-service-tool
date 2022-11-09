@@ -107,15 +107,15 @@
   touch-action: manipulation;
   font-size: 20px;
   font-family: 'Bowlby One SC', cursive;
-  border-color: #38A15C;
+  border-color: white;
 }
 
 .button30:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
-  border-color: white;
-  background-color: #38A15C;
-  color: white;
+  border-color: #38A15C;
+  background-color: white;
+  color: #38A15C;
 }
 
 .button30:focus {
