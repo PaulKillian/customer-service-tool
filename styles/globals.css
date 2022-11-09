@@ -46,7 +46,8 @@ h4 {
 }
 
 button {
-  background-color: #37BF82;
+/*   background-color: #37BF82; */
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   color: white;
   border: none;
   border-radius: 5px;
