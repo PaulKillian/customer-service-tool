@@ -45,7 +45,7 @@ h4 {
  color: #38A15C
 }
 
-button {
+/* button {
   background-image: linear-gradient(to right top, #053726, #11604a, #1a8b74, #1dbaa4, #12ebd8);
   color: white;
   border: none;
@@ -59,7 +59,7 @@ button {
 button:hover {
   background-image: linear-gradient(to right top, #12ebd8, #1dbaa4, #1a8b74, #11604a, #053726);
   transform: scale(1.05);
-} 
+}  */
 
 textarea {
   height: 38px;
