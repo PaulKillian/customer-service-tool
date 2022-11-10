@@ -149,11 +149,11 @@ export default function Home() {
         </div>
         <div>
           <ButtonHubspot />
-          {page === 'body' &&
-           <ButtonBodyType 
+          <ButtonBodyType 
             page={page}
             setPage={setPage}
-          />}
+          />
+          {page === 'body' && <BodyType />}
         </div>
       </div>
     )
