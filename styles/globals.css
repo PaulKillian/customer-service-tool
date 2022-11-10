@@ -91,10 +91,12 @@ input[type="text"], textarea {
     overflow: auto; 
 }
 
-textarea:focus {
-    border-style: none; 
-    border-color: transparent; 
-    overflow: auto; 
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
 }
 
 select {
