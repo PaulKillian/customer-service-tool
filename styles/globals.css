@@ -24,7 +24,7 @@ li, h4 {
   padding: .4rem;
   font-size: 20px;
   list-style: none;
-  color: #ebf2fa;
+  color: #34383C;
 }
 
 li {
@@ -82,7 +82,7 @@ textarea {
 input[type="text"], textarea {
     font-family: 'Bowlby One SC', cursive;
     background: rgb(56,161,92, .1);
-    color: #ebf2fa;
+    color: #34383C;
     padding: 5px;
     border-style: none; 
     border-color: Transparent; 
