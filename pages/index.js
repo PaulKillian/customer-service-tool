@@ -9,7 +9,7 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-import { Button, ButtonHubspot, ButtonBodyType } from '../components/button.js'
+import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
 import { gsap } from "gsap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -81,7 +81,7 @@ export default function Home() {
                     <p>{currentModel}</p>
                     <p>{currentBody}</p>
                   </div>
-                  <Button 
+                  <ButtonClear 
                     currentYear={currentYear}
                     setCurrentYear={setCurrentYear}
                     currentModel={currentModel}
@@ -116,7 +116,7 @@ export default function Home() {
               <RenderModel 
                 showModel={showModel} 
               />
-              <Button 
+              <ButtonClear
                 currentYear={currentYear}
                 setCurrentYear={setCurrentYear}
                 currentModel={currentModel}
@@ -150,7 +150,7 @@ export default function Home() {
               </div>
               <h2 className={styles.outline}>Click Year Of Vehicle</h2>
               <RenderYear showYear={showYear} />
-              <Button 
+              <ButtonClear
                 currentYear={currentYear}
                 setCurrentYear={setCurrentYear}
                 currentModel={currentModel}
