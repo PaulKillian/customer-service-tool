@@ -36,12 +36,12 @@ export default function Home() {
 
   const showModel = (model) => {
     setCurrentModel(model)
-    images.map((image) => {
-      if(image.model.name === model) {
-        setCurrentImage(image.model.modelImage)
-        setCurrentBody(image.model.body)
-      }
-    })
+    // images.map((image) => {
+    //   if(image.model.name === model) {
+    //     setCurrentImage(image.model.modelImage)
+    //     setCurrentBody(image.model.body)
+    //   }
+    // })
   }
 
   const showEngine = (event) => {

@@ -4,7 +4,7 @@ body {
     overflow: hidden;
     font-family: 'Bowlby One SC', cursive;
     background-size: cover;
-    background-color: #F7F7FC
+    background-color: #e0e0e0;
 }
 
 a {
@@ -43,7 +43,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #FFBE68;
+  color: #37A15C;
   margin-bottom: 0;
 }
 
@@ -51,7 +51,7 @@ h4 {
  margin-bottom: 0;
  padding-bottom: 0;
  font-size: 25px;
- color: #FFBE68;
+ color: #37A15C;
 }
 
 /* button {
@@ -77,17 +77,20 @@ textarea {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border: solid;
   border-width: 2px;
-  color: #MD2333
+  /* color: #MD2333; */
 }
 
 input[type="text"], textarea {
     font-family: 'Bowlby One SC', cursive;
-    background: rgb(56,161,92, .1);
     color: #34383C;
-    padding: 5px;
+    padding: 10px;
     border-style: none; 
     border-color: Transparent; 
     overflow: auto; 
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 
 textarea:focus, input:focus{
