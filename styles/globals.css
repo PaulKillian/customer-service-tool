@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/ezgif.com-gif-maker.jpg');
+    background: linear-gradient( rgba(247,247,252, 0.2), rgba(0, 0, 0, 0.7) ), url('/ezgif.com-gif-maker.jpg');
     color: white;
     overflow: hidden;
     font-family: 'Bowlby One SC', cursive;
