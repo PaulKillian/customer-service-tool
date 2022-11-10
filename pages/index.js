@@ -9,7 +9,7 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-import { Button } from '../components/button.js'
+import { Button, ButtonHubspot, ButtonBodytype } from '../components/button.js'
 import { gsap } from "gsap";
 
 export default function Home() {
