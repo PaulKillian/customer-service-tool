@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css'
 
 export const ButtonClear = (props) => {
-  console.log(props)
   const clear = () => {
     props.setCurrentModel('')
     props.setCurrentYear('')
@@ -29,10 +28,15 @@ export const ButtonHubspot = (props) => {
 }
 
 export const ButtonBodyType = (props) => {
+  const createPage = () => {
+    setPage('body)
+  }
+  
   return (
     <button 
       className={styles.button30} 
       role="button"
+      onClick={createPage}
       >body type
     </button>
   )
