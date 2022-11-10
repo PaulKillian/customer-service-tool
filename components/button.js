@@ -13,7 +13,7 @@ export const Button = (props) => {
     <button 
       className={styles.button30} 
       role="button"
-      onClick={clear} >clear
+      onClick={props.button} >clear
     </button>
   )
 }
