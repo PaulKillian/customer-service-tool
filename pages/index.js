@@ -32,13 +32,7 @@ export default function Home() {
   const [currentEngine, setCurrentEngine] = useState('')
   const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
   const [currentText, setCurrentText] = useState('')
-  const [button, setButton] = useState({
-    'clear': 'clear',
-    'hubspot': 'hubspot',
-    'body': 'body types',
-  })
-
-
+  
   const engines = [272, 383, 400, 440]
 
   const showYear = (year) => {
@@ -71,32 +65,33 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm">
-              <textarea 
-                placeholder="notes..."
-                id={'text'} 
-                onChange={updateText} 
-                rows="4" 
-                cols="50">
-              </textarea>
-            </div>
-            <div className={styles.main2}>
-              <div className={styles.pAnd}>
-                <p>{currentYear}</p>
-                <p>{currentModel}</p>
-                <p>{currentBody}</p>
-              </div>
-              <Button 
-                currentYear={currentYear}
-                setCurrentYear={setCurrentYear}
-                currentModel={currentModel}
-                setCurrentModel={setCurrentModel}
-              />
-            </div>
-            <div className="col-sm">
-             <Button button={button} />
-             <Button button={button} />
-             <Button button={button} />
-           </div>
+              <div>
+                <textarea 
+                  placeholder="notes..."
+                  id={'text'} 
+                  onChange={updateText} 
+                  rows="4" 
+                  cols="50">
+                </textarea>
+               </div>
+                <div className={styles.main2}>
+                  <div className={styles.pAnd}>
+                    <p>{currentYear}</p>
+                    <p>{currentModel}</p>
+                    <p>{currentBody}</p>
+                  </div>
+                  <Button 
+                    currentYear={currentYear}
+                    setCurrentYear={setCurrentYear}
+                    currentModel={currentModel}
+                    setCurrentModel={setCurrentModel}
+                  />
+                </div>
+               </div>
+                <div className="col-sm">
+                  <ButtonHubspot />
+                  <ButtonBodyType/>
+                </div>
           </div>
        </div>
      </main>
@@ -127,10 +122,10 @@ export default function Home() {
               setCurrentModel={setCurrentModel}
             />
            </div>
+           </div>
             <div className="col-sm">
-             <Button button={button} />
-             <Button button={button} />
-             <Button button={button} />
+             <ButtonHubspot />
+             <ButtonBodyType />
            </div>
           </div>
         </div>
@@ -162,10 +157,10 @@ export default function Home() {
               setCurrentModel={setCurrentModel}
             />
            </div>
+           </div>
            <div className="col-sm">
-              <Button button={button} />
-              <Button button={button} />
-              <Button button={button} />
+              <ButtonHubspot />
+              <ButtonBodyType />
            </div>
           </div>
         </div>
