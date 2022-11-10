@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useLayoutEffect } from 'react'
 import 'animate.css';
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
@@ -10,14 +10,18 @@ import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { Button } from '../components/button.js'
+import { gsap } from "gsap";
 
 export default function Home() {
-  useEffect(() => {
-    const engineUl = document.getElementById('engine')
-    if(currentEngine) {
-      engineUl.innerHTML = ''
-    }
-  })
+  const tArea = useRef(); // create a ref for the root level element (for scoping)
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.to(".box", { rotation: "+=360" }); 
+    }, tArea); // <- IMPORTANT! Scopes selector text
+    
+    return () => ctx.revert(); // cleanup
+  }, []);
 
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
@@ -57,12 +61,15 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <textarea placeholder="notes..."
-          id={'text'} 
-          onChange={updateText} 
-          rows="4" 
-          cols="50">
-        </textarea>
+        <div>
+          <textarea 
+            placeholder="notes..."
+            id={'text'} 
+            onChange={updateText} 
+            rows="4" 
+            cols="50">
+          </textarea>
+        </div>
         <div className={styles.main2}>
           <div className={styles.pAnd}>
             <p>{currentYear}</p>
@@ -82,12 +89,15 @@ export default function Home() {
   } if(currentYear) {
     return (
       <main className={styles.main}>
-        <textarea placeholder="notes..."
-          id={'text'} 
-          onChange={updateText} 
-          rows="4" 
-          cols="50">
-        </textarea>
+        <div>
+          <textarea 
+            placeholder="notes..."
+            id={'text'} 
+            onChange={updateText} 
+            rows="4" 
+            cols="50">
+          </textarea>
+        </div>
         <RenderModel 
           showModel={showModel} 
         />
@@ -103,12 +113,16 @@ export default function Home() {
     else {
     return (
       <main className={styles.main}> 
-        <textarea placeholder="notes..."
-          id={'text'} 
-          onChange={updateText} 
-          rows="4" 
-          cols="50">
-        </textarea>
+        <div ref={tArea}>
+          <textarea 
+            className={'box'}
+            placeholder="notes..."
+            id={'text'} 
+            onChange={updateText} 
+            rows="4" 
+            cols="50">
+          </textarea>
+        </div>
         <h2 className={styles.outline}>Click Year Of Vehicle</h2>
         <RenderYear showYear={showYear} />
         <Button 
@@ -120,15 +134,4 @@ export default function Home() {
       </main>
     )
   }
-} 
-
-  // <ul id={'engine'} className={styles.flex}>
-  //           {engines.map((engine) => (
-  //             <li 
-  //               key={engine} 
-  //               onClick={showEngine}>{engine}
-  //             </li>
-  //           ))}
-  //       </ul>
-
-  //test
+}
