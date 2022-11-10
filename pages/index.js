@@ -71,9 +71,9 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
               <textarea 
                 placeholder="notes..."
                 id={'text'} 
@@ -95,7 +95,7 @@ export default function Home() {
                 setCurrentModel={setCurrentModel}
               />
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
              <Button button={button} />
              <Button button={button} />
              <Button button={button} />
@@ -108,9 +108,9 @@ export default function Home() {
   } if(currentYear) {
     return (
       <main className={styles.main}>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
             <div>
               <textarea 
                 placeholder="notes..."
@@ -130,7 +130,7 @@ export default function Home() {
               setCurrentModel={setCurrentModel}
             />
            </div>
-            <div class="col-sm">
+            <div className="col-sm">
              <Button button={button} />
              <Button button={button} />
              <Button button={button} />
@@ -143,9 +143,9 @@ export default function Home() {
     else {
     return (
       <main className={styles.main}> 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
             <div ref={tArea}>
               <textarea 
                 className={'box'}
@@ -165,7 +165,7 @@ export default function Home() {
               setCurrentModel={setCurrentModel}
             />
            </div>
-           <div class="col-sm">
+           <div className="col-sm">
               <Button button={button} />
               <Button button={button} />
               <Button button={button} />
