@@ -17,14 +17,11 @@ export default function Home() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".box", { rotation: "+=360" }); 
-    }, tArea); // <- IMPORTANT! Scopes selector text
-    
     gsap.from(".box", {
       opacity: 0, 
       y: 100, 
       duration: 1
-    });
+    })}, tArea);
     return () => ctx.revert(); // cleanup
   }, []);
 
