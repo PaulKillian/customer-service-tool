@@ -20,6 +20,11 @@ export default function Home() {
       gsap.to(".box", { rotation: "+=360" }); 
     }, tArea); // <- IMPORTANT! Scopes selector text
     
+    gsap.from(".box", {
+      opacity: 0, 
+      y: 100, 
+      duration: 1
+    });
     return () => ctx.revert(); // cleanup
   }, []);
 
@@ -30,6 +35,11 @@ export default function Home() {
   const [currentEngine, setCurrentEngine] = useState('')
   const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
   const [currentText, setCurrentText] = useState('')
+  const [button, setButton] = useState({
+    'clear': 'clear',
+    'hubspot': 'hubspot',
+    'body': 'body types',
+  })
 
 
   const engines = [272, 383, 400, 440]
@@ -61,27 +71,36 @@ export default function Home() {
     return (
       <>
       <main className={styles.main}>
-        <div>
-          <textarea 
-            placeholder="notes..."
-            id={'text'} 
-            onChange={updateText} 
-            rows="4" 
-            cols="50">
-          </textarea>
-        </div>
-        <div className={styles.main2}>
-          <div className={styles.pAnd}>
-            <p>{currentYear}</p>
-            <p>{currentModel}</p>
-            <p>{currentBody}</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <textarea 
+                placeholder="notes..."
+                id={'text'} 
+                onChange={updateText} 
+                rows="4" 
+                cols="50">
+              </textarea>
+            </div>
+            <div className={styles.main2}>
+              <div className={styles.pAnd}>
+                <p>{currentYear}</p>
+                <p>{currentModel}</p>
+                <p>{currentBody}</p>
+              </div>
+              <Button 
+                currentYear={currentYear}
+                setCurrentYear={setCurrentYear}
+                currentModel={currentModel}
+                setCurrentModel={setCurrentModel}
+              />
+            </div>
+            <div class="col-sm">
+             <Button button={button} />
+             <Button button={button} />
+             <Button button={button} />
+           </div>
           </div>
-          <Button 
-            currentYear={currentYear}
-            setCurrentYear={setCurrentYear}
-            currentModel={currentModel}
-            setCurrentModel={setCurrentModel}
-          />
        </div>
      </main>
     </>
@@ -89,48 +108,70 @@ export default function Home() {
   } if(currentYear) {
     return (
       <main className={styles.main}>
-        <div>
-          <textarea 
-            placeholder="notes..."
-            id={'text'} 
-            onChange={updateText} 
-            rows="4" 
-            cols="50">
-          </textarea>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div>
+              <textarea 
+                placeholder="notes..."
+                id={'text'} 
+                onChange={updateText} 
+                rows="4" 
+                cols="50">
+              </textarea>
+            </div>
+            <RenderModel 
+              showModel={showModel} 
+            />
+            <Button 
+              currentYear={currentYear}
+              setCurrentYear={setCurrentYear}
+              currentModel={currentModel}
+              setCurrentModel={setCurrentModel}
+            />
+           </div>
+            <div class="col-sm">
+             <Button button={button} />
+             <Button button={button} />
+             <Button button={button} />
+           </div>
+          </div>
         </div>
-        <RenderModel 
-          showModel={showModel} 
-        />
-        <Button 
-          currentYear={currentYear}
-          setCurrentYear={setCurrentYear}
-          currentModel={currentModel}
-          setCurrentModel={setCurrentModel}
-        />
       </main> 
     )
   }
     else {
     return (
       <main className={styles.main}> 
-        <div ref={tArea}>
-          <textarea 
-            className={'box'}
-            placeholder="notes..."
-            id={'text'} 
-            onChange={updateText} 
-            rows="4" 
-            cols="50">
-          </textarea>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div ref={tArea}>
+              <textarea 
+                className={'box'}
+                placeholder="notes..."
+                id={'text'} 
+                onChange={updateText} 
+                rows="4" 
+                cols="50">
+              </textarea>
+            </div>
+            <h2 className={styles.outline}>Click Year Of Vehicle</h2>
+            <RenderYear showYear={showYear} />
+            <Button 
+              currentYear={currentYear}
+              setCurrentYear={setCurrentYear}
+              currentModel={currentModel}
+              setCurrentModel={setCurrentModel}
+            />
+           </div>
+           <div class="col-sm">
+              <Button button={button} />
+              <Button button={button} />
+              <Button button={button} />
+           </div>
+          </div>
         </div>
-        <h2 className={styles.outline}>Click Year Of Vehicle</h2>
-        <RenderYear showYear={showYear} />
-        <Button 
-          currentYear={currentYear}
-          setCurrentYear={setCurrentYear}
-          currentModel={currentModel}
-          setCurrentModel={setCurrentModel}
-        />
       </main>
     )
   }
