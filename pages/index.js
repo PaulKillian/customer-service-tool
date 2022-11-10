@@ -134,7 +134,7 @@ export default function Home() {
   }
     else {
     return (
-      <main className={styles.main}> 
+      <main > 
         <div className="container">
           <div className="row">
             <div className="col-sm">
