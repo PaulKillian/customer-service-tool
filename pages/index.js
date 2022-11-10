@@ -101,35 +101,34 @@ export default function Home() {
   } if(currentYear) {
     return (
       <main className={styles.main}>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm">
-            <div>
-              <textarea 
-                placeholder="notes..."
-                id={'text'} 
-                onChange={updateText} 
-                rows="4" 
-                cols="50">
-              </textarea>
-            </div>
-            <RenderModel 
-              showModel={showModel} 
-            />
-            <Button 
-              currentYear={currentYear}
-              setCurrentYear={setCurrentYear}
-              currentModel={currentModel}
-              setCurrentModel={setCurrentModel}
-            />
-           </div>
-           </div>
+        <div className="container">
+          <div className="row">
             <div className="col-sm">
-             <ButtonHubspot />
-             <ButtonBodyType />
-           </div>
+              <div>
+                <textarea 
+                  placeholder="notes..."
+                  id={'text'} 
+                  onChange={updateText} 
+                  rows="4" 
+                  cols="50">
+                </textarea>
+              </div>
+              <RenderModel 
+                showModel={showModel} 
+              />
+              <Button 
+                currentYear={currentYear}
+                setCurrentYear={setCurrentYear}
+                currentModel={currentModel}
+                setCurrentModel={setCurrentModel}
+              />
+             </div>
+              <div className="col-sm">
+               <ButtonHubspot />
+               <ButtonBodyType />
+             </div>
+            </div>
           </div>
-        </div>
       </main> 
     )
   }
