@@ -32,7 +32,10 @@ export default function Home() {
   const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
   const [currentText, setCurrentText] = useState('')
   
-
+  const showYear = (year) => {
+    setCurrentYear(year)
+  }
+  
   const showModel = (model) => {
     setCurrentModel(model)
   }
@@ -117,34 +120,32 @@ export default function Home() {
   }
     else {
     return (
-        <div className="container">
-          <div className="row">
-            <div className={styles.main}>
-              <div ref={tArea}>
-                <textarea 
-                  className={'box'}
-                  placeholder="notes..."
-                  id={'text'} 
-                  onChange={updateText} 
-                  rows="4" 
-                  cols="50">
-                </textarea>
-              </div>
-              <h2 className={styles.outline}>Click Year Of Vehicle</h2>
-              <RenderYear showYear={showYear} />
-              <ButtonClear
-                currentYear={currentYear}
-                setCurrentYear={setCurrentYear}
-                currentModel={currentModel}
-                setCurrentModel={setCurrentModel}
-              />
-             </div>
-             <div className={styles.main}>
-                <ButtonHubspot />
-                <ButtonBodyType />
-             </div>
-            </div>
+      <div className={styles.flex}>
+        <div className={styles.main}>
+          <div ref={tArea}>
+            <textarea 
+              className={'box'}
+              placeholder="notes..."
+              id={'text'} 
+              onChange={updateText} 
+              rows="4" 
+              cols="50">
+            </textarea>
           </div>
+          <h2 className={styles.outline}>Click Year Of Vehicle</h2>
+          <RenderYear showYear={showYear} />
+          <ButtonClear
+            currentYear={currentYear}
+            setCurrentYear={setCurrentYear}
+            currentModel={currentModel}
+            setCurrentModel={setCurrentModel}
+          />
+        </div>
+        <div>
+          <ButtonHubspot />
+          <ButtonBodyType />
+        </div>
+      </div>
     )
   }
 }
