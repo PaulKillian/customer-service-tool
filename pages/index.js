@@ -159,7 +159,7 @@ export default function Home() {
                 <ButtonHubspot />
                 <ButtonBodyType />
              </div>
-<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" className="btn btn-secondary">Secondary</button>
             </div>
           </div>
     )
