@@ -6,7 +6,7 @@ export const RenderModel = (props) => {
     const [c, setC] = useState({
             a: 'Camaro',
             b: 'Charger',
-            c: 'Chall',
+            c: 'Challenger',
             d: 'Coronet',
             e: 'Cuda'
         })
@@ -54,9 +54,12 @@ export const RenderModel = (props) => {
                 <h4>F</h4>
                 <ul>      
                     <li onClick={e => props.showModel(e.target.innerText)}>{f.a}</li>
-                    <ul>
-                      <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>  
-                    </ul>
+                </ul>
+            </div>
+            <div>
+                <h4>G</h4>
+                <ul>
+                  <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>  
                 </ul>
             </div>
             <div>
