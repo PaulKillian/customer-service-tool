@@ -6,7 +6,7 @@ export const RenderModel = (props) => {
     const [c, setC] = useState({
             a: 'Camaro',
             b: 'Charger',
-            c: 'Chall',
+            c: 'Challenger',
             d: 'Coronet',
             e: 'Cuda'
         })
