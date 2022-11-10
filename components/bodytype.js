@@ -15,7 +15,6 @@ export const BodyType = (props) => {
     return () => ctx.revert(); // cleanup
    }, []);
   
-  {props.bodyTpe && 
     return (
     <div className={style.bodyFlex}>
       <div>
@@ -59,5 +58,4 @@ export const BodyType = (props) => {
       </div>
     </div>
   )
- }
 }
