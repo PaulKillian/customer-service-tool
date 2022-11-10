@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Home.module.css'
 import { useState, useEffect, useRef, useLayoutEffect } from 'react'
 import 'animate.css';
@@ -11,7 +12,6 @@ import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
 import { gsap } from "gsap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   const tArea = useRef(); // create a ref for the root level element (for scoping)
