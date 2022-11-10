@@ -93,7 +93,7 @@ input[type="text"], textarea {
 
 textarea:focus {
     border-style: none; 
-    border-color: Transparent; 
+    border-color: transparent; 
     overflow: auto; 
 }
 
