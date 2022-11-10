@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 
-export const Button = (props) => {
+export const ButtonClear = (props) => {
   console.log(props)
   const clear = () => {
     props.setCurrentModel('')
@@ -13,7 +13,27 @@ export const Button = (props) => {
     <button 
       className={styles.button30} 
       role="button"
-      onClick={props.button} >clear
+      onClick={clear}>clear
+    </button>
+  )
+}
+
+export const ButtonHubspot = (props) => {
+  return (
+    <button 
+      className={styles.button30} 
+      role="button"
+      >hubspot
+    </button>
+  )
+}
+
+export const ButtonBodyType = (props) => {
+  return (
+    <button 
+      className={styles.button30} 
+      role="button"
+      >body type
     </button>
   )
 }
