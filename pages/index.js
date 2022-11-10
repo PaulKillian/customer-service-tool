@@ -134,7 +134,6 @@ export default function Home() {
   }
     else {
     return (
-      <main > 
         <div className="container">
           <div className="row">
             <div className="col-sm">
@@ -163,7 +162,6 @@ export default function Home() {
              </div>
             </div>
           </div>
-      </main>
     )
   }
 }
