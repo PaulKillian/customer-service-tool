@@ -135,35 +135,34 @@ export default function Home() {
     else {
     return (
       <main className={styles.main}> 
-      <div className="container">
-        <div className="row">
-          <div className="col-sm">
-            <div ref={tArea}>
-              <textarea 
-                className={'box'}
-                placeholder="notes..."
-                id={'text'} 
-                onChange={updateText} 
-                rows="4" 
-                cols="50">
-              </textarea>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
+              <div ref={tArea}>
+                <textarea 
+                  className={'box'}
+                  placeholder="notes..."
+                  id={'text'} 
+                  onChange={updateText} 
+                  rows="4" 
+                  cols="50">
+                </textarea>
+              </div>
+              <h2 className={styles.outline}>Click Year Of Vehicle</h2>
+              <RenderYear showYear={showYear} />
+              <Button 
+                currentYear={currentYear}
+                setCurrentYear={setCurrentYear}
+                currentModel={currentModel}
+                setCurrentModel={setCurrentModel}
+              />
+             </div>
+             <div className="col-sm">
+                <ButtonHubspot />
+                <ButtonBodyType />
+             </div>
             </div>
-            <h2 className={styles.outline}>Click Year Of Vehicle</h2>
-            <RenderYear showYear={showYear} />
-            <Button 
-              currentYear={currentYear}
-              setCurrentYear={setCurrentYear}
-              currentModel={currentModel}
-              setCurrentModel={setCurrentModel}
-            />
-           </div>
-           </div>
-           <div className="col-sm">
-              <ButtonHubspot />
-              <ButtonBodyType />
-           </div>
           </div>
-        </div>
       </main>
     )
   }
