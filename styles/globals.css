@@ -85,7 +85,7 @@ input[type="text"], textarea {
     font-family: 'Bowlby One SC', cursive;
     background: rgb(56,161,92, .1);
     color: #ebf2fa;
-    border-color: #38A15C;
+    border-color: none;
     padding: 5px;
 }
 
