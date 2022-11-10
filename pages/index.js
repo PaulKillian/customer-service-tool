@@ -135,7 +135,7 @@ export default function Home() {
     return (
         <div className="container">
           <div className="row">
-            <div className="col-sm">
+            <div className={styles.main}>
               <div ref={tArea}>
                 <textarea 
                   className={'box'}
@@ -155,11 +155,10 @@ export default function Home() {
                 setCurrentModel={setCurrentModel}
               />
              </div>
-             <div className="col-sm">
+             <div className={styles.main}>
                 <ButtonHubspot />
                 <ButtonBodyType />
              </div>
-<button type="button" className="btn btn-secondary">Secondary</button>
             </div>
           </div>
     )
