@@ -29,7 +29,7 @@ export const ButtonHubspot = (props) => {
 
 export const ButtonBodyType = (props) => {
   const createPage = () => {
-    setPage('body)
+    setPage('body')
   }
   
   return (
