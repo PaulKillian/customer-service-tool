@@ -11,6 +11,7 @@ import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
 import { gsap } from "gsap";
+import { BodyType } from '../components/bodytype.js'
 
 export default function Home() {
   const tArea = useRef(); // create a ref for the root level element (for scoping)
@@ -31,6 +32,7 @@ export default function Home() {
   const [currentEngine, setCurrentEngine] = useState('')
   const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
   const [currentText, setCurrentText] = useState('')
+  const [page, setPage] = useState('')
   
   const showYear = (year) => {
     setCurrentYear(year)
@@ -43,6 +45,10 @@ export default function Home() {
   const updateText = () => {
     const text = document.getElementById('text')
     setCurrentText(text.value)
+  }
+  
+  const createPage = (page) => {
+    
   }
   
   if(currentYear && currentModel) {
@@ -143,7 +149,11 @@ export default function Home() {
         </div>
         <div>
           <ButtonHubspot />
-          <ButtonBodyType />
+          {page === 'body' &&
+           <ButtonBodyType 
+            page={page}
+            setPage={setPage}
+          />}
         </div>
       </div>
     )
