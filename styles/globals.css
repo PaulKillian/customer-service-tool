@@ -90,6 +90,7 @@ input[type="text"], textarea {
     background-color: transparent;
     color: #ebf2fa;
     border-color: #38A15C;
+    padding: 5px;
 }
 
 select {
