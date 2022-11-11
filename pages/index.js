@@ -11,7 +11,7 @@ import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
 import { gsap } from "gsap";
-import { useBodyType } from '../components/bodytype.js'
+import BodyType from '../components/bodytype.js'
 
 export default function Home() {
   const tArea = useRef(); // create a ref for the root level element (for scoping)
