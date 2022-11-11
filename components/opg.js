@@ -4,50 +4,25 @@ import { gsap } from "gsap";
 
 const BodyType = () => {
    useEffect(() => {
-    const bodyDiv = document.querySelector('bodyFlex')
+    const bodyDiv = document.querySelector('opg')
       
     let ctx = gsap.context(() => {
-    gsap.from(".bodyFlex", {
+    gsap.from(".opg", {
       opacity: 0, 
       x: 100, 
       duration: 1
-    })}, bodyDiv);
+    })}, opg);
     return () => ctx.revert(); // cleanup
    }, []);
   
     return (
-    <div className={'bodyFlex'}>
-       <div>
-         <div>
-           <h4 className={styles.h4Design}>A</h4>
-             <h3>Bonneville(59-76), Catalina(59-76), Chevelle(64-77), Cutlass(61-77), 
-                El Camino(64-87), Grand Prix(62-77), GTO(64-73), Lemans(61-73), 
-                </h3>
-         </div>
-         <div>
-           <h4 className={styles.h4Design}>B</h4>
-           <h3>
-             330 & 440,
-             Belvedere,
-             Charger,
-             Coronet,
-             Dart,
-             Dayton,
-             Fury,
-             GTX,
-             Polara,
-             Road Runner,
-             Savoy,
-             Sport Fury,
-             Super Bee,
-             Super Bird,
-           </h3>
-         </div>
-         <div>
-           <h4 className={styles.h4Design}>E</h4>
-            <h3>Challenger, Cuda</h3>
-         </div>
-      </div>
+    <div className={'opg'}>
+     <h4 className={styles.h4Design}>A</h4>
+       <h3>
+         Bonneville(59-76), Cadillac(54-76), Catalina(59-76), Chevelle(64-77), Cutlass(61-77), 
+         El Camino(64-87), Grand Prix(62-77), GTO(64-73), Lemans(61-73), Malibu(78-83), 
+         Monte Carlo(71-88), Riviera(63-76), Skylark(61-72), Tempest(61-71)
+       </h3>
     </div>
   )
 }
