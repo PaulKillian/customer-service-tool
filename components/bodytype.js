@@ -38,7 +38,7 @@ const BodyType = () => {
              Savoy,
              Sport Fury,
              Super Bee,
-             Super Bird,
+             Super Bird
            </h3>
          </div>
          <div>
