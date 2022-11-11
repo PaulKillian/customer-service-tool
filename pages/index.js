@@ -153,7 +153,7 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-          {page === 'body' && <useBodyType />}
+          {page === 'body' && <BodyType />}
         </div>
       </div>
     )
