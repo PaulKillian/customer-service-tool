@@ -7,7 +7,7 @@ const BodyType = () => {
     const bodyDiv = document.getElementById('bodyDiv')
       
     let ctx = gsap.context(() => {
-    gsap.from(".box", {
+    gsap.from(".bodyDiv", {
       opacity: 0, 
       y: 100, 
       duration: 1
