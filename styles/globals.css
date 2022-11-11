@@ -19,6 +19,7 @@ a {
 ul {
   padding: 3px;
   margin-top: 0;
+  text-align: start;
 }
 
 li, h4 {
@@ -26,6 +27,7 @@ li, h4 {
   font-size: 20px;
   list-style: none;
   color: #34383C;
+  font-family: Bowlby One SC,cursive;
 }
 
 li {
