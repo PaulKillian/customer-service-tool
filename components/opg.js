@@ -2,10 +2,7 @@ import styles from '../styles/BodyType.module.css'
 import { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 
-const OPG = () => {
-   let cars = 'Bonneville(59-76)\n Cadillac(54-76)\n Catalina(59-76)\n Chevelle(64-77)\n Cutlass(61-77)\n El Camino(64-87)\n Grand Prix(62-77)\n GTO(64-73\n Lemans(61-73)\n Malibu(78-83)\n Monte Carlo(71-88)\n Riviera(63-76) \n Skylark(61-72)\n Tempest(61-71)'
-   cars.replace(/\n/g, "<br />")
-   
+const OPG = () => {   
    useEffect(() => {
     const opg = document.querySelector('opg')
       
@@ -20,7 +17,7 @@ const OPG = () => {
   
     return (
     <div className={'opg'}>
-       <h3>{cars}</h3>
+       <h3>Bonneville(59-76)<br/><br/> Cadillac(54-76)<br/><br/>Catalina(59-76)<br/><br/> Chevelle(64-77)<br/><br/> Cutlass(61-77)<br/><br/> El Camino(64-87)<br/><br/> Grand Prix(62-77)<br/><br/> GTO(64-73<br/><br/> Lemans(61-73)<br/><br/> Malibu(78-83)<br/><br/> Monte Carlo(71-88)<br/><br/> Riviera(63-76) <br/><br/> Skylark(61-72)<br/><br/> Tempest(61-71)</h3>
     </div>
   )
 }

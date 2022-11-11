@@ -9,11 +9,19 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-import { ButtonClear, ButtonHubspot, ButtonBodyType, ButtonShipping, ButtonOPG } from '../components/button.js'
+import { 
+  ButtonClear, 
+  ButtonHubspot, 
+  ButtonBodyType, 
+  ButtonShipping, 
+  ButtonOPG,
+  ButtonDelivery
+} from '../components/button.js'
 import { gsap } from "gsap";
 import BodyType from '../components/bodytype.js'
 import HubSpot from '../components/hubspot.js'
 import OPG  from '../components/opg.js'
+import DeliveryTimes from '../components/deliveryTimes.js'
 
 export default function Home() {
   const tArea = useRef();
@@ -78,7 +86,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.gridItem}>
-          <div className={styles.flex}>
+          <div className={styles.flexButtons}>
             {/* <ButtonHubspot 
             page={page}
             setPage={setPage}
@@ -95,11 +103,16 @@ export default function Home() {
              page={page}
               setPage={setPage}
             />
+            <ButtonDelivery 
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
            {page === 'body' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg' && <OPG />}
+           {page === 'delivery' && <DeliveryTimes />}
           </div>
         </div>
         
@@ -129,7 +142,7 @@ export default function Home() {
         />
         </div>
         <div className={styles.gridItem}>
-          <div className={styles.flex}>
+          <div className={styles.flexButtons}>
             {/* <ButtonHubspot 
               page={page}
               setPage={setPage}
@@ -146,11 +159,16 @@ export default function Home() {
              page={page}
               setPage={setPage}
             />
+            <ButtonDelivery 
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
             {page === 'body' && <BodyType />}
             {page === 'hubspot' && <HubSpot />}
             {page === 'opg' && <OPG />}
+            {page === 'delivery' && <DeliveryTimes />}
           </div>
         </div>
       </div>
@@ -180,7 +198,7 @@ export default function Home() {
           />
         </div>
         <div className={styles.gridItem}>
-          <div className={styles.flex}>
+          <div className={styles.flexButtons}>
             {/* <ButtonHubspot 
               page={page}
               setPage={setPage}
@@ -197,11 +215,16 @@ export default function Home() {
              page={page}
               setPage={setPage}
             />
+            <ButtonDelivery
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
            {page === 'body' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg' && <OPG />}
+           {page === 'delivery' && <DeliveryTimes />}
           </div>
         </div> 
       </div>

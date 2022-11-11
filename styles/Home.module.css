@@ -44,6 +44,10 @@
   flex-wrap: wrap;
 }
 
+.flexButtons {
+  display: flex;
+}
+
 /* .flex2 {
   display: flex;
   justify-content: between;
@@ -105,6 +109,7 @@
   font-family: 'Bowlby One SC', cursive;
   border-color: #34383C;
   color: white;
+  margin: 5px;
 }
 
 .button30 {
@@ -112,7 +117,8 @@
 }
 
 .button31 {
-  background-color: #386ba1
+  background-color: #386ba1;
+  font-size: 17px;
 }
 
 .button30:hover {
