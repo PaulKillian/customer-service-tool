@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const BodyType = () => {
    useEffect(() => {
-    const bodyDiv = useRef();
+    const bodyDiv = document.getElementById('bodyDiv')
       
     let ctx = gsap.context(() => {
     gsap.from(".box", {
@@ -16,7 +16,7 @@ const BodyType = () => {
    }, []);
   
     return (
-    <div ref={bodyDiv}>className={styles.bodyFlex}>
+    <div id={'bodyDiv'}>className={styles.bodyFlex}>
       <div>
         <div>A Body</div>
         <ul>
