@@ -4,10 +4,10 @@ import { gsap } from "gsap";
 
 const BodyType = () => {
    useEffect(() => {
-    const bodyDiv = document.getElementById('bodyDiv')
+    const bodyDiv = document.querySelector('bodyFlex')
       
     let ctx = gsap.context(() => {
-    gsap.from(".bodyDiv", {
+    gsap.from(".bodyFlex", {
       opacity: 0, 
       y: 100, 
       duration: 1
@@ -16,7 +16,7 @@ const BodyType = () => {
    }, []);
   
     return (
-    <div className={'bodyDiv'} className={styles.bodyFlex}>
+    <div className={styles.bodyFlex}>
       <div>
         <div>A Body</div>
         <ul>
