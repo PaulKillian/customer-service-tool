@@ -17,7 +17,6 @@ const OPG = () => {
   
     return (
     <div className={'opg'}>
-     <h4 className={styles.h4Design}>A</h4>
        <h3>
          Bonneville(59-76), Cadillac(54-76), Catalina(59-76), Chevelle(64-77), Cutlass(61-77), 
          El Camino(64-87), Grand Prix(62-77), GTO(64-73), Lemans(61-73), Malibu(78-83), 
