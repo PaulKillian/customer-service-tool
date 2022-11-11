@@ -4,19 +4,19 @@ import { gsap } from "gsap";
 
 export const BodyType = () => {
    useEffect(() => {
+    const bodyDiv = useRef();
+      
     let ctx = gsap.context(() => {
-   
     gsap.from(".box", {
       opacity: 0, 
       y: 100, 
       duration: 1
-    })}, tArea);
-    
+    })}, bodyDiv);
     return () => ctx.revert(); // cleanup
    }, []);
   
     return (
-    <div className={styles.bodyFlex}>
+    <div ref={bodyDiv}>className={styles.bodyFlex}>
       <div>
         <div>A Body</div>
         <ul>
