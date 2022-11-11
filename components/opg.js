@@ -2,7 +2,7 @@ import styles from '../styles/BodyType.module.css'
 import { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 
-const BodyType = () => {
+const OPG = () => {
    useEffect(() => {
     const bodyDiv = document.querySelector('opg')
       
@@ -27,4 +27,4 @@ const BodyType = () => {
   )
 }
 
-export default BodyType;
+export default OPG;
