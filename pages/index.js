@@ -11,7 +11,7 @@ import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
 import { gsap } from "gsap";
-import { BodyType } from '../components/bodytype.js'
+import { useBodyType } from '../components/bodytype.js'
 
 export default function Home() {
   const tArea = useRef(); // create a ref for the root level element (for scoping)
@@ -153,7 +153,7 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-          {page === 'body' && <BodyType />}
+          {page === 'body' && <useBodyType />}
         </div>
       </div>
     )
