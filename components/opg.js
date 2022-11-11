@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const OPG = () => {
    useEffect(() => {
-    const bodyDiv = document.querySelector('opg')
+    const opg = document.querySelector('opg')
       
     let ctx = gsap.context(() => {
     gsap.from(".opg", {
