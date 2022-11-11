@@ -7,7 +7,7 @@ const BodyType = () => {
     const bodyDiv = document.getElementById('bodyDiv')
       
     let ctx = gsap.context(() => {
-    gsap.from("#bodyDiv", {
+    gsap.from(".bodyDiv", {
       opacity: 0, 
       y: 100, 
       duration: 1
@@ -16,7 +16,7 @@ const BodyType = () => {
    }, []);
   
     return (
-    <div id={'bodyDiv'} className={styles.bodyFlex}>
+    <div className={'bodyDiv'} className={styles.bodyFlex}>
       <div>
         <div>A Body</div>
         <ul>
