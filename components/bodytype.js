@@ -2,7 +2,7 @@ import styles from '../styles/BodyType.module.css'
 import { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 
-export const useBodyType = () => {
+export const BodyType = () => {
    useEffect(() => {
     const bodyDiv = useRef();
       
