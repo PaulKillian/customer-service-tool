@@ -62,7 +62,7 @@ export const ButtonShipping = (props) => {
   )
 }
 
-export const OPG = (props) => {
+export const buttonOPG = (props) => {
   const createPage = () => {
     props.setPage('opg')
   }
