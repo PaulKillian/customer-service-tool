@@ -9,11 +9,11 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-import { ButtonClear, ButtonHubspot, ButtonBodyType, ButtonShipping } from '../components/button.js'
+import { ButtonClear, ButtonHubspot, ButtonBodyType, ButtonShipping, ButtonOPG } from '../components/button.js'
 import { gsap } from "gsap";
 import BodyType from '../components/bodytype.js'
 import HubSpot from '../components/hubspot.js'
-import ShippingTimes  from '../components/shipping.js'
+import OPG  from '../components/opg.js'
 
 export default function Home() {
   const tArea = useRef();
@@ -91,10 +91,15 @@ export default function Home() {
               page={page}
               setPage={setPage}
             /> */}
+            <ButtonOPG 
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
            {page === 'body' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
+           {page === 'opg' && <OPG />}
           </div>
         </div>
         
@@ -137,10 +142,15 @@ export default function Home() {
               page={page}
               setPage={setPage}
             /> */}
+            <ButtonOPG 
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
             {page === 'body' && <BodyType />}
             {page === 'hubspot' && <HubSpot />}
+            {page === 'opg' && <OPG />}
           </div>
         </div>
       </div>
@@ -183,10 +193,15 @@ export default function Home() {
               page={page}
               setPage={setPage}
             /> */}
+            <ButtonOPG 
+             page={page}
+              setPage={setPage}
+            />
           </div>
           <div className={styles.buttonBody}>
            {page === 'body' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
+           {page === 'opg' && <OPG />}
           </div>
         </div> 
       </div>
