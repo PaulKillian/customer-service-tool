@@ -9,7 +9,7 @@ const BodyType = () => {
     let ctx = gsap.context(() => {
     gsap.from(".bodyFlex", {
       opacity: 0, 
-      y: 100, 
+      x: 100, 
       duration: 1
     })}, bodyDiv);
     return () => ctx.revert(); // cleanup
@@ -17,45 +17,33 @@ const BodyType = () => {
   
     return (
     <div className={'bodyFlex'}>
-       <div className={styles.bodyFlex}>
+       <div>
          <div>
-           <div>A Body</div>
-           <ul>
-             <li>Barracuda</li>
-             <li>Dart</li>
-             <li>Demon</li>
-             <li>Duster</li>
-             <li>Lancer</li>
-             <li>Scamp</li>
-             <li>Valiant</li>
-           </ul>
+           <h4 className={styles.h4Design}>A</h4>
+             <h3>Barracuda, Dart, Demon, Duster, Lancer, Scamp</h3>
          </div>
          <div>
-           <div>B Body</div>
-           <ul>
-             <li>330 & 440</li>
-             <li>Belvedere</li>
-             <li>Charger</li>
-             <li>Coronet</li>
-             <li>Dart</li>
-             <li>Dayton</li>
-             <li>Fury</li>
-             <li>GTX</li>
-             <li>Polara</li>
-             <li>Road Runner</li>
-             <li>Satellite</li>
-             <li>Savoy</li>
-             <li>Sport Fury</li>
-             <li>Super Bee</li>
-             <li>Super Bird</li>
-           </ul>
+           <h4 className={styles.h4Design}>B</h4>
+           <h3>
+             330 & 440,
+             Belvedere,
+             Charger,
+             Coronet,
+             Dart,
+             Dayton,
+             Fury,
+             GTX,
+             Polara,
+             Road Runner,
+             Savoy,
+             Sport Fury,
+             Super Bee,
+             Super Bird,
+           </h3>
          </div>
          <div>
-           <div>E Body</div>
-           <ul>
-             <li>Challenger</li>
-             <li>Cuda</li>
-           </ul>
+           <h4 className={styles.h4Design}>E</h4>
+            <h3>Challenger, Cuda</h3>
          </div>
       </div>
     </div>

@@ -18,10 +18,15 @@ export const ButtonClear = (props) => {
 }
 
 export const ButtonHubspot = (props) => {
+  const createPage = () => {
+    props.setPage('hubspot')
+  }
+
   return (
     <button 
-      className={styles.button30} 
+      className={styles.button31} 
       role="button"
+      onClick={createPage}
       >hubspot
     </button>
   )
@@ -34,10 +39,25 @@ export const ButtonBodyType = (props) => {
   
   return (
     <button 
-      className={styles.button30} 
+      className={styles.button31} 
       role="button"
       onClick={createPage}
       >body type
+    </button>
+  )
+}
+
+export const ButtonShipping = (props) => {
+  const createPage = () => {
+    props.setPage('shipping')
+  }
+  
+  return (
+    <button 
+      className={styles.button31} 
+      role="button"
+      onClick={createPage}
+      >shipping
     </button>
   )
 }

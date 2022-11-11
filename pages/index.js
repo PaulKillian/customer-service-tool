@@ -9,28 +9,28 @@ import { images } from '../components/images.js'
 import { EditBlogForm } from '../components/editabelBock.js'
 import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
-import { ButtonClear, ButtonHubspot, ButtonBodyType } from '../components/button.js'
+import { ButtonClear, ButtonHubspot, ButtonBodyType, ButtonShipping } from '../components/button.js'
 import { gsap } from "gsap";
 import BodyType from '../components/bodytype.js'
+import HubSpot from '../components/hubspot.js'
+import ShippingTimes  from '../components/shipping.js'
 
 export default function Home() {
-  const tArea = useRef(); // create a ref for the root level element (for scoping)
-  useLayoutEffect(() => {
+  const tArea = useRef();
+
+  useEffect(() => {
     let ctx = gsap.context(() => {
     gsap.from(".box", {
       opacity: 0, 
       y: 100, 
       duration: 1
     })}, tArea);
-    return () => ctx.revert(); // cleanup
+    return () => ctx.revert();
   }, []);
  
   const [currentYear, setCurrentYear] = useState('')
   const [currentModel, setCurrentModel] = useState('')
   const [currentImage, setCurrentImage] = useState('')
-  const [currentBody, setCurrentBody] = useState('')
-  const [currentEngine, setCurrentEngine] = useState('')
-  const [color, setColor] = useState(Math.floor(Math.random() * colors.length))
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   
@@ -53,74 +53,103 @@ export default function Home() {
   
   if(currentYear && currentModel) {
     return (
-      <>
-      <div className={styles.flex}>
-      <div className={styles.main}>
-              <div>
-                <textarea 
-                  placeholder="notes..."
-                  id={'text'} 
-                  onChange={updateText} 
-                  rows="4" 
-                  cols="50">
-                </textarea>
-               </div>
-                <div className={styles.main2}>
-                  <div className={styles.pAnd}>
-                    <p>{currentYear}</p>
-                    <p>{currentModel}</p>
-                    <p>{currentBody}</p>
-                  </div>
-                  <ButtonClear 
-                    currentYear={currentYear}
-                    setCurrentYear={setCurrentYear}
-                    currentModel={currentModel}
-                    setCurrentModel={setCurrentModel}
-                  />
-                </div>
-               </div>
-                <div className="col-sm">
-                  <ButtonHubspot />
-                  <ButtonBodyType/>
-                </div>
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItem}>
+          <div>
+            <textarea 
+              placeholder="notes..."
+              id={'text'} 
+              onChange={updateText} 
+              rows="4" 
+              cols="50">
+            </textarea>
           </div>
-     </div>
-    </>
+          <div className={styles.main2}>
+            <div className={styles.pAnd}>
+              <p>{currentYear}</p>
+              <p>{currentModel}</p>
+            </div>
+            <ButtonClear 
+              currentYear={currentYear}
+              setCurrentYear={setCurrentYear}
+              currentModel={currentModel}
+              setCurrentModel={setCurrentModel}
+            />
+          </div>
+        </div>
+        <div className={styles.gridItem}>
+          <div className={styles.flex}>
+            {/* <ButtonHubspot 
+            page={page}
+            setPage={setPage}
+            /> */}
+            <ButtonBodyType 
+              page={page}
+              setPage={setPage}
+            />
+            {/* <ButtonShipping 
+              page={page}
+              setPage={setPage}
+            /> */}
+          </div>
+          <div className={styles.buttonBody}>
+           {page === 'body' && <BodyType />}
+           {page === 'hubspot' && <HubSpot />}
+          </div>
+        </div>
+        
+      </div>
     )
   } if(currentYear) {
     return (
-      <div className={styles.flex}>
-      <div className={styles.main}>
-              <div>
-                <textarea 
-                  placeholder="notes..."
-                  id={'text'} 
-                  onChange={updateText} 
-                  rows="4" 
-                  cols="50">
-                </textarea>
-              </div>
-              <RenderModel 
-                showModel={showModel} 
-              />
-              <ButtonClear
-                currentYear={currentYear}
-                setCurrentYear={setCurrentYear}
-                currentModel={currentModel}
-                setCurrentModel={setCurrentModel}
-              />
-             </div>
-              <div className="col-sm">
-               <ButtonHubspot />
-               <ButtonBodyType />
-             </div>
-     </div>
+      <div className={styles.gridContainer}>
+      <div className={styles.gridItem}>
+        <div>
+          <textarea 
+            placeholder="notes..."
+            id={'text'} 
+            onChange={updateText} 
+            rows="4" 
+            cols="50">
+          </textarea>
+        </div>
+        <RenderModel 
+          showModel={showModel} 
+        />
+        <ButtonClear
+          currentYear={currentYear}
+          setCurrentYear={setCurrentYear}
+          currentModel={currentModel}
+          setCurrentModel={setCurrentModel}
+        />
+        </div>
+        <div className={styles.gridItem}>
+          <div className={styles.flex}>
+            {/* <ButtonHubspot 
+              page={page}
+              setPage={setPage}
+              /> */}
+            <ButtonBodyType 
+              page={page}
+              setPage={setPage}
+            />
+            {/* <ButtonShipping 
+              page={page}
+              setPage={setPage}
+            /> */}
+          </div>
+          <div className={styles.buttonBody}>
+            {page === 'body' && <BodyType />}
+            {page === 'hubspot' && <HubSpot />}
+          </div>
+        </div>
+      </div>
     )
   }
     else {
     return (
-      <div className={styles.flex}>
-        <div className={styles.main}>
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItem}>
           <div ref={tArea}>
             <textarea 
               className={'box'}
@@ -140,14 +169,26 @@ export default function Home() {
             setCurrentModel={setCurrentModel}
           />
         </div>
-        <div>
-          <ButtonHubspot />
-          <ButtonBodyType 
-            page={page}
-            setPage={setPage}
-          />
-          {page === 'body' && <BodyType />}
-        </div>
+        <div className={styles.gridItem}>
+          <div className={styles.flex}>
+            {/* <ButtonHubspot 
+              page={page}
+              setPage={setPage}
+            /> */}
+            <ButtonBodyType 
+             page={page}
+              setPage={setPage}
+            />
+            {/* <ButtonShipping 
+              page={page}
+              setPage={setPage}
+            /> */}
+          </div>
+          <div className={styles.buttonBody}>
+           {page === 'body' && <BodyType />}
+           {page === 'hubspot' && <HubSpot />}
+          </div>
+        </div> 
       </div>
     )
   }

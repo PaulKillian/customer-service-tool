@@ -2,14 +2,26 @@
   padding: 0 2rem;
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  height: 99vh;
+}
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
 .main {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
   align-items: center;
-  background-color: #F3F2EE;
 }
 
 .main2 {
@@ -27,7 +39,7 @@
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -42,7 +54,8 @@
 }
 
 .yearWidth {
-  max-width: 42%;
+  margin: auto;
+  max-width: 60%;
 }
 
 .flexModel {
@@ -61,26 +74,7 @@
   padding: 1rem;
 }
 
-/* 
-.button30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  background-image: linear-gradient(to right top, #053726, #11604a, #1a8b74, #1dbaa4, #12ebd8);;
-}
-
-.button30:hover {
-  cursor: pointer;
-  background-image: linear-gradient(to right top, #12ebd8, #1dbaa4, #1a8b74, #11604a, #053726);
-}
-
-.button30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-<!-- HTML !-->
-<button class="button-55" role="button">Button 55</button> */
-
-.button30 {
+.button30, .button31 {
   align-self: center;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -90,7 +84,6 @@
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #38A15C;
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
@@ -110,8 +103,15 @@
   font-size: 20px;
   font-family: 'Bowlby One SC', cursive;
   border-color: #34383C;
-  background-color: #38A15C;
   color: white;
+}
+
+.button30 {
+  background-color: #38A15C;
+}
+
+.button31 {
+  background-color: #386ba1
 }
 
 .button30:hover {
@@ -122,6 +122,19 @@
   color: #38A15C;
 }
 
-.button30:focus {
+.button31:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  border-color: #386ba1;
+  background-color: white;
+  color: #386ba1;
+}
+
+.button30:focus,
+.button31:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.buttonDiv {
+  margin: 2rem;
 }
