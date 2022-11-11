@@ -42,7 +42,7 @@ export const ButtonBodyType = (props) => {
       className={styles.button31} 
       role="button"
       onClick={createPage}
-      >body type
+      >body
     </button>
   )
 }
@@ -72,7 +72,7 @@ export const ButtonOPG = (props) => {
       className={styles.button31} 
       role="button"
       onClick={createPage}
-      >OPG Cars
+      >OPG
     </button>
   )
 }
@@ -87,7 +87,7 @@ export const ButtonDelivery = (props) => {
       className={styles.button31} 
       role="button"
       onClick={createPage}
-      >Delivery Times
+      >Delivery
     </button>
   )
 }
