@@ -61,3 +61,18 @@ export const ButtonShipping = (props) => {
     </button>
   )
 }
+
+export const OPG = (props) => {
+  const createPage = () => {
+    props.setPage('opg')
+  }
+  
+  return (
+    <button 
+      className={styles.button31} 
+      role="button"
+      onClick={createPage}
+      >shipping
+    </button>
+  )
+}
