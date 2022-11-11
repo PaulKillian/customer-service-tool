@@ -16,7 +16,7 @@ const BodyType = () => {
    }, []);
   
     return (
-    <div id={'bodyDiv'}>className={styles.bodyFlex}>
+    <div id={'bodyDiv'} className={styles.bodyFlex}>
       <div>
         <div>A Body</div>
         <ul>
