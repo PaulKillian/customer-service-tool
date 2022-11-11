@@ -21,7 +21,7 @@ const BodyType = () => {
          <div>
            <h4 className={styles.h4Design}>A</h4>
              <h3>Bonneville(59-76), Catalina(59-76), Chevelle(64-77), Cutlass(61-77), 
-                Duster, Lancer, Scamp</h3>
+                El Camino(64-87), Grand Prix(62-77), GTO(64-73)</h3>
          </div>
          <div>
            <h4 className={styles.h4Design}>B</h4>
