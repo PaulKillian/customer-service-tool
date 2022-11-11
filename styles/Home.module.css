@@ -116,11 +116,6 @@
   background-color: #38A15C;
 }
 
-.button31 {
-  background-color: #386ba1;
-  font-size: 17px;
-}
-
 .button30:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
@@ -145,3 +140,9 @@
 .buttonDiv {
   margin: 2rem;
 }
+
+.button31 {
+  background-color: #386ba1;
+  font-size: 17px;
+}
+
