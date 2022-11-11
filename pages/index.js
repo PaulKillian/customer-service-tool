@@ -54,10 +54,8 @@ export default function Home() {
   if(currentYear && currentModel) {
     return (
       <>
-      <main className={styles.main}>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">
+      <div className={styles.flex}>
+      <div className={styles.main}>
               <div>
                 <textarea 
                   placeholder="notes..."
@@ -86,16 +84,13 @@ export default function Home() {
                   <ButtonBodyType/>
                 </div>
           </div>
-       </div>
-     </main>
+     </div>
     </>
     )
   } if(currentYear) {
     return (
-      <main className={styles.main}>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">
+      <div className={styles.flex}>
+      <div className={styles.main}>
               <div>
                 <textarea 
                   placeholder="notes..."
@@ -119,9 +114,7 @@ export default function Home() {
                <ButtonHubspot />
                <ButtonBodyType />
              </div>
-            </div>
-          </div>
-      </main> 
+     </div>
     )
   }
     else {
