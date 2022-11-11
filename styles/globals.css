@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 body {
     overflow: hidden;
@@ -57,9 +58,9 @@ h4 {
 
 h3 {
   text-align: start;
-  font-family: Bowlby One SC,cursive;
   color: #34383C;
   margin: 2px 0px 2px 0px;
+  font-family: Roboto, sans-serif;
 }
 
 /* button {
