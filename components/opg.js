@@ -18,9 +18,20 @@ const OPG = () => {
     return (
     <div className={'opg'}>
        <h3>
-         Bonneville(59-76), Cadillac(54-76), Catalina(59-76), Chevelle(64-77), Cutlass(61-77), 
-         El Camino(64-87), Grand Prix(62-77), GTO(64-73), Lemans(61-73), Malibu(78-83), 
-         Monte Carlo(71-88), Riviera(63-76), Skylark(61-72), Tempest(61-71)
+         Bonneville(59-76)<br>
+         Cadillac(54-76)<br>
+         Catalina(59-76)<br>
+         Chevelle(64-77)<br> 
+         Cutlass(61-77)<br>
+         El Camino(64-87)<br>
+         Grand Prix(62-77)<br>
+         GTO(64-73<br>
+         Lemans(61-73)<br>
+         Malibu(78-83)<br>
+         Monte Carlo(71-88)<br> 
+         Riviera(63-76)<br> 
+         Skylark(61-72)<br> 
+         Tempest(61-71)<br>
        </h3>
     </div>
   )
