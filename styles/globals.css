@@ -64,26 +64,9 @@ h3 {
   margin-top: 35px
 }
 
-/* button {
-  background-image: linear-gradient(to right top, #053726, #11604a, #1a8b74, #1dbaa4, #12ebd8);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 33px;
-  padding: 0px 8px 0px 8px;
-  font-family: 'Bowlby One SC', cursive;
-}
-
-button:hover {
-  background-image: linear-gradient(to right top, #12ebd8, #1dbaa4, #1a8b74, #11604a, #053726);
-  transform: scale(1.05);
-}  */
-
 textarea {
   height: 300px;
   width: 655px;
-  font-size: 38px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border: solid;
   border-width: 2px;
@@ -98,6 +81,7 @@ input[type="text"], textarea {
     overflow: auto; 
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: 25px;
 }
 
 textarea:focus, input:focus{

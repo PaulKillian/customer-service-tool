@@ -11,12 +11,8 @@ import { initializeApp } from "firebase/app";
 import { colors } from '../components/pallette.js'
 import { 
   ButtonClear, 
-  ButtonHubspot, 
-  ButtonBodyType, 
-  ButtonShipping, 
-  ButtonOPG,
-  ButtonDelivery
-} from '../components/button.js'
+  Buttons
+} from '../components/buttons.js'
 import { gsap } from "gsap";
 import BodyType from '../components/bodytype.js'
 import HubSpot from '../components/hubspot.js'
@@ -55,10 +51,6 @@ export default function Home() {
     setCurrentText(text.value)
   }
   
-  const createPage = (page) => {
-    
-  }
-  
   if(currentYear && currentModel) {
     return (
       <div className={styles.gridContainer}>
@@ -87,32 +79,16 @@ export default function Home() {
         </div>
         <div className={styles.gridItem}>
           <div className={styles.flexButtons}>
-            {/* <ButtonHubspot 
-            page={page}
-            setPage={setPage}
-            /> */}
-            <ButtonBodyType 
-              page={page}
-              setPage={setPage}
-            />
-            {/* <ButtonShipping 
-              page={page}
-              setPage={setPage}
-            /> */}
-            <ButtonOPG 
-             page={page}
-              setPage={setPage}
-            />
-            <ButtonDelivery 
-             page={page}
-              setPage={setPage}
+            <Buttons
+                page={page}
+                setPage={setPage}
             />
           </div>
           <div className={styles.buttonBody}>
-           {page === 'body' && <BodyType />}
+           {page === 'body type' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
-           {page === 'opg' && <OPG />}
-           {page === 'delivery' && <DeliveryTimes />}
+           {page === 'opg cars' && <OPG />}
+           {page === 'delivery times' && <DeliveryTimes />}
           </div>
         </div>  
       </div>
@@ -142,32 +118,16 @@ export default function Home() {
         </div>
         <div className={styles.gridItem}>
           <div className={styles.flexButtons}>
-            {/* <ButtonHubspot 
+            <Buttons 
               page={page}
-              setPage={setPage}
-              /> */}
-            <ButtonBodyType 
-              page={page}
-              setPage={setPage}
-            />
-            {/* <ButtonShipping 
-              page={page}
-              setPage={setPage}
-            /> */}
-            <ButtonOPG 
-             page={page}
-              setPage={setPage}
-            />
-            <ButtonDelivery 
-             page={page}
               setPage={setPage}
             />
           </div>
           <div className={styles.buttonBody}>
-            {page === 'body' && <BodyType />}
+            {page === 'body type' && <BodyType />}
             {page === 'hubspot' && <HubSpot />}
-            {page === 'opg' && <OPG />}
-            {page === 'delivery' && <DeliveryTimes />}
+            {page === 'opg cars' && <OPG />}
+            {page === 'delivery times' && <DeliveryTimes />}
           </div>
         </div>
       </div>
@@ -198,32 +158,16 @@ export default function Home() {
         </div>
         <div className={styles.gridItem}>
           <div className={styles.flexButtons}>
-            {/* <ButtonHubspot 
+            <Buttons
               page={page}
-              setPage={setPage}
-            /> */}
-            <ButtonBodyType 
-             page={page}
-              setPage={setPage}
-            />
-            {/* <ButtonShipping 
-              page={page}
-              setPage={setPage}
-            /> */}
-            <ButtonOPG 
-             page={page}
-              setPage={setPage}
-            />
-            <ButtonDelivery
-             page={page}
               setPage={setPage}
             />
           </div>
           <div className={styles.buttonBody}>
-           {page === 'body' && <BodyType />}
+           {page === 'body type' && <BodyType />}
            {page === 'hubspot' && <HubSpot />}
-           {page === 'opg' && <OPG />}
-           {page === 'delivery' && <DeliveryTimes />}
+           {page === 'opg cars' && <OPG />}
+           {page === 'delivery times' && <DeliveryTimes />}
           </div>
         </div> 
       </div>
