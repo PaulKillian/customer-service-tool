@@ -16,34 +16,38 @@ const BodyType = () => {
    }, []);
   
     return (
-    <div className={'bodyFlex'}>
-       <div>
-         <div>
-           <h4 className={styles.h4Design}>A</h4>
-             <h3 className={styles.bodyMargin}>Barracuda, Dart, Demon, Duster, Lancer, Scamp</h3>
-         </div>
-         <div>
-           <h4 className={styles.h4Design}>B</h4>
-           <h3 className={styles.bodyMargin}>
-             330 & 440,
-             Belvedere,
-             Charger,
-             Coronet,
-             Dayton,
-             Fury,
-             GTX,
-             Polara,
-             Road Runner,
-             Savoy,
-             Sport Fury,
-             Super Bee,
-             Super Bird
-           </h3>
-         </div>
-         <div>
-           <h4 className={styles.h4Design}>E</h4>
-            <h3 className={styles.bodyMargin}>Challenger, Cuda</h3>
-         </div>
+    <div className={'bodyFlex'} >
+      <div className={styles.bodyFlex}>
+        <div>
+          <h3 className={styles.bodyMargin}>
+            <span className={styles.h4Design}>A</span><br/> 
+            Barracuda<br/> Dart<br/> Demon<br/> Duster<br/> Lancer<br/> Scamp
+          </h3>
+        </div>
+        <div>
+          <h3 className={styles.bodyMargin}>
+          <span className={styles.h4Design}>B</span><br/> 
+            330 & 440<br/> 
+            Belvedere<br/> 
+            Charger<br/> 
+            Coronet<br/> 
+            Dayton<br/> 
+            Fury<br/> 
+            GTX<br/> 
+            Polara<br/> 
+            Road Runner<br/> 
+            Savoy<br/> 
+            Sport Fury<br/> 
+            Super Bee<br/> 
+            Super Bird
+          </h3>
+        </div>
+        <div>
+          <h3 className={styles.bodyMargin}>
+            <span className={styles.h4Design}>E</span><br/> 
+            Challenger<br/> Cuda
+          </h3>
+        </div>
       </div>
     </div>
   )
