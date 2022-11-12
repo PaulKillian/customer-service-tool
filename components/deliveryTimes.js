@@ -18,10 +18,11 @@ const DeliveryTimes = () => {
     return (
     <div className={'deliveryTimes'}>
        <h3>
-        Zone 2 & 3:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3days<br/><br/> 
-        Zone 4 & 5:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-5days<br/><br/>
-        Zone 6:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5-7days<br/><br/> 
-        Zone 7 & 8:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7-10days
+        <span className={styles.h4Design}>Zone</span><br/>
+        2 & 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3days<br/><br/> 
+        4 & 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-5days<br/><br/>
+        6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5-7days<br/><br/> 
+        7 & 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7-10days
        </h3>
     </div>
   )

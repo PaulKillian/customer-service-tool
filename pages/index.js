@@ -114,8 +114,7 @@ export default function Home() {
            {page === 'opg' && <OPG />}
            {page === 'delivery' && <DeliveryTimes />}
           </div>
-        </div>
-        
+        </div>  
       </div>
     )
   } if(currentYear) {
