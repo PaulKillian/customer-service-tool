@@ -29,7 +29,6 @@ const BodyType = () => {
              Belvedere,
              Charger,
              Coronet,
-             Dart,
              Dayton,
              Fury,
              GTX,
