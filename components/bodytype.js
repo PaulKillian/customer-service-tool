@@ -20,11 +20,11 @@ const BodyType = () => {
        <div>
          <div>
            <h4 className={styles.h4Design}>A</h4>
-             <h3>Barracuda, Dart, Demon, Duster, Lancer, Scamp</h3>
+             <h3 className={styles.bodyMargin>Barracuda, Dart, Demon, Duster, Lancer, Scamp</h3>
          </div>
          <div>
            <h4 className={styles.h4Design}>B</h4>
-           <h3>
+           <h3 className={styles.bodyMargin}>
              330 & 440,
              Belvedere,
              Charger,
@@ -42,7 +42,7 @@ const BodyType = () => {
          </div>
          <div>
            <h4 className={styles.h4Design}>E</h4>
-            <h3>Challenger, Cuda</h3>
+            <h3 className={styles.bodyMargin>Challenger, Cuda</h3>
          </div>
       </div>
     </div>
