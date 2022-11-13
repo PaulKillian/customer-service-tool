@@ -2,13 +2,14 @@ import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
 
 export const RenderModel = (props) => {
-    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air'})
+    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air', c: 'Blazer'})
     const [c, setC] = useState({
             a: 'Camaro',
-            b: 'Charger',
-            c: 'Challenger',
-            d: 'Coronet',
-            e: 'Cuda'
+            b: 'Caprice',
+            c: 'Charger',
+            d: 'Challenger',
+            e: 'Coronet',
+            f: 'Cuda'
         })
     const [d, setD] = useState({a: 'Dart', b: 'Duster'})
     const [f, setF] = useState({a: 'Firebird'})
@@ -29,6 +30,7 @@ export const RenderModel = (props) => {
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{b.c}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
                 </ul>
@@ -41,6 +43,7 @@ export const RenderModel = (props) => {
                     <li onClick={e => props.showModel(e.target.innerText)}>{c.c}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{c.d}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{c.e}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{c.f}</li>
                 </ul>
             </div>
                 <div className={styles.flexModelChild}>

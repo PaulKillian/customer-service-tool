@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, useEffect, useRef, useLayoutEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import 'animate.css';
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
-import { EditBlogForm } from '../components/editabelBock.js'
-import { initializeApp } from "firebase/app";
-import { colors } from '../components/pallette.js'
 import { 
   ButtonClear, 
   Buttons
