@@ -7,13 +7,13 @@
 .gridContainer {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 100%;
   padding: 10px;
-  height: 99vh;
 }
 .gridItem {
   padding: 20px;
   text-align: center;
+  width: 100%
 }
 
 .main {
@@ -60,14 +60,27 @@
 
 .yearWidth {
   margin: auto;
-  max-width: 60%;
+  max-width: 90%;
 }
 
 .flexModel {
   margin-top: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+}
+
+.flexModelChild:nth-child(n+2) {
+  margin-top: 0;
+}
+
+.h4Child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.h4Child2 {
+  margin-top: 0;
 }
 
 .flexColumn {

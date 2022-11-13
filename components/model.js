@@ -43,69 +43,75 @@ export const RenderModel = (props) => {
                     <li onClick={e => props.showModel(e.target.innerText)}>{c.e}</li>
                 </ul>
             </div>
+                <div className={styles.flexModelChild}>
+                    <div>
+                      <h4 className={styles.h4Child}>D</h4>
+                      <ul>
+                        <li onClick={e => props.showModel(e.target.innerText)}>{d.a}</li>
+                        <li onClick={e => props.showModel(e.target.innerText)}>{d.b}</li>
+                      </ul>  
+                    </div>
+                    <div>
+                        <h4 className={styles.h4Child2}>F</h4>
+                        <ul>      
+                            <li onClick={e => props.showModel(e.target.innerText)}>{f.a}</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className={styles.h4Child2}>G</h4>
+                        <ul>
+                        <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>  
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className={styles.h4Child2}>I</h4>
+                        <ul>
+                            <li onClick={e => props.showModel(e.target.innerText)}>{i.a}</li>
+                        </ul>
+                    </div>
+                </div>
             <div>
-                <h4>D</h4>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{d.a}</li>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{d.b}</li>
-                </ul>
-            </div>
-            <div>
-                <h4>F</h4>
-                <ul>      
-                    <li onClick={e => props.showModel(e.target.innerText)}>{f.a}</li>
-                </ul>
-            </div>
-            <div>
-                <h4>G</h4>
-                <ul>
-                  <li onClick={e => props.showModel(e.target.innerText)}>{g.a}</li>  
-                </ul>
-            </div>
-            <div>
-                <h4>I</h4>
-                <ul>
-                    <li onClick={e => props.showModel(e.target.innerText)}>{i.a}</li>
-                </ul>
-            </div>
-            <div>
+            <div    >
                 <h4>M</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{m.a}</li>
                 </ul>
             </div>
             <div>
-                <h4>N</h4>
+                <h4 className={styles.h4Child2}>N</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{n.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{n.b}</li>
                 </ul>
             </div>
             <div>
-                <h4>R</h4>
+                <h4 className={styles.h4Child2}>R</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{r.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{r.b}</li>
                 </ul>
             </div>
+            </div>
             <div>
+                <div className={styles.flexModelChild}>
                 <h4>S</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{s.a}</li>
                 </ul>
             </div>
             <div>
-                <h4>T</h4>
+                <h4 className={styles.h4Child2}>T</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{t.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{t.b}</li>
                 </ul>
             </div>
              <div>
-                <h4>V</h4>
+                <h4 className={styles.h4Child2}>V</h4>
                 <ul>
                     <li onClick={e => props.showModel(e.target.innerText)}>{v.a}</li>
                 </ul>
+            </div>
             </div>
         </div>
     )

@@ -2,12 +2,11 @@
 
 .bodyFlex {
   display: flex;
-  justify-content: center;
   text-align: start;
 }
 
 .h4Design {
- font-size: 20px;
+ font-size: 25px;
  color: #37A15C;
  text-align: start;
 }

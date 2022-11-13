@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
 
 body {
     overflow: hidden;
-    font-family: Bowlby One SC, cursive;
+    font-family: 'Poppins', sans-serif;
     background-size: cover;
     background-color: #e0e0e0;
 }
@@ -21,6 +21,7 @@ ul {
   padding: 3px;
   margin-top: 0;
   text-align: start;
+  margin-bottom: 0;
 }
 
 li, h4 {
@@ -28,16 +29,18 @@ li, h4 {
   font-size: 20px;
   list-style: none;
   color: #34383C;
-  font-family: Bowlby One SC,cursive;
 }
 
 li {
   cursor: pointer;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 li:hover {
   transform: scale(1.2);
-  color: #38A15C
+  color: #386ba1
 }
 
 h1 {
@@ -50,18 +53,20 @@ h2 {
 }
 
 h4 {
+ margin-top: 5px;
  margin-bottom: 0;
  padding-bottom: 0;
  font-size: 25px;
  color: #37A15C;
+ text-align: start;
 }
 
 h3 {
   text-align: start;
   color: #34383C;
   margin: 5px;
-  font-family: Roboto, sans-serif;
-  margin-top: 35px
+  font-family: 'Poppins', sans-serif;
+  margin-top: 35px;
 }
 
 textarea {
@@ -73,7 +78,7 @@ textarea {
 }
 
 input[type="text"], textarea {
-    font-family: Bowlby One SC,cursive;
+    font-family: 'Poppins', sans-serif;
     color: #34383C;
     padding: 10px;
     border-style: none; 
@@ -104,5 +109,6 @@ p {
 }
 
 span {
-  font-family: Bowlby One SC, cursive;;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
 }

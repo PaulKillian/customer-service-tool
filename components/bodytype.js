@@ -21,31 +21,31 @@ const BodyType = () => {
         <div>
           <h3 className={styles.bodyMargin}>
             <span className={styles.h4Design}>A</span><br/> 
-            Barracuda<br/><br/> Dart<br/><br/> Demon<br/><br/> Duster<br/><br/> Lancer<br/><br/> Scamp
+            Barracuda<br/> Dart<br/> Demon<br/> Duster<br/> Lancer<br/> Scamp
           </h3>
         </div>
         <div>
           <h3 className={styles.bodyMargin}>
           <span className={styles.h4Design}>B</span><br/> 
-            330 & 440<br/><br/> 
-            Belvedere<br/><br/> 
-            Charger<br/><br/> 
-            Coronet<br/><br/> 
-            Dayton<br/><br/> 
-            Fury<br/><br/> 
-            GTX<br/><br/> 
-            Polara<br/><br/> 
-            Road Runner<br/><br/> 
-            Savoy<br/><br/> 
-            Sport Fury<br/><br/> 
-            Super Bee<br/><br/> 
+            330 & 440<br/> 
+            Belvedere<br/> 
+            Charger<br/> 
+            Coronet<br/> 
+            Dayton<br/> 
+            Fury<br/>
+            GTX<br/> 
+            Polara<br/> 
+            Road Runner<br/> 
+            Savoy<br/> 
+            Sport Fury<br/> 
+            Super Bee<br/> 
             Super Bird
           </h3>
         </div>
         <div>
           <h3 className={styles.bodyMargin}>
             <span className={styles.h4Design}>E</span><br/> 
-            Challenger<br/><br/> Cuda
+            Challenger<br/> Cuda
           </h3>
         </div>
       </div>
