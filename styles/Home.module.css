@@ -122,26 +122,21 @@
   border-color: #34383C;
   color: white;
   margin: 5px;
+  margin-top: 0;
 }
 
 .button30 {
-  background-color: #38A15C;
+  background-color: #2c88d3;
+  margin-top: 15px;
 }
 
-.button30:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-  border-color: #38A15C;
-  background-color: white;
-  color: #38A15C;
-}
-
+.button30:hover,
 .button31:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
-  border-color: #386ba1;
+  border-color: #35A3FF;
   background-color: white;
-  color: #386ba1;
+  color: #35A3FF;
 }
 
 .button30:focus,
@@ -154,12 +149,16 @@
 }
 
 .button31 {
-  background-color: #386ba1;
+  background-color: #2c88d3;
   font-size: 14px;
-  border-color: white;
+  border-color: #34383C;;
 }
 
 .bodyMargin {
   margin-top: 5px;
+}
+
+.buttonBody {
+  margin-left: 12px;
 }
 
