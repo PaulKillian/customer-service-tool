@@ -17,14 +17,10 @@ const infoRender = (props) => {
     }, []);
   
     return (
-       {props.clickedButton === 'body type' &&
-        <BodyType />}
-       {props.clickedButton === 'return label' &&
-        <ReturnLabel />}
-       {props.clickedButton === 'opg' &&
-        <OPG/>}
-       {props.clickedButton === 'delivery times' &&
-        <DeliveryTimes />} 
+       {props.clickedButton === 'body type' && <BodyType />}
+       {props.clickedButton === 'return label' && <ReturnLabel />}
+       {props.clickedButton === 'opg' && <OPG />}
+       {props.clickedButton === 'delivery times' && <DeliveryTimes />}
   )
 }
 
