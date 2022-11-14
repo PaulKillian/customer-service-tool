@@ -17,10 +17,31 @@ const infoRender = (props) => {
     }, []);
   
     return (
-       {props.clickedButton === 'body type' && bodyType()}
-       {props.clickedButton === 'return label' && returnLabel()}
-       {props.clickedButton === 'opg' && opg()}
-       {props.clickedButton === 'delivery times' && deliveryTimes()}
+       <div>
+         {(() => {
+           if (props.clickedButton === 'body type') {
+             return (
+               bodyType()
+             )
+           } else if (props.clickedButton === 'return label') {
+             return (
+               returnLabel()
+             )
+           } else if (props.clickedButton === 'opg') {
+             return (
+               opg()
+             )
+           } else {
+             return (
+               deliveryTimes()
+             )
+           }
+         })()}
+       </div>
+//        {props.clickedButton === 'body type' && bodyType()}
+//        {props.clickedButton === 'return label' && returnLabel()}
+//        {props.clickedButton === 'opg' && opg()}
+//        {props.clickedButton === 'delivery times' && deliveryTimes()}
   )
 }
 
