@@ -15,7 +15,7 @@ import BodyType from '../components/bodytype.js'
 import HubSpot from '../components/hubspot.js'
 import OPG  from '../components/opg.js'
 import DeliveryTimes from '../components/deliveryTimes.js'
-import ReturnLabel from '../components/retun.js'
+import ReturnLabel from '../components/retunLabel.js'
 
 export default function Home() {
   const tArea = useRef();
