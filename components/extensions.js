@@ -1,29 +1,17 @@
 const owner = [
     'Owner',
-    {
-      name: Jeff Leonard*,
-      name: Jeff Leonard*,
-      ext: 1201,
-      ext: 1202,
-    }
+    { name: Jeff Leonard*, ext: 1201 }
+    { name: Jeff Leonard*, ext: 1202 }
   ]
 
 const adminAsst = [
     'Administrative Asst',
-    {
-      name: Michaelle Shi*,
-      name: Michaelle Shi Remote*,
-      ext: 1221,
-      ext: 1225,
-    }
+    { name: Michaelle Shi*, ext: 1221 }
+    { name: Michaelle Shi Remote*, ext: 1225}
   ]
 
 const generalManager = [
-    'Administrative Asst',
-    {
-      name: Michaelle Shi*,
-      name: Michaelle Shi Remote*,
-      ext: 1221,
-      ext: 1225,
-    }
+    'General Manager',
+    { name: Mark Vogt*, ext: 1221 }
+    { name: Conference room, ext: 1225}
   ]
