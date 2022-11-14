@@ -45,4 +45,4 @@ const InfoRender = (props) => {
   )
 }
 
-export default infoRender;
+export default InfoRender;
