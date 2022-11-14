@@ -79,7 +79,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.buttonBody}>
-            <InforRender />
+            <InfoRender />
           </div>
         </div>
       </div>  
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div className={styles.buttonBody}>
             <div className={styles.buttonBody}>
-              <InforRender />
+              <InfoRender />
             </div>
           </div>  
          </div>
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
           <div className={styles.buttonBody}>
              <div className={styles.buttonBody}>
-              <InforRender />
+              <InfoRender />
             </div>
           </div>
         </div> 
