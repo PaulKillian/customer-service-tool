@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
-import infoRender from './info.js
+import { InfoRender } from './info.js
 
 
 export const ButtonClear = () => {
@@ -43,6 +43,6 @@ export const Buttons = () => {
         </button>
       ))}
     </div>
-    <div clickedButton={buttons}>/div>
+    <InfoRender clickedButton={props.page}>/InforRender>
   )
 }
