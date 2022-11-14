@@ -4,19 +4,19 @@ import { gsap } from "gsap";
 
 const BodyType = () => {
    useEffect(() => {
-    const bodyDiv = document.querySelector('bodyFlex')
+    const infoDiv = document.querySelector('info')
       
     let ctx = gsap.context(() => {
-    gsap.from(".bodyFlex", {
+    gsap.from(".info", {
       opacity: 0, 
       x: 100, 
       duration: 1
-    })}, bodyDiv);
+    })}, infoDiv);
     return () => ctx.revert(); // cleanup
    }, []);
   
     return (
-    <div className={'bodyFlex'} >
+    <div className={'info'} >
       <div className={styles.bodyFlex}>
         <div>
           <h3 className={styles.bodyMargin}>
