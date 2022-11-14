@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
-import { InfoRender } from './info.js
+import { InfoRender } from './info.js'
 
 
 export const ButtonClear = () => {
