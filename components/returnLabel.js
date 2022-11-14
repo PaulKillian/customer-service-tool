@@ -7,7 +7,7 @@ const ReturnLabel = () => {
     const returnDiv = document.querySelector('return')
       
     let ctx = gsap.context(() => {
-    gsap.from(".bodyFlex", {
+    gsap.from(".return", {
       opacity: 0, 
       x: 100, 
       duration: 1
