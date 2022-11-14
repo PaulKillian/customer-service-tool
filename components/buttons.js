@@ -33,16 +33,18 @@ export const Buttons = () => {
   }
   
   return (
-    <div>
-      {buttons.map((button, index) => (
-        <button 
-          className={styles.button31}
-          role="button"
-          key={index}
-          onClick={() =>{createPage(button)}}>{button}
-        </button>
-      ))}
-    </div>
-    <InfoRender clickedButton={props.page}></InfoRender>
+    <>
+      <div>
+        {buttons.map((button, index) => (
+          <button 
+            className={styles.button31}
+            role="button"
+            key={index}
+            onClick={() =>{createPage(button)}}>{button}
+          </button>
+        ))}
+      </div>
+      <InfoRender clickedButton={props.page}></InfoRender>
+    </>
   )
 }
