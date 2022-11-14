@@ -87,7 +87,7 @@ export default function Home() {
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg cars' && <OPG />}
            {page === 'delivery times' && <DeliveryTimes />}
-           {page === 'delivery times' && <ReturnLabel />}
+           {page === 'return label' && <ReturnLabel />}
           </div>
         </div>  
       </div>
@@ -127,7 +127,7 @@ export default function Home() {
             {page === 'hubspot' && <HubSpot />}
             {page === 'opg cars' && <OPG />}
             {page === 'delivery times' && <DeliveryTimes />}
-            {page === 'delivery times' && <ReturnLabel />}
+            {page === 'return label' && <ReturnLabel />}
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@ export default function Home() {
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg cars' && <OPG />}
            {page === 'delivery times' && <DeliveryTimes />}
-           {page === 'delivery times' && <ReturnLabel />}
+           {page === 'return label' && <ReturnLabel />}
           </div>
         </div> 
       </div>
