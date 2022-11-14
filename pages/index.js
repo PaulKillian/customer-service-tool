@@ -80,10 +80,9 @@ export default function Home() {
           </div>
           <div className={styles.buttonBody}>
             <InforRender />
-           </div>
           </div>
-        </div>  
-      </div>
+        </div>
+      </div>  
     )
   } if(currentYear) {
     return (
@@ -121,7 +120,6 @@ export default function Home() {
             </div>
           </div>  
         </div>
-      </div>
     )
   }
     else {
@@ -160,7 +158,6 @@ export default function Home() {
             </div>
           </div>
         </div> 
-      </div>
     )
   }
 }
