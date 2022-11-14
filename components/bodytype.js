@@ -1,6 +1,7 @@
 import styles from '../styles/BodyType.module.css'
 import { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
+import { returnLabel, bodyType, opg, deliveryTimes } from './components/info.js'
 
 const BodyType = () => {
    useEffect(() => {
