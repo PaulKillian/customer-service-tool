@@ -43,6 +43,6 @@ export const Buttons = () => {
         </button>
       ))}
     </div>
-    <InfoRender clickedButton={props.page}>/InforRender>
+    <InfoRender clickedButton={props.page}>/InfoRender>
   )
 }
