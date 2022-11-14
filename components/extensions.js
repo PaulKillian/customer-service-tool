@@ -8,7 +8,17 @@ const owner = [
     }
   ]
 
-const AdminAsst. = [
+const adminAsst = [
+    'Administrative Asst',
+    {
+      name: Michaelle Shi*,
+      name: Michaelle Shi Remote*,
+      ext: 1221,
+      ext: 1225,
+    }
+  ]
+
+const generalManager = [
     'Administrative Asst',
     {
       name: Michaelle Shi*,
