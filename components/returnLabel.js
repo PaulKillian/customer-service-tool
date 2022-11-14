@@ -21,9 +21,9 @@ const ReturnLabel = () => {
           width="640" 
           height="360" 
           frameBorder="0" 
-          webkitallowFullscreen="" 
-          mozallowFullscreen="" 
-          allowFullscreen="">
+          webkitallowFullScreen="" 
+          mozallowFullScreen="" 
+          allowFullScreen="">
         </iframe>
      </div>
   )
