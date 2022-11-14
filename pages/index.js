@@ -11,11 +11,7 @@ import {
   Buttons
 } from '../components/buttons.js'
 import { gsap } from "gsap";
-import BodyType from '../components/bodytype.js'
-import HubSpot from '../components/hubspot.js'
-import OPG  from '../components/opg.js'
-import DeliveryTimes from '../components/deliveryTimes.js'
-import ReturnLabel from '../components/returnLabel.js'
+import InfoRender from '../component/infoRender.js'
 
 export default function Home() {
   const tArea = useRef();
@@ -83,12 +79,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.buttonBody}>
-           {page === 'body type' && <BodyType />}
-           {page === 'hubspot' && <HubSpot />}
-           {page === 'opg cars' && <OPG />}
-           {page === 'delivery times' && <DeliveryTimes />}
-           <div className={styles.styleIframe}>
-            {page === 'return label' && <ReturnLabel />}
+            <InforRender />
            </div>
           </div>
         </div>  
@@ -125,12 +116,8 @@ export default function Home() {
             />
           </div>
           <div className={styles.buttonBody}>
-            {page === 'body type' && <BodyType />}
-            {page === 'hubspot' && <HubSpot />}
-            {page === 'opg cars' && <OPG />}
-            {page === 'delivery times' && <DeliveryTimes />}
-            <div className={styles.styleIframe}>
-              {page === 'return label' && <ReturnLabel />}
+            <div className={styles.buttonBody}>
+              <InforRender />
             </div>
           </div>  
         </div>
@@ -168,13 +155,9 @@ export default function Home() {
             />
           </div>
           <div className={styles.buttonBody}>
-           {page === 'body type' && <BodyType />}
-           {page === 'hubspot' && <HubSpot />}
-           {page === 'opg cars' && <OPG />}
-           {page === 'delivery times' && <DeliveryTimes />}
-           <div className={styles.styleIframe}>
-            {page === 'return label' && <ReturnLabel />}
-           </div>
+             <div className={styles.buttonBody}>
+              <InforRender />
+            </div>
           </div>
         </div> 
       </div>
