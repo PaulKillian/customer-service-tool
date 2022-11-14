@@ -87,25 +87,25 @@ export default function Home() {
   } if(currentYear) {
     return (
       <div className={styles.gridContainer}>
-      <div className={styles.gridItem}>
-        <div>
-          <textarea 
-            placeholder="notes..."
-            id={'text'} 
-            onChange={updateText} 
-            rows="4" 
-            cols="50">
-          </textarea>
-        </div>
-        <RenderModel 
-          showModel={showModel} 
-        />
-        <ButtonClear
-          currentYear={currentYear}
-          setCurrentYear={setCurrentYear}
-          currentModel={currentModel}
-          setCurrentModel={setCurrentModel}
-        />
+        <div className={styles.gridItem}>
+          <div>
+            <textarea 
+              placeholder="notes..."
+              id={'text'} 
+              onChange={updateText} 
+              rows="4" 
+              cols="50">
+            </textarea>
+          </div>
+          <RenderModel 
+            showModel={showModel} 
+          />
+          <ButtonClear
+            currentYear={currentYear}
+            setCurrentYear={setCurrentYear}
+            currentModel={currentModel}
+            setCurrentModel={setCurrentModel}
+          />
         </div>
         <div className={styles.gridItem}>
           <div className={styles.flexButtons}>
@@ -119,6 +119,7 @@ export default function Home() {
               <InforRender />
             </div>
           </div>  
+         </div>
         </div>
     )
   }
@@ -158,6 +159,7 @@ export default function Home() {
             </div>
           </div>
         </div> 
+      </div> 
     )
   }
 }
