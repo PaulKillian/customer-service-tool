@@ -1,7 +1,9 @@
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
+import infoRender from './components/info.js
 
-export const ButtonClear = (props) => {
+
+export const ButtonClear = () => {
   const clear = () => {
     props.setCurrentModel('')
     props.setCurrentYear('')
@@ -18,7 +20,7 @@ export const ButtonClear = (props) => {
   )
 }
 
-export const Buttons = (props) => {
+export const Buttons = () => {
   const [buttons, setButtons] = useState([
     'body type', 
     'opg cars', 
