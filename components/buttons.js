@@ -43,5 +43,6 @@ export const Buttons = () => {
         </button>
       ))}
     </div>
+    <div clickedButton={buttons}>/div>
   )
 }
