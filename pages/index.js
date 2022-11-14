@@ -15,6 +15,7 @@ import BodyType from '../components/bodytype.js'
 import HubSpot from '../components/hubspot.js'
 import OPG  from '../components/opg.js'
 import DeliveryTimes from '../components/deliveryTimes.js'
+import ReturnLabel from '../components/retun.js'
 
 export default function Home() {
   const tArea = useRef();
@@ -86,6 +87,7 @@ export default function Home() {
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg cars' && <OPG />}
            {page === 'delivery times' && <DeliveryTimes />}
+           {page === 'delivery times' && <ReturnLabel />}
           </div>
         </div>  
       </div>
@@ -125,6 +127,7 @@ export default function Home() {
             {page === 'hubspot' && <HubSpot />}
             {page === 'opg cars' && <OPG />}
             {page === 'delivery times' && <DeliveryTimes />}
+            {page === 'delivery times' && <ReturnLabel />}
           </div>
         </div>
       </div>
@@ -165,6 +168,7 @@ export default function Home() {
            {page === 'hubspot' && <HubSpot />}
            {page === 'opg cars' && <OPG />}
            {page === 'delivery times' && <DeliveryTimes />}
+           {page === 'delivery times' && <ReturnLabel />}
           </div>
         </div> 
       </div>
