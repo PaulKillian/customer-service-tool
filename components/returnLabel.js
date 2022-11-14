@@ -9,7 +9,7 @@ const ReturnLabel = () => {
     let ctx = gsap.context(() => {
     gsap.from(".return", {
       opacity: 0, 
-      x: 100, 
+      x: 150, 
       duration: 1
     })}, returnDiv);
     return () => ctx.revert(); // cleanup
