@@ -25,7 +25,7 @@ const OPG = () => {
             Lemans(61-73)<br/> Malibu(78-83)<br/> 
             Monte Carlo(71-88)<br/> Riviera(63-76) 
             <br/> Skylark(61-72)<br/> Tempest(61-71)
-            <br/><br/>Phone # 1‑800‑243‑8355
+            <br/><br/>Phone# 1‑800‑243‑8355
         </h3>
     </div>
   )
