@@ -24,4 +24,4 @@ const infoRender = (props) => {
   )
 }
 
-export default BodyType;
+export default infoRender;
