@@ -11,7 +11,7 @@ import {
   Buttons
 } from '../components/buttons.js'
 import { gsap } from "gsap";
-import InfoRender from '../component/infoRender.js'
+import InfoRender from '../components/infoRender.js'
 
 export default function Home() {
   const tArea = useRef();
