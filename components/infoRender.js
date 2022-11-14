@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { returnLabel, bodyType, opg, deliveryTimes } from './components/info.js'
 
-const infoRender = () => {
+const infoRender = (returnedInfo) => {
    useEffect(() => {
     const infoDiv = document.querySelector('info')
       
