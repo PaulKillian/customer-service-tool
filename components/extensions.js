@@ -21,5 +21,10 @@ const owner = [
     name: 'Shipping Station', ext: 1251,
     name: 'Tech Shop', ext: 1254,
     name: 'Tech Desk', ext: 1255
-   }
+   },
+   {
+      department: 'Monarch Building',
+      name: 'Mark Vogt', ext: 2602,
+      name: 'Studio', ext: 2603
+   },
  ]
