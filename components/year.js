@@ -12,7 +12,7 @@ export const RenderYear = (props) => {
        setVehicleYears(years)
     };
     
-    yearsComponent()
+    yearComponent()
 
     return (
         <div className={styles.yearWidth}>
