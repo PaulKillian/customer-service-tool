@@ -21,16 +21,15 @@ export const RenderYear = (props) => {
 
     return (
         <div className={styles.yearWidth}>
-            {/* <h1 id={'ul'}>{currentYear}</h1> */}
-            <ul className={styles.flex}>
-                {years.map((year) => (
-                <li 
-                    key={year}
-                    onClick={e => props.showYear(e.target.innerText)}
-                    >{year}
-                </li>
+          <ul className={styles.flex}>
+            {years.map((year) => (
+              <li 
+                key={year}
+                onClick={e => props.showYear(e.target.innerText)}
+                >{year}
+              </li>
             ))}
-            </ul>
-        </div>
+          </ul>
+        </div> 
     )
 }

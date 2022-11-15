@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect, useRef } from 'react'
-import 'animate.css';
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
@@ -17,17 +16,18 @@ export default function Home() {
   const tArea = useRef();
 
   useEffect(() => {
+    const infoDiv = document.querySelector('info') 
     let ctx = gsap.context(() => {
-    gsap.from(".box", {
-      opacity: 0, 
-      y: 100, 
-      duration: 1
-    })}, tArea);
-    return () => ctx.revert();
+       gsap.from(".info", {
+         opacity: 0, 
+         x: 100, 
+         duration: 1
+       })}, infoDiv);
+       return () => ctx.revert();
   }, []);
  
-  const [currentYear, setCurrentYear] = useState('')
-  const [currentModel, setCurrentModel] = useState('')
+  const [currentYear, setCurrentYear] = useState(null)
+  const [currentModel, setCurrentModel] = useState(null)
   const [currentImage, setCurrentImage] = useState('')
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
@@ -45,121 +45,61 @@ export default function Home() {
     setCurrentText(text.value)
   }
   
-  if(currentYear && currentModel) {
-    return (
-      <div className={styles.gridContainer}>
-        <div className={styles.gridItem}>
-          <div>
-            <textarea 
-              placeholder="notes..."
-              id={'text'} 
-              onChange={updateText} 
-              rows="4" 
-              cols="50">
-            </textarea>
-          </div>
-          <div className={styles.main2}>
-            <div className={styles.pAnd}>
-              <p>{currentYear}</p>
-              <p>{currentModel}</p>
-            </div>
-            <ButtonClear 
-              currentYear={currentYear}
-              setCurrentYear={setCurrentYear}
+  const modelAndYear = () => {
+    if (currentModel && currentYear) {
+      return (
+        <div className={styles.main2}>
+        <div className={styles.pAnd}>
+          <p>{currentYear}</p>
+          <p>{currentModel}</p>
+        </div>
+      </div>
+      )
+    }
+  }
+
+  return (
+    <div className={styles.gridContainer}>
+      <div className={styles.gridItem}>
+        <div>
+          <textarea 
+            placeholder="notes..."
+            id={'text'} 
+            onChange={updateText} 
+            rows="4" 
+            cols="50">
+          </textarea>
+        </div>
+        {
+          currentYear 
+          ? <RenderModel 
+              showModel={showModel} 
               currentModel={currentModel}
-              setCurrentModel={setCurrentModel}
-            />
-          </div>
-        </div>
-        <div className={styles.gridItem}>
-          <div className={styles.flexButtons}>
-            <Buttons
-                page={page}
-                setPage={setPage}
-            />
-          </div>
-          <div className={styles.buttonBody}>
-            <InfoRender />
-          </div>
-        </div>
-      </div>  
-    )
-  } if(currentYear) {
-    return (
-      <div className={styles.gridContainer}>
-        <div className={styles.gridItem}>
-          <div>
-            <textarea 
-              placeholder="notes..."
-              id={'text'} 
-              onChange={updateText} 
-              rows="4" 
-              cols="50">
-            </textarea>
-          </div>
-          <RenderModel 
-            showModel={showModel} 
-          />
-          <ButtonClear
-            currentYear={currentYear}
-            setCurrentYear={setCurrentYear}
-            currentModel={currentModel}
-            setCurrentModel={setCurrentModel}
-          />
-        </div>
-        <div className={styles.gridItem}>
-          <div className={styles.flexButtons}>
-            <Buttons 
-              page={page}
-              setPage={setPage}
-            />
-          </div>
-          <div className={styles.buttonBody}>
-            <div className={styles.buttonBody}>
-              <InfoRender />
+              />
+          : <div>
+              <h2 className={styles.outline}>Click Year Of Vehicle</h2>
+              <RenderYear showYear={showYear} />
             </div>
-          </div>  
-         </div>
-        </div>
-    )
-  }
-    else {
-    return (
-      <div className={styles.gridContainer}>
-        <div className={styles.gridItem}>
-          <div ref={tArea}>
-            <textarea 
-              className={'box'}
-              placeholder="notes..."
-              id={'text'} 
-              onChange={updateText} 
-              rows="4" 
-              cols="50">
-            </textarea>
-          </div>
-          <h2 className={styles.outline}>Click Year Of Vehicle</h2>
-          <RenderYear showYear={showYear} />
-          <ButtonClear
-            currentYear={currentYear}
-            setCurrentYear={setCurrentYear}
-            currentModel={currentModel}
-            setCurrentModel={setCurrentModel}
+        }
+        {modelAndYear()}
+        <ButtonClear
+          setCurrentYear={setCurrentYear}
+          setCurrentModel={setCurrentModel}
+        />
+      </div>
+      <div className={styles.gridItem}>
+        <div className={styles.flexButtons}>
+          <Buttons 
+            page={page}
+            setPage={setPage}
           />
         </div>
-        <div className={styles.gridItem}>
-          <div className={styles.flexButtons}>
-            <Buttons
-              page={page}
-              setPage={setPage}
-            />
-          </div>
-          <div className={styles.buttonBody}>
-             <div className={styles.buttonBody}>
-              <InfoRender />
-            </div>
-          </div>
-        </div> 
-      </div> 
-    )
-  }
+        <div className={styles.buttonBody}>
+          <InfoRender 
+            clickedButton={page}>
+          </InfoRender>
+        </div>  
+      </div>
+    </div>
+  )
 }

@@ -1,4 +1,5 @@
 import styles from '../styles/BodyType.module.css'
+import iframe from '../styles/Home.module.css'
 
 export const bodyType = () => {
   return (
@@ -73,6 +74,7 @@ export const opg = () => {
 export const returnLabel = () => {
   return (
      <div className={'info'}>
+      <div className={iframe.styleIframe}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2IB5w3jt28UKSCdvMHe2PeZ-N-d9BkOCU5Qv_c5s6ynnjJA/viewform" 
           width="640" 
           height="700" 
@@ -81,6 +83,7 @@ export const returnLabel = () => {
           mozallowFullScreen="" 
           allowFullScreen="">
         </iframe>
+      </div> 
      </div>
   )
 }

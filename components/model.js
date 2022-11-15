@@ -24,6 +24,7 @@ export const RenderModel = (props) => {
     const [num, setNum] = useState({a: '150', b: '210'})
 
     return (
+        props.currentModel ? null :
         <div className={styles.flexModel}>
             <div>
                 <h4>B</h4>

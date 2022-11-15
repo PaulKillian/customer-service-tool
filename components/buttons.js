@@ -1,9 +1,8 @@
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
-import InfoRender from './infoRender.js'
 
 
-export const ButtonClear = () => {
+export const ButtonClear = (props) => {
   const clear = () => {
     props.setCurrentModel('')
     props.setCurrentYear('')
@@ -28,11 +27,9 @@ export const Buttons = (props) => {
     'return label'
   ])
   
-  const [pageToRender, setPageToRender] = useState('')
 
   const createPage = (clicked) => {
     props.setPage(clicked)
-    setPageToRender(clicked)
   }
   
   return (
@@ -47,7 +44,6 @@ export const Buttons = (props) => {
           </button>
         ))}
       </div>
-      <InfoRender clickedButton={pageToRender}></InfoRender>
     </>
   )
 }
