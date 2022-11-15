@@ -67,7 +67,7 @@
   margin-top: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .flexModelChild:nth-child(n+2) {
