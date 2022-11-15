@@ -134,9 +134,9 @@
 .button31:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
-  border-color: #219EBC;
+  border-color: #FF4545;
   background-color: #F1FAEE;
-  color: #219EBC;
+  color: #FF4545;
 }
 
 .button30:focus,
