@@ -28,7 +28,7 @@ export const Buttons = (props) => {
     'return label'
   ])
   
-  const [pageToRender, setPageToRender] = useSate('')
+  const [pageToRender, setPageToRender] = useState('')
 
   const createPage = (clicked) => {
     props.setPage(clicked)
