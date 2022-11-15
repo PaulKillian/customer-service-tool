@@ -1,3 +1,5 @@
+import styles from '../styles/BodyType.module.css'
+
 export const bodyType = () => {
   return (
     <div className={'info'} >
