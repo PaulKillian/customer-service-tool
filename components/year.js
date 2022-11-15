@@ -5,7 +5,7 @@ export const RenderYear = (props) => {
     const [vehicleYears, setVehicleYears] = useState(0);
 
     const yearComponent = () => {
-       conts years = [];
+       const years = [];
        for(i = 0; i < 106; i++) {
            years.push(i)
        }
