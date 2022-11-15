@@ -20,7 +20,7 @@ export const ButtonClear = () => {
   )
 }
 
-export const Buttons = () => {
+export const Buttons = (props) => {
   const [buttons, setButtons] = useState([
     'body type', 
     'opg cars', 
