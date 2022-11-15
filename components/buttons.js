@@ -27,9 +27,12 @@ export const Buttons = (props) => {
     'delivery times',
     'return label'
   ])
+  
+  const [pageToRender, setPageToRender] = useSate('')
 
   const createPage = (clicked) => {
     props.setPage(clicked)
+    setPageToRender(clicked)
   }
   
   return (
@@ -44,7 +47,7 @@ export const Buttons = (props) => {
           </button>
         ))}
       </div>
-      <InfoRender clickedButton={props.page}></InfoRender>
+      <InfoRender clickedButton={pageToRender}></InfoRender>
     </>
   )
 }
