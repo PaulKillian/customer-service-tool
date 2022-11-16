@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@300&display=swap');
 
 .container {
   padding: 0 2rem;
@@ -118,7 +118,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   font-size: 20px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Lato', sans-serif;
   border-color: #34383C;
   color: white;
   margin: 5px;
