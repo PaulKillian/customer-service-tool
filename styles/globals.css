@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
 
 body {
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    background-size: cover;
-    background-color: #e0e0e0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background: rgb(244,245,248);
+  background: linear-gradient(90deg, rgba(244,245,248,1) 50%, rgba(250,249,249,1) 50%);
 }
 
 a {
@@ -41,7 +42,7 @@ li {
 
 li:hover {
   transform: scale(1.2);
-  color: #FF4545
+  color: #FF4545;
 }
 
 h1 {
