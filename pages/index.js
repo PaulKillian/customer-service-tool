@@ -32,6 +32,7 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState('')
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
+  const [clearedData, setClearedData] - useState('')
   
   const showYear = (year) => {
     setCurrentYear(year)
@@ -88,7 +89,7 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        <ButtonGetClearedData />
+        <ButtonGetClearedData clearedData={clearedData} />
       </div>
       <div className={styles.gridItem}>
         <div className={styles.flexButtons}>
