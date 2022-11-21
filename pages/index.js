@@ -28,7 +28,7 @@ export default function Home() {
       const sessionData = currentText.slice(0, 24) + "n/" + currentText.slice(24)
       sessionStorage.setItem('notes', sessionData);
     }
-      
+      //
     const infoDiv = document.querySelector('info') 
     let ctx = gsap.context(() => {
        gsap.from(".info", {
