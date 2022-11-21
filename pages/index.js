@@ -7,7 +7,8 @@ import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
 import { 
   ButtonClear, 
-  Buttons
+  Buttons,
+  ButtonGetClearedData
 } from '../components/buttons.js'
 import { gsap } from "gsap";
 import InfoRender from '../components/infoRender.js'
@@ -87,6 +88,7 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
+        <ButtonGetClearedData />
       </div>
       <div className={styles.gridItem}>
         <div className={styles.flexButtons}>
