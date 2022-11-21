@@ -25,8 +25,7 @@ export default function Home() {
 
   useEffect(() => {
     if (currentText) {
-      const sessionData = currentText.slice(0, 24) + "n/" + currentText.slice(24)
-      sessionStorage.setItem('notes', sessionData);
+      sessionStorage.setItem('notes', currentText);
     }
       //
     const infoDiv = document.querySelector('info') 
