@@ -14,7 +14,14 @@ import { gsap } from "gsap";
 import InfoRender from '../components/infoRender.js'
 
 export default function Home() {
+  const [currentYear, setCurrentYear] = useState(null)
+  const [currentModel, setCurrentModel] = useState(null)
+  const [currentImage, setCurrentImage] = useState('')
+  const [currentText, setCurrentText] = useState('')
+  const [page, setPage] = useState('')
+  const [clearedData, setClearedData] = useState('')
   const tArea = useRef();
+  
 
   useEffect(() => {
     currentText && sessionStorage.setItem('notes', text.value);
@@ -29,12 +36,7 @@ export default function Home() {
        return () => ctx.revert();
   }, [currentText]);
  
-  const [currentYear, setCurrentYear] = useState(null)
-  const [currentModel, setCurrentModel] = useState(null)
-  const [currentImage, setCurrentImage] = useState('')
-  const [currentText, setCurrentText] = useState('')
-  const [page, setPage] = useState('')
-  const [clearedData, setClearedData] = useState('')
+ 
   
   const showYear = (year) => {
     setCurrentYear(year)
