@@ -133,7 +133,9 @@
 }
 
 .button29 {
-  background: #673AB7
+  background: #673AB7;
+  font-size: 14px;
+  border-color: white;
 }
 
 .button30:hover,
