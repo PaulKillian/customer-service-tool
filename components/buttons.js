@@ -54,7 +54,7 @@ export const Buttons = (props) => {
 }
 
 export const ButtonGetClearedData = (props) => {
-  const = getdata () => {
+  const getData = () => {
     props.setClearedData(sessionStorage.getItem(props.clearedData)
   }
                          
