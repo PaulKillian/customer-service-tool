@@ -27,7 +27,7 @@ export default function Home() {
          duration: 1
        })}, infoDiv);
        return () => ctx.revert();
-  }, []);
+  }, [currentText]);
  
   const [currentYear, setCurrentYear] = useState(null)
   const [currentModel, setCurrentModel] = useState(null)
