@@ -89,7 +89,10 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        <ButtonGetClearedData clearedData={clearedData} />
+        <ButtonGetClearedData 
+          clearedData={clearedData}
+          setClearedData={setCleaeredData}
+        />
         <p>{clearedData}</p>
       </div>
       <div className={styles.gridItem}>
