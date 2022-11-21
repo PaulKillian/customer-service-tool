@@ -88,7 +88,8 @@
 
 .button30, 
 .button31, 
-.button29 {
+.button29,
+.button28 {
   align-self: center;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -126,7 +127,8 @@
   margin-top: 15px;
 }
 
-.button29 {
+.button29,
+.button28 {
   background: #673AB7;
   font-size: 14px;
   border-color: black;
@@ -134,7 +136,8 @@
 
 .button30:hover,
 .button31:hover,
-.button29:hover {
+.button29:hover,
+.button28 {
   box-shadow: rgba(230, 57, 70, .6) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   border-color: #FF4545;
