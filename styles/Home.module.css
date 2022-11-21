@@ -48,12 +48,6 @@
   display: flex;
 }
 
-/* .flex2 {
-  display: flex;
-  justify-content: between;
-  flex-direction: column;
-} */
-
 .block {
     display: block;
 }
@@ -67,7 +61,7 @@
   margin-top: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .flexModelChild:nth-child(n+2) {
