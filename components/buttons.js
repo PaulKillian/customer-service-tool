@@ -54,5 +54,9 @@ export const Buttons = (props) => {
 }
 
 export const ButtonGetClearedData = (props) => {
-    let props.data = sessionStorage.getItem("notes");
-  }
+  let props.data = sessionStorage.getItem("notes")
+  
+  return (
+    <button className={styles.button28}></button>
+  )
+}
