@@ -122,7 +122,7 @@ export const tracer = () => {
   )
 }
 
-export const partsPull = () => {
+export const truckFreight = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
