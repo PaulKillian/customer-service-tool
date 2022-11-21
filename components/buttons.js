@@ -62,7 +62,7 @@ export const ButtonGetClearedData = (props) => {
     <button 
       className={styles.button28}
       onClick={getData}
-    >
+    >get cleared data
     </button>
   )
 }
