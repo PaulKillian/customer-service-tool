@@ -25,7 +25,7 @@ export default function Home() {
 
   useEffect(() => {
     if (currentText) {
-      const notes = sessionStorage.setItem('notes', text.value);
+      const notes = window.sessionStorage.setItem('notes', text.value);
     }
       
     const infoDiv = document.querySelector('info') 
