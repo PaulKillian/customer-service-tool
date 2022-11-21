@@ -17,6 +17,8 @@ export default function Home() {
   const tArea = useRef();
 
   useEffect(() => {
+    currentText && sessionStorage.setItem('notes', text.value);
+    
     const infoDiv = document.querySelector('info') 
     let ctx = gsap.context(() => {
        gsap.from(".info", {
@@ -45,7 +47,6 @@ export default function Home() {
   const updateText = () => {
     const text = document.getElementById('text')
     setCurrentText(text.value)
-    sessionStorage.setItem('notes', text.value);
   }
   
   const modelAndYear = () => {
