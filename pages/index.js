@@ -90,6 +90,7 @@ export default function Home() {
           setCurrentModel={setCurrentModel}
         />
         <ButtonGetClearedData clearedData={clearedData} />
+        <p>{clearedData}</p>
       </div>
       <div className={styles.gridItem}>
         <div className={styles.flexButtons}>
