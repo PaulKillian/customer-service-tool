@@ -91,7 +91,7 @@ export default function Home() {
         />
         <ButtonGetClearedData 
           clearedData={clearedData}
-          setClearedData={setCleaeredData}
+          setClearedData={setClearedData}
         />
         <p>{clearedData}</p>
       </div>
