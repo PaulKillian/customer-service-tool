@@ -25,7 +25,9 @@ export const Buttons = (props) => {
     'opg cars', 
     'delivery times',
     'return label',
-    'parts pull'
+    'parts pull',
+    'tracer',
+    'truck freight'
   ])
   
 
