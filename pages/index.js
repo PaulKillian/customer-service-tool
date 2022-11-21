@@ -43,6 +43,7 @@ export default function Home() {
   const updateText = () => {
     const text = document.getElementById('text')
     setCurrentText(text.value)
+    localStorage.setItem('notes', text.value);
   }
   
   const modelAndYear = () => {
