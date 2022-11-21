@@ -92,7 +92,9 @@
   padding: 1rem;
 }
 
-.button30, .button31 {
+.button30, 
+.button31, 
+.button29 {
   align-self: center;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
