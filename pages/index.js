@@ -25,7 +25,8 @@ export default function Home() {
 
   useEffect(() => {
     if (currentText) {
-      sessionStorage.setItem('notes', currentText);
+      const sessionData = txt1.slice(0, 24) + "<br>" + txt1.slice(24)
+      sessionStorage.setItem('notes', sessionData);
     }
       
     const infoDiv = document.querySelector('info') 
