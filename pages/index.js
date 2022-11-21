@@ -32,7 +32,7 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState('')
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
-  const [clearedData, setClearedData] - useState('')
+  const [clearedData, setClearedData] = useState('')
   
   const showYear = (year) => {
     setCurrentYear(year)
