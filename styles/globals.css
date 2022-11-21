@@ -108,6 +108,7 @@ p {
   margin: 3px;
   font-size: 40px;
   color: #34383C;
+  white-space: pre-wrap;
 }
 
 span {
