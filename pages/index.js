@@ -24,7 +24,7 @@ export default function Home() {
   
 
   useEffect(() => {
-    if (currentText) {
+    if (currentText && sessionStorage) {
       sessionStorage.setItem('notes', currentText);
     }
       
