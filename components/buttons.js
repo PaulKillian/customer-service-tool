@@ -61,7 +61,7 @@ export const ButtonGetClearedData = (props) => {
   return (
     <button 
       className={styles.button28}
-      onClick=dangerouslySetInnerHTML={{__html: clearData()}}
+      onClick=dangerouslySetInnerHTML={{__html: getData()}}
     >get cleared data
     </button>
   )
