@@ -5,7 +5,6 @@ body {
   font-family: 'Lato', sans-serif;
   background-size: cover;
   background: rgb(244,245,248);
-  background: linear-gradient(90deg, rgba(244,245,248,1) 50%, rgba(250,249,249,1) 50%);
 }
 
 a {
