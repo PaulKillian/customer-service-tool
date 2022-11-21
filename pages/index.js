@@ -24,9 +24,10 @@ export default function Home() {
   
 
   useEffect(() => {
-    currentText && 
+    if (currentText) {
       const notes = sessionStorage.setItem('notes', text.value);
-    
+    }
+      
     const infoDiv = document.querySelector('info') 
     let ctx = gsap.context(() => {
        gsap.from(".info", {
