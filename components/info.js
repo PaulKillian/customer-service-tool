@@ -104,3 +104,37 @@ export const partsPull = () => {
      </div>
   )
 }
+
+export const tracer = () => {
+  return (
+     <div className={'info'}>
+      <div className={iframe.styleIframe}>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwr9vxvsd3KIzVdp7C5uPtwXzRVl8CYoO5SdKFTR30Lzvlkg/viewform?gxids=7628" 
+          width="640" 
+          height="700" 
+          frameBorder="0" 
+          webkitallowFullScreen="" 
+          mozallowFullScreen="" 
+          allowFullScreen="">
+        </iframe>
+      </div> 
+     </div>
+  )
+}
+
+export const partsPull = () => {
+  return (
+     <div className={'info'}>
+      <div className={iframe.styleIframe}>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSMXwKpDCXDwSFnJedIKdGgqlHDe3rpBJovE28XisCUoQgyA/viewform" 
+          width="640" 
+          height="700" 
+          frameBorder="0" 
+          webkitallowFullScreen="" 
+          mozallowFullScreen="" 
+          allowFullScreen="">
+        </iframe>
+      </div> 
+     </div>
+  )
+}
