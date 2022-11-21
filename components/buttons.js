@@ -54,10 +54,14 @@ export const Buttons = (props) => {
 }
 
 export const ButtonGetClearedData = (props) => {
+  const getdata () => {
+    props.setClearedData(sessionStorage.getItem(props.clearedData)
+  }
+                         
   return (
     <button 
-    className={styles.button28}
-    onClick={props.setClearedData(sessionStorage.getItem(props.clearedData))}
+      className={styles.button28}
+      onClick={getData}
     >
     </button>
   )
