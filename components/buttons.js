@@ -57,7 +57,7 @@ export const ButtonGetClearedData = (props) => {
   return (
     <button 
     className={styles.button28}
-    onClick={props.setClearedData(window.sessionStorage.getItem("notes"))}
+    onClick={props.setClearedData(sessionStorage.getItem(clearedData))}
     >
     </button>
   )
