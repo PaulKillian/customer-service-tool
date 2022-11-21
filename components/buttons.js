@@ -40,7 +40,10 @@ export const Buttons = (props) => {
       <div>
         {buttons.map((button, index) => (
           <button 
-            className={styles.button31}
+            {index > 2 
+              : className={styles.button31} 
+              ? className={styles.button29}
+            }
             role="button"
             key={index}
             onClick={() =>{createPage(button)}}>{button}
