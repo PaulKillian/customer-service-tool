@@ -98,7 +98,9 @@ export default function Home() {
           clearedData={clearedData}
           setClearedData={setClearedData}
         />
-        <p>{clearedData}</p>
+        <div className={styles.clearedData}>
+          <p>{clearedData}</p>
+        </div>
       </div>
       <div className={styles.gridItem}>
         <div className={styles.flexButtons}>
