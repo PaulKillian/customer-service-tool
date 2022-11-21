@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
 
-
 export const ButtonClear = (props) => {
   const clear = () => {
     props.setCurrentModel('')
@@ -53,3 +52,7 @@ export const Buttons = (props) => {
     </>
   )
 }
+
+export const ButtonGetClearedData = (props) => {
+    let props.data = sessionStorage.getItem("notes");
+  }
