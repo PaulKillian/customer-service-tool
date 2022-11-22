@@ -69,6 +69,7 @@ export const ButtonGetClearedData = (props) => {
 }
 
 export const ButtonScreenShot = (props) => {
+  console.log(props)
   const screenShot = () => {
     props.setScreenShot(true)
   }
