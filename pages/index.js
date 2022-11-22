@@ -8,7 +8,8 @@ import { images } from '../components/images.js'
 import { 
   ButtonClear, 
   Buttons,
-  ButtonGetClearedData
+  ButtonGetClearedData,
+  ButtonScreenShot
 } from '../components/buttons.js'
 import { gsap } from "gsap";
 import InfoRender from '../components/infoRender.js'
@@ -108,6 +109,7 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
+        <ButtonScreenShot />
         </div>
         <div className={styles.buttonBody}>
           <InfoRender 
