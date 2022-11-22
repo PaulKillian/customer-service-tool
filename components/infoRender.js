@@ -6,7 +6,7 @@ import {
     partsPull, 
     tracer, 
     truckFreight,
-    extensions
+//     extensions
 } from './info.js'
 
 const InfoRender = (props) => {
@@ -26,8 +26,8 @@ const InfoRender = (props) => {
            tracer()}
          {props.clickedButton === 'truck freight' &&
            truckFreight()}
-          {props.clickedButton === 'extensions' &&
-           extensions()}
+//           {props.clickedButton === 'extensions' &&
+//            extensions()}
        </div>
    )
 }
