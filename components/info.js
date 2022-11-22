@@ -1,6 +1,6 @@
 import styles from '../styles/BodyType.module.css'
 import iframe from '../styles/Home.module.css'
-import extensions from '../public/extentions.jpg'
+import extensionsJpg from '../public/extentions.jpg'
 import Image from 'next/image'
 
 export const bodyType = () => {
