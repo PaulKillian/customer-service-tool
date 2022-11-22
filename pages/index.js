@@ -37,7 +37,7 @@ export default function Home() {
 //          duration: 1
 //        })}, infoDiv);
 //        return () => ctx.revert();
-  }, []);
+  }, [currentText]);
  
  
   
