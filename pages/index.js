@@ -32,16 +32,16 @@ export default function Home() {
     }
     if (screenShot) {
       window.dispatchEvent(new KeyboardEvent('keydown', {
-        "key": "s",
-        "keyCode": 83,
-        "which": 83,
-        "code": "KeyS",
-        "location": 0,
-        "altKey": false,
-        "ctrlKey": false,
-        "metaKey": true,
-        "shiftKey": true,
-        "repeat": false
+       "key": "S",
+       "keyCode": 83,
+       "which": 83,
+       "code": "KeyS",
+       "location": 0,
+       "altKey": false,
+       "ctrlKey": false,
+       "metaKey": false,
+       "shiftKey": true,
+       "repeat": true
       }))
 //       setScreenShot(false)
     }
