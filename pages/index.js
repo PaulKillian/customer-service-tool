@@ -21,7 +21,6 @@ export default function Home() {
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
-  const [screenShot, setScreenShot] = useState(false)
 
   const tArea = useRef();
 
@@ -29,21 +28,6 @@ export default function Home() {
      console.log(screenShot)
     if (currentText) {
       sessionStorage.setItem('notes', currentText);
-    }
-    if (screenShot) {
-      window.dispatchEvent(new KeyboardEvent('keydown', {
-       "key": "S",
-       "keyCode": 83,
-       "which": 83,
-       "code": "KeyS",
-       "location": 0,
-       "altKey": false,
-       "ctrlKey": false,
-       "metaKey": false,
-       "shiftKey": true,
-       "repeat": true
-      }))
-//       setScreenShot(false)
     }
 
 //     const infoDiv = document.querySelector('info') 
@@ -126,10 +110,7 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-        <ButtonScreenShot 
-          screenShot={screenShot} 
-          setScreenShot={setScreenShot}
-         />
+        <ButtonScreenShot />
         </div>
         <div className={styles.buttonBody}>
           <InfoRender 
