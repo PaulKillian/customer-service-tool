@@ -25,7 +25,6 @@ export default function Home() {
   const tArea = useRef();
 
   useEffect(() => {
-     console.log(screenShot)
     if (currentText) {
       sessionStorage.setItem('notes', currentText);
     }
