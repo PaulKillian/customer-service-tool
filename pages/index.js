@@ -46,15 +46,15 @@ export default function Home() {
       setScreenShot(false)
     }
 
-    const infoDiv = document.querySelector('info') 
-    let ctx = gsap.context(() => {
-       gsap.from(".info", {
-         opacity: 0, 
-         x: 100, 
-         duration: 1
-       })}, infoDiv);
-       return () => ctx.revert();
-  }, [currentText]);
+//     const infoDiv = document.querySelector('info') 
+//     let ctx = gsap.context(() => {
+//        gsap.from(".info", {
+//          opacity: 0, 
+//          x: 100, 
+//          duration: 1
+//        })}, infoDiv);
+//        return () => ctx.revert();
+  }, []);
  
  
   
