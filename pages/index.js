@@ -20,8 +20,8 @@ export default function Home() {
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
+
   const tArea = useRef();
-  
 
   useEffect(() => {
     if (currentText) {
@@ -94,13 +94,13 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        <ButtonGetClearedData 
+        {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
         />
-//         <div className={styles.clearedData}>
-//           <p>{clearedData}</p>
-//         </div>
+        <div className={styles.clearedData}>
+          <p>{clearedData}</p>
+        </div> */}
       </div>
       <div className={styles.gridItem}>
         <div className={styles.flexButtons}>
