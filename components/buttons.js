@@ -69,7 +69,7 @@ export const ButtonGetClearedData = (props) => {
 }
 
 export const ButtonScreenShot = () => {
-    window.dispatchEvent(new KeyboardEvent('keydown', {
+   dispatchEvent(new KeyboardEvent('keydown', {
     "key": "s",
     "keyCode": 83,
     "which": 83,
