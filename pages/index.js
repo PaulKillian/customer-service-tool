@@ -26,11 +26,11 @@ export default function Home() {
   const tArea = useRef();
 
   useEffect(() => {
+          debugger
     if (currentText) {
       sessionStorage.setItem('notes', currentText);
     }
     if (screenShot) {
-      debugger
       window.dispatchEvent(new KeyboardEvent('keydown', {
         "key": "s",
         "keyCode": 83,
