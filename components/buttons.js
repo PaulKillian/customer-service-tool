@@ -68,8 +68,9 @@ export const ButtonGetClearedData = (props) => {
   )
 }
 
-export const ButtonScreenShot = () => {
-   dispatchEvent(new KeyboardEvent('keydown', {
+export const ButtonScreenShot = (props) => {
+  props.setScreenShot(
+   window.dispatchEvent(new KeyboardEvent('keydown', {
     "key": "s",
     "keyCode": 83,
     "which": 83,
@@ -80,5 +81,5 @@ export const ButtonScreenShot = () => {
     "metaKey": true,
     "shiftKey": true,
     "repeat": false
-  }))
+  })))
 }
