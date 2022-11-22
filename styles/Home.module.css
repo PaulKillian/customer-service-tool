@@ -89,7 +89,8 @@
 .button30, 
 .button31, 
 .button29,
-.button28 {
+.button28,
+.screenShot {
   align-self: center;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -125,6 +126,10 @@
 .button30 {
   background-color: #2c88d3;
   margin-top: 15px;
+}
+
+.screenShot {
+  margin-top: 0
 }
 
 .button29,

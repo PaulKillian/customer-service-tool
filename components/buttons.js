@@ -69,5 +69,15 @@ export const ButtonGetClearedData = (props) => {
 }
 
 export const ButtonScreenShot = (props) => {
-  props.setScreenShot(true)
+  const screenShot = () => {
+    props.setScreenShot(true)
+  }
+
+  return (
+    <button 
+      className={styles.screenShot}
+      onClick={screenShot}
+    >screenshot
+    </button>
+  )
 }
