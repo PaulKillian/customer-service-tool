@@ -1,5 +1,6 @@
 import styles from '../styles/BodyType.module.css'
 import iframe from '../styles/Home.module.css'
+import extensions from '../public/extentions.jpg'
 import Image from 'next/image'
 
 export const bodyType = () => {
@@ -76,7 +77,7 @@ export const extensions = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
-        <Image src={'/extentions.jpeg'}
+        <Image src={extentions}
           width="400" 
           height="900" 
         />
