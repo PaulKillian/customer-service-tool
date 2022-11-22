@@ -76,7 +76,7 @@ export const extensions = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
-        <Image src={'/extensions.jpeg'}
+        <Image src={'/extentions.jpeg'}
           width="400" 
           height="900" 
         />
