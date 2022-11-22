@@ -75,7 +75,7 @@ export const extensions = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
-        <iframe src="/extensions.pdf" 
+        <iframe src="../public/extensions.pdf#toolbar=0" 
           width="640" 
           height="700" 
           frameBorder="0" 
