@@ -21,7 +21,7 @@ export default function Home() {
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
-  const [screenShot, setScreenShot] = useState('')
+  const [screenShot, setScreenShot] = useState(false)
 
   const tArea = useRef();
 
