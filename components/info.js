@@ -1,6 +1,6 @@
 import styles from '../styles/BodyType.module.css'
 import iframe from '../styles/Home.module.css'
-import extensionsPdf from '../public/extensions.pdf'
+import extensionsPdf from '../public/extentions.pdf'
 
 export const bodyType = () => {
   return (
