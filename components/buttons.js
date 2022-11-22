@@ -40,7 +40,7 @@ export const Buttons = (props) => {
       <div>
         {buttons.map((button, index) => (
           <button 
-            className={index > 2 
+            className={index > 3 
               ? styles.button29 
               : styles.button31
             }
