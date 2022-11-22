@@ -1,6 +1,6 @@
 import styles from '../styles/BodyType.module.css'
 import iframe from '../styles/Home.module.css'
-import extensions from '../public/extensions.pdf'
+import extensionsPdf from '../public/extensions.pdf'
 
 export const bodyType = () => {
   return (
@@ -76,7 +76,7 @@ export const extensions = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
-        <iframe src={extensions}
+        <iframe src={extensionsPdf}
           width="640" 
           height="700" 
           frameBorder="0" 
