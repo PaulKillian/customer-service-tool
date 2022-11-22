@@ -1,6 +1,6 @@
 import styles from '../styles/BodyType.module.css'
 import iframe from '../styles/Home.module.css'
-// import extensionsPdf from '../public/extentions.pdf'
+import Image from 'next/image'
 
 export const bodyType = () => {
   return (
@@ -72,22 +72,18 @@ export const opg = () => {
   )
 }
 
-// export const extensions = () => {
-//   return (
-//      <div className={'info'}>
-//       <div className={iframe.styleIframe}>
-//         <iframe src={extensionsPdf}
-//           width="640" 
-//           height="700" 
-//           frameBorder="0" 
-//           webkitallowFullScreen="" 
-//           mozallowFullScreen="" 
-//           allowFullScreen="">
-//         </iframe>
-//       </div> 
-//      </div>
-//   )
-// }
+export const extensions = () => {
+  return (
+     <div className={'info'}>
+      <div className={iframe.styleIframe}>
+        <Image src={extensionsPdf}
+          width="400" 
+          height="900" 
+        />
+      </div> 
+     </div>
+  )
+}
 
 export const returnLabel = () => {
   return (
