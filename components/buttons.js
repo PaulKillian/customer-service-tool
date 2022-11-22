@@ -70,12 +70,24 @@ export const ButtonGetClearedData = (props) => {
 
 export const ButtonScreenShot = (props) => {
   const screenShot = () => {
-    console.log(props)
-    props.setScreenShot(true)
+    const screeShotButton = document.getElementById('s')
+    s.dispatchEvent(new KeyboardEvent('keydown', {
+       "key": "S",
+       "keyCode": 83,
+       "which": 83,
+       "code": "KeyS",
+       "location": 0,
+       "altKey": false,
+       "ctrlKey": false,
+       "metaKey": false,
+       "shiftKey": true,
+       "repeat": true
+      }))
   }
 
   return (
-    <button 
+    <button
+      id={'s'}
       className={styles.screenShot}
       onClick={screenShot}
     >screenshot
