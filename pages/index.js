@@ -30,6 +30,7 @@ export default function Home() {
       sessionStorage.setItem('notes', currentText);
     }
     if (screenShot) {
+      debugger
       window.dispatchEvent(new KeyboardEvent('keydown', {
         "key": "s",
         "keyCode": 83,
