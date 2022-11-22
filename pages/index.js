@@ -21,6 +21,7 @@ export default function Home() {
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
+  const [screenShot, setScreenShot] = useState('')
 
   const tArea = useRef();
 
@@ -28,7 +29,21 @@ export default function Home() {
     if (currentText) {
       sessionStorage.setItem('notes', currentText);
     }
-      //
+    if (screenShot) {
+      window.dispatchEvent(new KeyboardEvent('keydown', {
+        "key": "s",
+        "keyCode": 83,
+        "which": 83,
+        "code": "KeyS",
+        "location": 0,
+        "altKey": false,
+        "ctrlKey": false,
+        "metaKey": true,
+        "shiftKey": true,
+        "repeat": false
+      }))
+    }
+
     const infoDiv = document.querySelector('info') 
     let ctx = gsap.context(() => {
        gsap.from(".info", {
@@ -109,7 +124,10 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-        <ButtonScreenShot />
+        <ButtonScreenShot 
+          screenShot={screenShot} 
+          setScreenShot={setScreenShot}
+         />
         </div>
         <div className={styles.buttonBody}>
           <InfoRender 
