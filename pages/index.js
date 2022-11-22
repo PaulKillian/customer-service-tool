@@ -42,6 +42,7 @@ export default function Home() {
         "shiftKey": true,
         "repeat": false
       }))
+      setScreenShot(false)
     }
 
     const infoDiv = document.querySelector('info') 
