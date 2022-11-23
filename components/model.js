@@ -18,7 +18,7 @@ export const RenderModel = (props) => {
     const [m, setM] = useState({a: 'Mustang'})
     const [n, setn] = useState({a: 'Nova', b: 'Nomad'})
     const [r, setR] = useState({a: 'Road Runner', b: 'Regal'})
-    const [s, setS] = useState({a: 'Satellite'}, {b: 'Sport Fury')
+    const [s, setS] = useState({a: 'Satellite'}, {b: 'Sport Fury'})
     const [t, setT] = useState({a: 'Trans Am', b: 'Truck'})
     const [v, setV] = useState({a: 'Valiant'})
     const [num, setNum] = useState({a: '150', b: '210'})
