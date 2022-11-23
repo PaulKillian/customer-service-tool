@@ -141,7 +141,7 @@ export const truckFreight = () => {
   return (
      <div className={'info'}>
       <div className={iframe.styleIframe}>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSMXwKpDCXDwSFnJedIKdGgqlHDe3rpBJovE28XisCUoQgyA/viewform" 
+        <iframe src="https://mail.google.com/mail/u/0/#inbox" 
           width="640" 
           height="700" 
           frameBorder="0" 
