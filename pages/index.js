@@ -91,6 +91,7 @@ export default function Home() {
             </div>
         }
         {modelAndYear()}
+//         {currentModel Image src=/>
         <ButtonClear
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
