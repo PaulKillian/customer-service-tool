@@ -26,8 +26,8 @@ const InfoRender = (props) => {
            tracer()}
          {props.clickedButton === 'truck freight' &&
            truckFreight()}
-         {props.clickedButton === 'extensions' &&
-           extensions()}
+//          {props.clickedButton === 'extensions' &&
+//            extensions()}
        </div>
    )
 }
