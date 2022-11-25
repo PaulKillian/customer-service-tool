@@ -52,6 +52,11 @@
     display: block;
 }
 
+.imgDim {
+  height: '300px';
+  width: '300px';
+}
+
 .yearWidth {
   margin: auto;
   max-width: 90%;
