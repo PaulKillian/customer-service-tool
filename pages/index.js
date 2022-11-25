@@ -109,7 +109,9 @@ const modelImage = () => {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        {modelImage()}
+        <div className={styles.imgDim}
+          {modelImage()}
+        </div>
         {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
