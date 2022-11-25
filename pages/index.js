@@ -71,6 +71,7 @@ export default function Home() {
 
 const modelImage = () => {
   console.log(currentModel)
+  debugger
   {currentModel === 'Charger' 
     ? <Image 
         width={'300'}
