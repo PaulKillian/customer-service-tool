@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
-import { ModelImage } from'../components/modelImage.js
+import { ModelImage } from '../components/modelImage.js'
 import { 
   ButtonClear, 
   Buttons,
