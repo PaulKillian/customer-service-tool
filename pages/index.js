@@ -64,19 +64,22 @@ export default function Home() {
               <p>{currentModel}</p>
             </div>
           </div>
-        {currentModel === 'Charger' 
-          ? <Image 
-              width={'300'}
-              height={'300'}
-              alt={'car'}
-              src={'/Charger.png'}
-            />
-        : null
-        }
         </>
       )
     }
   }
+
+const modelImage = () => {
+  {currentModel === 'Charger' 
+    ? <Image 
+        width={'300'}
+        height={'300'}
+        alt={'car'}
+        src={'/Charger.png'}
+      />
+  : null
+  }
+}
 
   return (
     <div className={styles.gridContainer}>
@@ -106,6 +109,7 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
+        {modelImage()}
         {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
