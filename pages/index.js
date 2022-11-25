@@ -71,14 +71,15 @@ export default function Home() {
 
 const modelImage = () => {
   console.log(currentModel)
-  debugger
-  {currentModel === 'Charger' 
-    ? <Image 
+  {currentModel === 'Charger'
+    ? <div className={styles.imgDim}>
+        <Image 
 //         width={300}
 //         height={300}
         layout='fill'
         alt={'car'}
         src={'/Charger.png'}
+      </div>
       />
     : null
   }
@@ -112,9 +113,7 @@ const modelImage = () => {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        <div className={styles.imgDim}>
-          {modelImage()}
-        </div>
+        {modelImage()}
         {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
