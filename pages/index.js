@@ -74,8 +74,9 @@ const modelImage = () => {
   debugger
   {currentModel === 'Charger' 
     ? <Image 
-        width={300}
-        height={300}
+//         width={300}
+//         height={300}
+        layout='fill'
         alt={'car'}
         src={'/Charger.png'}
       />
