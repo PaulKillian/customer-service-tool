@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
 
 export const RenderModel = (props) => {
-    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air', c: 'Blazer'})
+    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air', c: 'Belvedere', d: 'Blazer'})
     const [c, setC] = useState({
             a: 'Camaro',
             b: 'Caprice',
@@ -32,6 +32,7 @@ export const RenderModel = (props) => {
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.b}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{b.c}</li>
+                    <li onClick={e => props.showModel(e.target.innerText)}>{b.d}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.a}</li>
                     <li onClick={e => props.showModel(e.target.innerText)}>{num.b}</li>
                 </ul>
