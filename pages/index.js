@@ -73,14 +73,14 @@ const modelImage = () => {
   console.log(currentModel)
   {currentModel === 'Charger'
     ? <div className={styles.imgDim}>
-        <Image 
-//         width={300}
-//         height={300}
-        layout='fill'
-        alt={'car'}
-        src={'/Charger.png'}
+          <Image 
+  //         width={300}
+  //         height={300}
+          layout='fill'
+          alt={'car'}
+          src={'/Charger.png'}
+        />
       </div>
-      />
     : null
   }
 }
