@@ -75,7 +75,7 @@ export default function Home() {
         <div className={styles.imgDim}>
           <Image 
             width={655}
-            height={300}
+            height={400}
             objectFit='cover'
             alt={'car'}
             src={'/Charger.png'}
