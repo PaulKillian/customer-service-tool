@@ -36,8 +36,6 @@
 .pAnd {
   display: flex;
   justify-content: around;
-  width: 300px;
-  height: 300px;
 }
 
 .flex {
