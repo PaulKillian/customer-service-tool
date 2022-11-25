@@ -70,8 +70,8 @@ export default function Home() {
   }
 
   const modelImage = () => {
-    {currentModel === 'Charger'
-      ? <div className={styles.imgDim}>
+    if (currentModel === 'Charger') {
+        <div className={styles.imgDim}>
           <Image 
   //         width={300}
   //         height={300}
@@ -79,7 +79,10 @@ export default function Home() {
             alt={'car'}
             src={'/Charger.png'}
           />
-      : null
+        </div>
+      else {
+        return null
+      } 
     }
   }
   
