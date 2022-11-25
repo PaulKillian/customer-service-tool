@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
 import { images } from '../components/images.js'
+import { ModelImage } from'../components/modelImage.js
 import { 
   ButtonClear, 
   Buttons,
@@ -68,22 +69,6 @@ export default function Home() {
       )
     }
   }
-
-  const modelImage = () => {
-    if (currentModel === 'Charger') {
-      return (
-        <div className={styles.imgDim}>
-          <Image 
-            width={655}
-            height={400}
-            objectFit='cover'
-            alt={'car'}
-            src={'/Charger.png'}
-          />
-        </div>
-      )
-    }
-  }
   
   return (
     <div className={styles.gridContainer}>
@@ -113,7 +98,7 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        {modelImage()}
+        <ModelImage currentModel={currentModel}/>
         {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
