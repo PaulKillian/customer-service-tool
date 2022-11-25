@@ -76,6 +76,7 @@ export default function Home() {
           <Image 
             width={300}
             height={300}
+            objectFit='cover'
             alt={'car'}
             src={'/Charger.png'}
           />
