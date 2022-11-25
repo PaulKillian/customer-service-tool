@@ -57,11 +57,13 @@ export default function Home() {
   const modelAndYear = () => {
     if (currentModel && currentYear) {
       return (
-        <div className={styles.main2}>
-        <div className={styles.pAnd}>
-          <p>{currentYear}</p>
-          <p>{currentModel}</p>
-        </div>
+        <>
+          <div className={styles.main2}>
+            <div className={styles.pAnd}>
+              <p>{currentYear}</p>
+              <p>{currentModel}</p>
+            </div>
+          </div>
         {currentModel === 'Charger' 
           ? <Image 
               width={'300'}
@@ -71,7 +73,7 @@ export default function Home() {
             />
         : null
         }
-      </div>
+        </>
       )
     }
   }
