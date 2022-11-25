@@ -69,22 +69,20 @@ export default function Home() {
     }
   }
 
-const modelImage = () => {
-  console.log(currentModel)
-  {currentModel === 'Charger'
-    ? null
-    : <div className={styles.imgDim}>
+  const modelImage = () => {
+    {currentModel === 'Charger'
+      ? <div className={styles.imgDim}>
           <Image 
   //         width={300}
   //         height={300}
-          layout='fill'
-          alt={'car'}
-          src={'/Charger.png'}
-        />
-      </div>
+            layout='fill'
+            alt={'car'}
+            src={'/Charger.png'}
+          />
+      : null
+    }
   }
-}
-
+  
   return (
     <div className={styles.gridContainer}>
       <div className={styles.gridItem}>
