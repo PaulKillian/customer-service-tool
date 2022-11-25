@@ -61,16 +61,16 @@ export default function Home() {
         <div className={styles.pAnd}>
           <p>{currentYear}</p>
           <p>{currentModel}</p>
-          {currentModel === 'Charger' 
-            ? <Image 
-                width={'300'}
-                height={'300'}
-                alt={'car'}
-                src={'/Charger.png'}
-              />
-          : null
-          }
         </div>
+        {currentModel === 'Charger' 
+          ? <Image 
+              width={'300'}
+              height={'300'}
+              alt={'car'}
+              src={'/Charger.png'}
+            />
+        : null
+        }
       </div>
       )
     }
