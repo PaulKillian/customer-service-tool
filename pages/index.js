@@ -73,13 +73,13 @@ const modelImage = () => {
   console.log(currentModel)
   debugger
   {currentModel === 'Charger' 
-    ? null
-    : <Image 
-        width={'300'}
-        height={'300'}
+    ? <Image 
+        width={300}
+        height={300}
         alt={'car'}
         src={'/Charger.png'}
       />
+    : null
   }
 }
 
