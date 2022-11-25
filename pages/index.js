@@ -55,12 +55,24 @@ export default function Home() {
   }
   
   const modelAndYear = () => {
+    const modelImg = () => {
+      currentModal === 'Charger'
+      && return 
+        <Image 
+          width={'300'}
+          height={'300'}
+          alt={'car'}
+          src={'/Charger.png'}
+        />
+    }
+    
     if (currentModel && currentYear) {
       return (
         <div className={styles.main2}>
         <div className={styles.pAnd}>
           <p>{currentYear}</p>
           <p>{currentModel}</p>
+          {modelImg()}
         </div>
       </div>
       )
