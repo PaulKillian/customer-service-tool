@@ -74,9 +74,8 @@ export default function Home() {
       return (
         <div className={styles.imgDim}>
           <Image 
-  //         width={300}
-  //         height={300}
-            layout='fill'
+            width={300}
+            height={300}
             alt={'car'}
             src={'/Charger.png'}
           />
