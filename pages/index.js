@@ -72,7 +72,8 @@ export default function Home() {
 const modelImage = () => {
   console.log(currentModel)
   {currentModel === 'Charger'
-    ? <div className={styles.imgDim}>
+    ? null
+    : <div className={styles.imgDim}>
           <Image 
   //         width={300}
   //         height={300}
@@ -81,7 +82,6 @@ const modelImage = () => {
           src={'/Charger.png'}
         />
       </div>
-    : null
   }
 }
 
