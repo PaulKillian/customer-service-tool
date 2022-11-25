@@ -56,8 +56,8 @@ export default function Home() {
   
   const modelAndYear = () => {
     const modelImg = () => {
-      currentModel === 'Charger'
-      && return 
+      currentModel === 'Charger' && 
+        return 
         <Image 
           width={'300'}
           height={'300'}
