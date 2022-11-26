@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 
 export const ModelImage = (props) => {
     return (
-      {props.currentModel && props.currentYear
+      if (props.currentModel && props.currentYear) {
         <div className={styles.imgDim}>
           <Image 
             width={655}
