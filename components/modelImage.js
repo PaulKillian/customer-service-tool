@@ -10,7 +10,7 @@ export const ModelImage = (props) => {
             height={400}
             objectFit='cover'
             alt={'car'}
-            src={`/${props.currentModel}`}
+            src={`/${props.currentModel}.webp`}
           />
         </div>
       }
