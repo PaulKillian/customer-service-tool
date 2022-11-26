@@ -16,9 +16,7 @@ export const ModelImage = (props) => {
     
     switch(props.currentModel) {
       case 'Charger':
-        return (
         {image}
-      )
         break;
     }
   }
