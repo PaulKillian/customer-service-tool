@@ -98,7 +98,10 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
         />
-        <ModelImage currentModel={currentModel}/>
+        <ModelImage 
+          currentModel={currentModel}
+          currentYear={currentYear}
+        />
         {/* <ButtonGetClearedData 
           clearedData={clearedData}
           setClearedData={setClearedData}
