@@ -23,6 +23,7 @@ export const ModelImage = (props) => {
     
     return (
       <div>
-        {renderImage()})
+        {renderImage()}
       </div>
+    )
   }
