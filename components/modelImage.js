@@ -2,9 +2,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export const ModelImage = (props) => {
-    if (props.currentModel === 'Charger') {
-      return (
-        <div className={styles.imgDim}>
+    const image = 
+      <div className={styles.imgDim}>
           <Image 
             width={655}
             height={400}
@@ -12,7 +11,16 @@ export const ModelImage = (props) => {
             alt={'car'}
             src={'/Charger.png'}
           />
-        </div>
+      </div>
+
+    
+    switch(expression) {
+      case x:
+        // code block
+        break;
+    if (props.currentModel === 'Charger') {
+      return (
+        {image}
       )
     }
   }
