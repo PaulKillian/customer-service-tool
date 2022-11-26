@@ -14,13 +14,11 @@ export const ModelImage = (props) => {
       </div>
 
     
-    switch(expression) {
-      case x:
-        // code block
-        break;
-    if (props.currentModel === 'Charger') {
-      return (
+    switch(props.currentModel) {
+      case 'Charger':
+        return (
         {image}
       )
+        break;
     }
   }
