@@ -21,5 +21,5 @@ export const ModelImage = (props) => {
         }
     }
     
-    return {renderImage()}
+    return ({renderImage()})
   }
