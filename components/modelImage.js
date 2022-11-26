@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export const modelImage = (props) => {
+export const ModelImage = (props) => {
     if (props.currentModel === 'Charger') {
       return (
         <div className={styles.imgDim}>
