@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import styles from '../styles/Home.module.css'
 
 export const ModelImage = (props) => {
     if (props.currentModel === 'Charger') {
