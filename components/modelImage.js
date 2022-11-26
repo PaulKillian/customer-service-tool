@@ -11,7 +11,7 @@ export const ModelImage = (props) => {
                     height={400}
                     objectFit='cover'
                     alt={'car'}
-                    src={`/${props.currentModel}.webp`}
+                    src={`/${props.currentYear}, ${props.currentModel}.webp`}
                   />
               </div>
             : null
