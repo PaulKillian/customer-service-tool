@@ -56,9 +56,12 @@
 .imgDim {
   height: 300px;
   width: 655px;
+  margin-top: 11px;
+}
+
+.imgDim > img {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 5px;
-  margin-top: 11px;
 }
 
 .yearWidth {
