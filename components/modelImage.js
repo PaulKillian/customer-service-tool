@@ -17,6 +17,5 @@ export const ModelImage = (props) => {
             : null
          }
         </div>
-      }
-    )
+     )
   }
