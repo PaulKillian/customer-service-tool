@@ -9,7 +9,7 @@ export const ModelImage = (props) => {
           height={400}
           objectFit='cover'
           alt={'car'}
-          src={'/Charger.png'}
+          src={`/${props.currentModel`}
         />
       </div>
     
