@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export const ModelImage = (props) => {
+    console.log
     return (
       if (props.currentModel && props.currentYear) {
         <div className={styles.imgDim}>
@@ -10,7 +11,7 @@ export const ModelImage = (props) => {
             height={400}
             objectFit='cover'
             alt={'car'}
-            src={`/${props.currentYear props.currentModel}.webp`}
+            src={`/${props.currentModel}.webp`}
           />
         </div>
       }
