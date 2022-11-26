@@ -11,7 +11,7 @@ export const ModelImage = (props) => {
             objectFit='cover'
             alt={'car'}
             src={`/${props.currentModel}`}
-         />
+          />
         </div>
       )
   }
