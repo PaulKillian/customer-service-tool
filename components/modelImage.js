@@ -12,7 +12,6 @@ export const ModelImage = (props) => {
             src={'/Charger.png'}
           />
       </div>
-
     
     switch(props.currentModel) {
       case 'Charger':
