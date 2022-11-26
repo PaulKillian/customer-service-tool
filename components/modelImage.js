@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 
 export const ModelImage = (props) => {
     return (
-        {props.currentModel && props.currentYear}
+      {props.currentModel && props.currentYear}
         <div className={styles.imgDim}>
           <Image 
             width={655}
@@ -12,6 +12,6 @@ export const ModelImage = (props) => {
             alt={'car'}
             src={`/${props.currentModel}`}
          />
-      </div>
-    )
+        </div>
+      )
   }
