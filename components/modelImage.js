@@ -12,6 +12,7 @@ export const ModelImage = (props) => {
                     height={400}
                     objectFit='cover'
                     alt={'car'}
+                    loading='eager'
                     src={`/${props.currentYear} ${props.currentModel}.webp`}
                   />
               </div>
