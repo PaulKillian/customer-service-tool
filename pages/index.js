@@ -29,19 +29,8 @@ export default function Home() {
     if (currentText) {
       sessionStorage.setItem('notes', currentText);
     }
-
-//     const infoDiv = document.querySelector('info') 
-//     let ctx = gsap.context(() => {
-//        gsap.from(".info", {
-//          opacity: 0, 
-//          x: 100, 
-//          duration: 1
-//        })}, infoDiv);
-//        return () => ctx.revert();
   }, [currentText]);
  
- 
-  
   const showYear = (year) => {
     setCurrentYear(year)
   }

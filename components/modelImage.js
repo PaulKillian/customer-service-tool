@@ -1,13 +1,25 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useEffect } from 'react'
+import { gsap } from "gsap";
 
 export const ModelImage = (props) => {
-    console.log(`/${props.currentYear} ${props.currentModel}.webp`)
+    useEffect(() => {
+      const carImg = document.querySelector('carImg') 
+      let ctx = gsap.context(() => {
+        gsap.from(".carImg", {
+          opacity: 0, 
+          duration: 1
+        })}, carImg);
+      return () => ctx.revert();
+    })
+    
     return (
         <div>
         {props.currentModel && props.currentYear
             ? <div className={styles.imgDim}>
                   <Image 
+                    className='carImg'
                     width={655}
                     height={400}
                     objectFit='cover'
