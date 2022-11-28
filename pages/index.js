@@ -1,10 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect, useRef } from 'react'
 import { RenderYear } from '../components/year.js'
 import { RenderModel } from '../components/model.js'
-import { images } from '../components/images.js'
 import { ModelImage } from '../components/modelImage.js'
 import { 
   ButtonClear, 
@@ -12,7 +9,6 @@ import {
   ButtonGetClearedData,
   ButtonScreenShot
 } from '../components/buttons.js'
-import { gsap } from "gsap";
 import InfoRender from '../components/infoRender.js'
 
 export default function Home() {
@@ -22,6 +18,7 @@ export default function Home() {
   const [currentText, setCurrentText] = useState('')
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
+  const [loaded, setLoaded] = useState(null)
 
   const tArea = useRef();
 
@@ -86,10 +83,13 @@ export default function Home() {
         <ButtonClear
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
+          setLoaded={setLoaded}
         />
         <ModelImage 
           currentModel={currentModel}
           currentYear={currentYear}
+          loaded={loaded}
+          setLoaded={setLoaded}
         />
         {/* <ButtonGetClearedData 
           clearedData={clearedData}

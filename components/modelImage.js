@@ -1,34 +1,41 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState} from 'react'
 import { gsap } from "gsap";
 
 export const ModelImage = (props) => {
-  useEffect(() => {
-    const carImg = document.querySelector('carImg') 
+  const loadImg = () => {
+    const carImg = document.querySelector('.carImg')
     let ctx = gsap.context(() => {
-      gsap.from(".carImg", {
+      gsap.from(carImg, {
         opacity: 0, 
         duration: 1
       })}, carImg);
+
+    props.setLoaded(true)
+
     return () => ctx.revert();
-  })
+  }
   
   return (
-      <div>
+      <div className='carImg'>
       {props.currentModel && props.currentYear
-          ? <div className={styles.imgDim}>
-              <Image 
-                className='carImg'
-                width={655}
-                height={400}
-                objectFit='cover'
-                alt={'car'}
-                loading='eager'
-                src={`/${props.currentYear} ${props.currentModel}.webp`}
-              />
-            </div>
-          : null
+          ? <div 
+            className={props.loaded
+            ? styles.imgDim
+            : null
+          }>
+            <Image
+              width={655}
+              height={400}
+              objectFit='cover'
+              alt={'car'}
+              loading='eager'
+              src={`/${props.currentYear} ${props.currentModel}.webp`}
+              onLoad={loadImg}
+            />
+          </div>
+        : null
         }
       </div>
     )

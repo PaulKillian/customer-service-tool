@@ -3,10 +3,11 @@ import { useState } from 'react'
 
 export const ButtonClear = (props) => {
   const clear = () => {
-    props.setCurrentModel('')
-    props.setCurrentYear('')
-    const text = document.getElementById('text')
-    text.value = ''
+    props.setCurrentModel('');
+    props.setCurrentYear('');
+    props.setLoaded(null);
+    const text = document.getElementById('text');
+    text.value = '';
   }
 
   return (
