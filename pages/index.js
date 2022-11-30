@@ -7,7 +7,6 @@ import {
   ButtonClear, 
   Buttons,
   ButtonGetClearedData,
-//   ButtonScreenShot
 } from '../components/buttons.js'
 import InfoRender from '../components/infoRender.js'
 
@@ -105,7 +104,6 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-//         <ButtonScreenShot />
         </div>
         <div className={styles.buttonBody}>
           <InfoRender 
