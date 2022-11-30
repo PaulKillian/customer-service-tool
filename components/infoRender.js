@@ -1,12 +1,14 @@
 import styles from '../styles/BodyType.module.css'
 import { 
     returnLabel, 
-    bodyType, opg, 
+    bodyType, 
+    opg, 
     deliveryTimes, 
     partsPull, 
     tracer, 
     truckFreight,
-    extensions
+    extensions,
+    catalogPartNumbers
 } from './info.js'
 
 const InfoRender = (props) => {
@@ -26,6 +28,8 @@ const InfoRender = (props) => {
            tracer()}
          {props.clickedButton === 'truck freight' &&
            truckFreight()}
+         {props.clickedButton === "catalog part#'s" &&
+           catalogPartNumbers()}
        </div>
    )
 }
