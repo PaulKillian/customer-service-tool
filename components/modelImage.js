@@ -4,6 +4,14 @@ import { useEffect, useRef, useState} from 'react'
 import { gsap } from "gsap";
 
 export const ModelImage = (props) => {
+  const [srcValid, setSrcValid] = useState(true)
+  
+  useEffect(() => {
+    const img = document.getElementById('img');
+    const src = img.getAttribute('src');
+    console.log(src)
+  })
+  
   const loadImg = () => {
     const carImg = document.querySelector('.carImg')
     let ctx = gsap.context(() => {
@@ -26,6 +34,7 @@ export const ModelImage = (props) => {
             : null
           }>
             <Image
+              id={'img'}
               width={655}
               height={400}
               objectFit='cover'
