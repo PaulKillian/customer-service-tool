@@ -8,7 +8,7 @@ export const ModelImage = (props) => {
   
   useEffect(() => {
     const img = document.getElementById('img');
-    const src = img.getAttribute('src');
+//     const src = img.getAttribute('src');
     console.log(src)
   })
   
