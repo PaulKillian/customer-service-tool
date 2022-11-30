@@ -159,7 +159,7 @@ export const catalogPartNumbers = () => {
   return (
     <div className={'info'}>
        <h3>
-        <span className={styles.h4Design}>Part#'s</span><br/>
+        <span className={styles.h4Design}>Part#&apos;s</span><br/>
         Camaro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ccatalog<br/> 
         Firebird&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fcatalog<br/>
         Nova&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ncatalog<br/> 
