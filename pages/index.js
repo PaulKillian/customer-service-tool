@@ -18,6 +18,7 @@ export default function Home() {
   const [page, setPage] = useState('')
   const [clearedData, setClearedData] = useState('')
   const [loaded, setLoaded] = useState(null)
+  const [srcNoImage, setSrcNoImage] = useState(true);
 
   const tArea = useRef();
 
@@ -83,12 +84,15 @@ export default function Home() {
           setCurrentYear={setCurrentYear}
           setCurrentModel={setCurrentModel}
           setLoaded={setLoaded}
+          setSrcNoImage={setSrcNoImage}
         />
         <ModelImage 
           currentModel={currentModel}
           currentYear={currentYear}
           loaded={loaded}
           setLoaded={setLoaded}
+          srcNoImage={srcNoImage}
+          setSrcNoImage={setSrcNoImage}
         />
         {/* <ButtonGetClearedData 
           clearedData={clearedData}

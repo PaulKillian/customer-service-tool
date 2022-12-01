@@ -6,6 +6,7 @@ export const ButtonClear = (props) => {
     props.setCurrentModel('');
     props.setCurrentYear('');
     props.setLoaded(null);
+    props.setSrcNoImage(true);
     const text = document.getElementById('text');
     text.value = '';
   }
