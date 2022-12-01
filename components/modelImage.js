@@ -5,10 +5,10 @@ import { gsap } from "gsap";
 import noImage from '../public/noimage.jpg'
 
 export const ModelImage = (props) => {
-  const [srcValid, setSrcValid] = useState(null);
+  const [srcNoImage, setSrcNoImage] = useState(null);
   
   const notValid = () => {
-    setSrcValid(false)
+    setSrcNoImage(true)
   }
   
   const loadImg = () => {
@@ -32,20 +32,28 @@ export const ModelImage = (props) => {
             ? styles.imgDim
             : null
           }>
-            <Image
-              id={'img'}
-              width={655}
-              height={400}
-              objectFit='cover'
-              alt={'car'}
-              loading='eager'
-              src={`/${props.currentYear} ${props.currentModel}.webp`}
-              onLoad={loadImg}
-              onError={({ currentTarget }) => {
-                currentTarget.onerror = null;
-                currentTarget.src={noImage};
-              }}
-            />
+            {srcNoImage 
+             ? <Image
+                id={'img'}
+                width={655}
+                height={400}
+                objectFit='cover'
+                alt={'car'}
+                loading='eager'
+                src={`/${props.currentYear} ${props.currentModel}.webp`}
+                onLoad={loadImg}
+                onError={notValid}
+              />
+             : <Image
+                id={'img'}
+                width={655}
+                height={400}
+                objectFit='cover'
+                alt={'car'}
+                loading='eager'
+                src={noImage}
+              />
+            }
           </div>
         : null
         }
