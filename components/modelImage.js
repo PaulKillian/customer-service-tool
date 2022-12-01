@@ -24,8 +24,6 @@ export const ModelImage = (props) => {
     return () => ctx.revert();
   }
   
-  console.log(srcValid)
-  
   return (
       <div className='carImg'>
       {props.currentModel && props.currentYear
@@ -45,7 +43,7 @@ export const ModelImage = (props) => {
               onLoad={loadImg}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
-                currentTarget.src=noImage;
+                currentTarget.src={noImage};
               }}
             />
           </div>
