@@ -4,16 +4,6 @@ import { useEffect, useRef, useState} from 'react'
 import { gsap } from "gsap";
 
 export const ModelImage = (props) => {
-  const [srcValid, setSrcValid] = useState(true)
-  
-  useEffect(() => {
-      window.addEventListener("load", event => {
-      var image = document.getElementById('img');
-      var isLoaded = image.complete && image.naturalHeight !== 0;
-      console.log(isLoaded);
-    });
-  })
-  
   const loadImg = () => {
     const carImg = document.querySelector('.carImg')
     let ctx = gsap.context(() => {
@@ -23,7 +13,7 @@ export const ModelImage = (props) => {
       })}, carImg);
 
     props.setLoaded(true)
-
+    console.log('hi'
     return () => ctx.revert();
   }
   
