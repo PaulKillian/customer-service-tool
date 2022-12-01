@@ -6,6 +6,10 @@ import { gsap } from "gsap";
 export const ModelImage = (props) => {
   const [srcValid, setSrcValid] = useState(null);
   
+  const notValid = () => {
+    setSrcValid(false)
+  }
+  
   const loadImg = () => {
     const carImg = document.querySelector('.carImg')
     let ctx = gsap.context(() => {
@@ -38,7 +42,7 @@ export const ModelImage = (props) => {
               loading='eager'
               src={`/${props.currentYear} ${props.currentModel}.webp`}
               onLoad={loadImg}
-              onError={setSrcValid(false)}
+              onError={notValid}
             />
           </div>
         : null
