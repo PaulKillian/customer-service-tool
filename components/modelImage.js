@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useEffect, useRef, useState} from 'react'
 import { gsap } from "gsap";
+import noImage from '../public/noimage.jpg'
 
 export const ModelImage = (props) => {
   const [srcValid, setSrcValid] = useState(null);
@@ -42,7 +43,10 @@ export const ModelImage = (props) => {
               loading='eager'
               src={`/${props.currentYear} ${props.currentModel}.webp`}
               onLoad={loadImg}
-              onError={notValid}
+              onError={({ currentTarget }) => {
+                currentTarget.onerror = null;
+                currentTarget.src=noImage;
+              }}
             />
           </div>
         : null
