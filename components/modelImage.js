@@ -19,7 +19,8 @@ export const ModelImage = (props) => {
         duration: 1
       })}, carImg);
 
-    props.setLoaded(true)
+    props.setLoaded(true);
+    setSrcNoImage(false);
     
     return () => ctx.revert();
   }
