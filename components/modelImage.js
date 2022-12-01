@@ -31,7 +31,7 @@ export const ModelImage = (props) => {
              <Image
                 id={'img'}
                 width={655}
-                height={400}
+                height={300}
                 objectFit='cover'
                 alt={'car'}
                 loading='eager'
@@ -42,7 +42,7 @@ export const ModelImage = (props) => {
              : <Image
                 id={'img'}
                 width={655}
-                height={400}
+                height={300}
                 objectFit='cover'
                 alt={'car'}
                 loading='eager'
