@@ -8,7 +8,7 @@ export const ModelImage = (props) => {
   
   useEffect(() => {
     const img = document.getElementById('img');
-    var isLoaded = img.complete && img.naturalHeight !== 0;
+    var isLoaded = img.naturalHeight === 0;
     console.log(isLoaded)
   })
   
