@@ -13,7 +13,7 @@ export const ModelImage = (props) => {
       })}, carImg);
 
     props.setLoaded(true)
-    console.log('hi')
+    
     return () => ctx.revert();
   }
   
