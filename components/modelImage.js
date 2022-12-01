@@ -19,6 +19,8 @@ export const ModelImage = (props) => {
     return () => ctx.revert();
   }
   
+  console.log(srcValid)
+  
   return (
       <div className='carImg'>
       {props.currentModel && props.currentYear
