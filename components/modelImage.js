@@ -5,11 +5,11 @@ import { gsap } from "gsap";
 import noImage from '../public/noimage.jpg'
 
 export const ModelImage = (props) => {
-  const [srcNoImage, setSrcNoImage] = useState(true);
+//   const [srcNoImage, setSrcNoImage] = useState(true);
   
-  const notValid = () => {
-    setSrcNoImage(false)
-  }
+//   const notValid = () => {
+//     setSrcNoImage(false)
+//   }
   
   const loadImg = () => {
     const carImg = document.querySelector('.carImg')
@@ -20,7 +20,6 @@ export const ModelImage = (props) => {
       })}, carImg);
 
     props.setLoaded(true);
-    setSrcNoImage(false);
     
     return () => ctx.revert();
   }
@@ -33,8 +32,9 @@ export const ModelImage = (props) => {
             ? styles.imgDim
             : null
           }>
-            {srcNoImage 
-             ? <Image
+//             {srcNoImage 
+//              ? 
+             <Image
                 id={'img'}
                 width={655}
                 height={400}
@@ -45,16 +45,16 @@ export const ModelImage = (props) => {
                 onLoad={loadImg}
                 onError={notValid}
               />
-             : <Image
-                id={'img'}
-                width={655}
-                height={400}
-                objectFit='cover'
-                alt={'car'}
-                loading='eager'
-                src={noImage}
-              />
-            }
+//              : <Image
+//                 id={'img'}
+//                 width={655}
+//                 height={400}
+//                 objectFit='cover'
+//                 alt={'car'}
+//                 loading='eager'
+//                 src={noImage}
+//               />
+//             }
           </div>
         : null
         }
