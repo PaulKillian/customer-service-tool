@@ -5,10 +5,10 @@ import { gsap } from "gsap";
 import noImage from '../public/noimage.jpg'
 
 export const ModelImage = (props) => {
-  const [srcNoImage, setSrcNoImage] = useState(null);
+  const [srcNoImage, setSrcNoImage] = useState(true);
   
   const notValid = () => {
-    setSrcNoImage(true)
+    setSrcNoImage(false)
   }
   
   const loadImg = () => {
