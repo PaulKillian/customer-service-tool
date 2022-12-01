@@ -7,9 +7,11 @@ export const ModelImage = (props) => {
   const [srcValid, setSrcValid] = useState(true)
   
   useEffect(() => {
-    const img = document.getElementById('img');
-    var isLoaded = img.naturalHeight === 0;
-    console.log(isLoaded)
+      window.addEventListener("load", event => {
+      var image = document.getElementById('img');
+      var isLoaded = image.complete && image.naturalHeight !== 0;
+      console.log(isLoaded);
+    });
   })
   
   const loadImg = () => {
