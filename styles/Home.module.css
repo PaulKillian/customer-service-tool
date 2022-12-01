@@ -60,11 +60,11 @@
   border-radius: 5px;
 /*   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
   box-shadow:
-      1px 2px 2px hsl(220deg 60% 50% / 0.2),
-      2px 4px 4px hsl(220deg 60% 50% / 0.2),
-      4px 8px 8px hsl(220deg 60% 50% / 0.2),
-      8px 16px 16px hsl(220deg 60% 50% / 0.2),
-      16px 32px 32px hsl(220deg 60% 50% / 0.2)
+      1px 2px 2px hsl(262deg, 77%, 90% / 0.2),
+      2px 4px 4px hsl(262deg, 77%, 90% / 0.2),
+      4px 8px 8px hsl(262deg, 77%, 90% / 0.2),
+      8px 16px 16px hsl(262deg, 77%, 90% / 0.2),
+      16px 32px 32px hsl(262deg, 77%, 90% / 0.2)
 }
 
 .yearWidth {
