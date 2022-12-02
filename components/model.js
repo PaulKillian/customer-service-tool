@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
 
 export const RenderModel = (props) => {
-    const [b, setB] = useState({a: 'Barracuda', b: 'Belair', c: 'Belvedere', d: 'Blazer'})
+    const [b, setB] = useState({a: 'Barracuda', b: 'Bel Air', c: 'Belvedere', d: 'Blazer'})
     const [c, setC] = useState({
             a: 'Camaro',
             b: 'Caprice',
