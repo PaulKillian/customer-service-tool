@@ -1,7 +1,8 @@
-const impala = {
+const impalaSS = {
   '64': {
         sideMolding: {
-        https://www.classicindustries.com/product/1964/chevrolet/impala/parts/c1061.html
+        link: https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html
+        img: '../public/ssSideMolding.jpg
       }
     }
   }
