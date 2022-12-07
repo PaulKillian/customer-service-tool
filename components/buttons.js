@@ -31,7 +31,6 @@ export const Buttons = (props) => {
     'parts pull',
     'tracer',
     'truck freight',
-//     'parts'
   ])
   
 
@@ -72,29 +71,48 @@ export const ButtonGetClearedData = (props) => {
   )
 }
 
-export const ButtonScreenShot = (props) => {
-  const screenShot = () => {
-    const screeShotButton = document.getElementById('s')
-    s.dispatchEvent(new KeyboardEvent('keydown', {
-       "key": "S",
-       "keyCode": 83,
-       "which": 83,
-       "code": "KeyS",
-       "location": 0,
-       "altKey": false,
-       "ctrlKey": false,
-       "metaKey": false,
-       "shiftKey": true,
-       "repeat": true
-      }))
-  }
+// export const ButtonScreenShot = (props) => {
+//   const screenShot = () => {
+//     const screeShotButton = document.getElementById('s')
+//     s.dispatchEvent(new KeyboardEvent('keydown', {
+//        "key": "S",
+//        "keyCode": 83,
+//        "which": 83,
+//        "code": "KeyS",
+//        "location": 0,
+//        "altKey": false,
+//        "ctrlKey": false,
+//        "metaKey": false,
+//        "shiftKey": true,
+//        "repeat": true
+//       }))
+//   }
 
-  return (
-    <button
-      id={'s'}
-      className={styles.screenShot}
-      onClick={screenShot}
-    >screenshot
-    </button>
-  )
-}
+//   return (
+//     <button
+//       id={'s'}
+//       className={styles.screenShot}
+//       onClick={screenShot}
+//     >screenshot
+//     </button>
+//   )
+// }
+
+const ButtonParts = (props) => {
+  const impala64 = {
+    SS_Side_Molding:
+      "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
+  };
+  const impala62 = {
+    Drop_Spindles: {
+      link:
+        "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/bs7001.html",
+      link:
+        "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/153638.html"
+    }
+  };
+
+  return <a href={impala64.SS_Side_Molding}>SS Side Moldings</a>;
+};
+
+export default parts;
