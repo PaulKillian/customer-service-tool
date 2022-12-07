@@ -30,7 +30,8 @@ export const Buttons = (props) => {
     'return label',
     'parts pull',
     'tracer',
-    'truck freight'
+    'truck freight',
+    'parts'
   ])
   
 
