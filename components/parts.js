@@ -15,4 +15,4 @@ const parts = () => {
   return <a href={impala64.SS_Side_Molding}>SS Side Moldings</a>;
 };
 
-export default Parts;
+export default parts;
