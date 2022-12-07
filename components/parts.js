@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Parts = () => {
+const parts = () => {
   const [impala64, setImpala64] = useState({
     SS_Side_Molding:
       "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
