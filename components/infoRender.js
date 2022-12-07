@@ -10,6 +10,7 @@ import {
     extensions,
     catalogPartNumbers
 } from './info.js'
+import parts from './parts.js'
 
 const InfoRender = (props) => {
     return (
@@ -30,6 +31,8 @@ const InfoRender = (props) => {
            truckFreight()}
          {props.clickedButton === "catalog part#'s" &&
            catalogPartNumbers()}
+         {props.clickedButton === "prts" &&
+           parts()}
        </div>
    )
 }
