@@ -105,14 +105,14 @@ export const ButtonParts = (props) => {
   switch (yearAndModel) {
     case '62 Impala':
       partName = 'Drop Spindle'
-      link = [{
+      links = [{
           link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/bs7001.html",
           link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/153638.html"
         }]
     break;
     case '64 Impala': 
       partName = 'SS Side Molding Set'
-      link= [{
+      links = [{
           link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
         }]
     break;
