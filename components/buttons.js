@@ -98,7 +98,7 @@ export const ButtonGetClearedData = (props) => {
 //   )
 // }
 
-const ButtonParts = (props) => {
+export const ButtonParts = (props) => {
   const impala64 = {
     SS_Side_Molding:
       "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
