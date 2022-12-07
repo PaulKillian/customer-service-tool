@@ -10,7 +10,6 @@ import {
   ButtonParts
 } from '../components/buttons.js'
 import InfoRender from '../components/infoRender.js'
-import Parts from '../components/parts.js'
 
 export default function Home() {
   const [currentYear, setCurrentYear] = useState(null)
