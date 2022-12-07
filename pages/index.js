@@ -7,6 +7,7 @@ import {
   ButtonClear, 
   Buttons,
   ButtonGetClearedData,
+  ButtonParts
 } from '../components/buttons.js'
 import InfoRender from '../components/infoRender.js'
 import Parts from '../components/parts.js'
@@ -108,6 +109,10 @@ export default function Home() {
           <Buttons 
             page={page}
             setPage={setPage}
+          />
+          <ButtonParts 
+            currentYear={currentYear}
+            currentModel={currentModel}
           />
         </div>
         <div className={styles.buttonBody}>
