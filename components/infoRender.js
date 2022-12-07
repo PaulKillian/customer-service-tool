@@ -31,7 +31,7 @@ const InfoRender = (props) => {
            truckFreight()}
          {props.clickedButton === "catalog part#'s" &&
            catalogPartNumbers()}
-         {props.clickedButton === "prts" &&
+         {props.clickedButton === "parts" &&
            parts()}
        </div>
    )
