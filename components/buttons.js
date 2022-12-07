@@ -99,20 +99,31 @@ export const ButtonGetClearedData = (props) => {
 // }
 
 export const ButtonParts = (props) => {
-  const impala64 = {
-    SS_Side_Molding:
-      "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
-  };
-  const impala62 = {
-    Drop_Spindles: {
-      link:
-        "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/bs7001.html",
-      link:
-        "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/153638.html"
-    }
-  };
-
-  return <a href={impala64.SS_Side_Molding}>SS Side Moldings</a>;
+  const yearAndModel = `${props.currentYear, props.currentModel}`
+  let partName = ''
+  let links = []
+  const getLink = () => {
+    switch (yearAndModel) {
+      case '62 Impala':
+        partName = 'Drop Spindle'
+        link = [{
+            link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/bs7001.html",
+            link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/153638.html"
+          }]
+      break;
+      case '64 Impala': 
+        partName = 'SS Side Molding Set'
+        link= [{
+            link: "https://www.classicindustries.com/product/1964/chevrolet/impala/parts/b9206.html"
+          }]
+      break;
+      default:
+        null
+    }}
+  }
+  return {links.map(link => (
+          <a href={link}>{partName}</a>;
+        )
 };
 
 export default parts;
