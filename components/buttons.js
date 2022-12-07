@@ -120,9 +120,11 @@ export const ButtonParts = (props) => {
       null
   }
 
-  return {links.map(link => (
+  return (
+    {links.map(link => (
         <a href={link}>{partName}</a>;
-      )
+      )}
+    )
 };
 
 export default parts;
