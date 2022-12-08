@@ -45,9 +45,6 @@ const parts = (props) => {
   )
 };
 
-export default Parts;
-
-
 const InfoRender = (props) => {
     return (
        <div>
