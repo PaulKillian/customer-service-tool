@@ -31,6 +31,7 @@ export const Buttons = (props) => {
     'parts pull',
     'tracer',
     'truck freight',
+    'parts'
   ])
   
 
