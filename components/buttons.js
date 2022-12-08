@@ -122,8 +122,11 @@ export const ButtonParts = (props) => {
 
   return (
     <div>
-      {links.map((link) => (
-        <a href={link}>{partName}</a>
+      {links.map((link, index) => (
+        <a 
+          href={link} 
+          key={index}
+        >{partName}</a>
       ))}
     </div>
   )
