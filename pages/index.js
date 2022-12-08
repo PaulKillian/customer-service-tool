@@ -109,14 +109,12 @@ export default function Home() {
             page={page}
             setPage={setPage}
           />
-          <ButtonParts 
-            currentYear={currentYear}
-            currentModel={currentModel}
-          />
         </div>
         <div className={styles.buttonBody}>
-          <InfoRender 
-            clickedButton={page}>
+          <InfoRender clickedButton={page}
+            currentYear={currentYear}
+            currentModel={currentModel}
+          >
           </InfoRender>
         </div>  
       </div>
