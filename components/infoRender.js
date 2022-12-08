@@ -11,7 +11,7 @@ import {
     catalogPartNumbers
 } from './info.js'
 
-export const Parts = (props) => {
+const parts = (props) => {
   const yearAndModel = `${props.currentYear, props.currentModel}`
   let partName = ''
   let links = []
@@ -68,7 +68,7 @@ const InfoRender = (props) => {
          {props.clickedButton === "catalog part#'s" &&
            catalogPartNumbers()}
          {props.clickedButton === "parts" &&
-           Parts()}
+           prts()}
        </div>
    )
 }
