@@ -12,6 +12,7 @@ import {
 } from './info.js'
 
 const parts = (props) => {
+   console.log(props.currentYear)
   const yearAndModel = `${props.currentYear, props.currentModel}`
   let partName = ''
   let links = []
