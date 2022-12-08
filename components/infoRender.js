@@ -35,7 +35,7 @@ const parts = (props) => {
 //   }
 
   return (
-    <div>
+//     <div>
 //       {links.map((link, index) => (
 //         <a 
 //           href={link} 
@@ -43,7 +43,7 @@ const parts = (props) => {
 //         >{partName}</a>
 //       ))}
       <h1>hi</h1>
-    </div>
+//     </div>
   )
 };
 
