@@ -68,7 +68,7 @@ const InfoRender = (props) => {
          {props.clickedButton === "catalog part#'s" &&
            catalogPartNumbers()}
          {props.clickedButton === "parts" &&
-           prts()}
+           parts()}
        </div>
    )
 }
