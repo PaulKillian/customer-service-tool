@@ -11,13 +11,13 @@ export const bodyType = () => {
             <span className={styles.h4Design}>A</span><br/> 
             Barracuda<br/>
             <select name='Dart'>
-              <option value="Demon">Volvo</option>
-              <option value="Swinger">Volvo</option>
+              <option value="Demon">Demon</option>
+              <option value="Swinger">Swinger</option>
             </select>
             Duster<br/> 
             Lancer<br/> 
             <select name='Valiant'>
-              <option value="Scamp">Volvo</option>
+              <option value="Scamp">Scamp</option>
             </select>
           </h3>
         </div>
