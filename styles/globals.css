@@ -100,8 +100,10 @@ textarea:focus, input:focus{
 }
 
 select {
-  height: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 22px;
+/*   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  font-size: 18px;
+  color: #34383C
 }
 
 p {
