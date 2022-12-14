@@ -4,7 +4,6 @@ import {
     bodyType, 
     opg, 
     deliveryTimes, 
-    partsPull, 
     tracer, 
     truckFreight,
     extensions,
@@ -58,8 +57,6 @@ const InfoRender = (props) => {
            opg()}
          {props.clickedButton === 'delivery times' &&
            deliveryTimes()}
-         {props.clickedButton === 'parts pull' &&
-           partsPull()}
          {props.clickedButton === 'tracer' &&
            tracer()}
          {props.clickedButton === 'truck freight' &&
