@@ -9,7 +9,16 @@ export const bodyType = () => {
         <div>
           <h3 className={styles.bodyMargin}>
             <span className={styles.h4Design}>A</span><br/> 
-            Barracuda<br/> Dart<br/> Demon<br/> Duster<br/> Lancer<br/> Scamp
+            Barracuda<br/>
+            <select name='Dart'>
+              <option value="Demon">Volvo</option>
+              <option value="Swinger">Volvo</option>
+            </select>
+            Duster<br/> 
+            Lancer<br/> 
+            <select name='Valiant'>
+              <option value="Scamp">Volvo</option>
+            </select>
           </h3>
         </div>
         <div>
