@@ -103,23 +103,6 @@ export const returnLabel = () => {
   )
 }
 
-export const partsPull = () => {
-  return (
-     <div className={'info'}>
-      <div className={iframe.styleIframe}>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIoERmkVQM1Z2chi7NObpTg2mr3qc-JBufYq7ZyIY1dm585w/viewform" 
-          width="640" 
-          height="700" 
-          frameBorder="0" 
-          webkitallowFullScreen="" 
-          mozallowFullScreen="" 
-          allowFullScreen="">
-        </iframe>
-      </div> 
-     </div>
-  )
-}
-
 export const tracer = () => {
   return (
      <div className={'info'}>
