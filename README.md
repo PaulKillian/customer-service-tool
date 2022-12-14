@@ -1,1 +1,1 @@
-![Screen shot of tool](customer-service-tool/csScreen.png)
+![Screen shot of tool](/csScreen.png)
