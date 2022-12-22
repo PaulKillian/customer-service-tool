@@ -182,8 +182,8 @@ export const truckDifferances = () => {
         <Image 
            src={`/60 Truck.webp`}
            alt={'Fleetside'}
-           width="430" 
-           height="400" 
+           width="500" 
+           height="350" 
          />
        </div>
        <h3>Stepside</h3>
@@ -191,8 +191,8 @@ export const truckDifferances = () => {
         <Image 
            src={`/55 Truck.webp`}
            alt={'Stepside'}
-           width="430" 
-           height="400" 
+           width="500" 
+           height="350" 
          />
        </div>
     </div>
