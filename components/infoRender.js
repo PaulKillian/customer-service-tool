@@ -7,7 +7,7 @@ import {
     tracer, 
     truckFreight,
     extensions,
-    catalogPartNumbers
+    catalogPartNumbers,
     truckDifferances
 } from './info.js'
 
@@ -66,6 +66,8 @@ const InfoRender = (props) => {
            catalogPartNumbers()}
          {props.clickedButton === "parts" &&
            parts()}
+         {props.clickedButton === "truckDifferances" &&
+           truckDifferances()}
        </div>
    )
 }
