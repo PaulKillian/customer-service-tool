@@ -171,11 +171,11 @@ export const truckDifferances = () => {
   return (
     <div className={'info'}>
        <h3>
-        <span className={styles.h4Design}>Truck Differances</span><br/>
-        C- two wheel drive
-        K- four wheel drive
-        R- two wheel drive 87-91 square body
-        V- four wheel drive 87-91 square body
+        <span className={styles.h4Design}>Truck Differences</span><br/>
+        C- two wheel drive<br/>
+        K- four wheel drive<br/>
+        R- two wheel drive 87-91 square body<br/>
+        V- four wheel drive 87-91 square body<br/>
        </h3>
        <h3>Fleetside</h3>
         <Image 
