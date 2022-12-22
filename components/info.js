@@ -166,3 +166,31 @@ export const catalogPartNumbers = () => {
     </div>
   )
 }
+
+export const TruckDifferances = () => {
+  return (
+    <div className={'info'}>
+       <h3>
+        <span className={styles.h4Design}>Truck Variances</span><br/>
+        C- two wheel drive
+        K- four wheel drive
+        R- two wheel drive 87-91 square body
+        V- four wheel drive 87-91 square body
+       </h3>
+       <h3>Fleetside</h3>
+        <Image 
+           src={`/60 Truck.webp`}
+           alt={'Fleetside'}
+           width="330" 
+           height="200" 
+         />
+       <h3>Stepside</h3>
+         <Image 
+           src={`/55 Truck.webp`}
+           alt={'Stepside'}
+           width="330" 
+           height="200" 
+         />
+    </div>
+  )
+}
