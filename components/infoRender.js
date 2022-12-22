@@ -8,6 +8,7 @@ import {
     truckFreight,
     extensions,
     catalogPartNumbers
+    truckDifferances
 } from './info.js'
 
 const parts = (props) => {
