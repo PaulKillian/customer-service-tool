@@ -167,11 +167,11 @@ export const catalogPartNumbers = () => {
   )
 }
 
-export const TruckDifferances = () => {
+export const truckDifferances = () => {
   return (
     <div className={'info'}>
        <h3>
-        <span className={styles.h4Design}>Truck Variances</span><br/>
+        <span className={styles.h4Design}>Truck Differances</span><br/>
         C- two wheel drive
         K- four wheel drive
         R- two wheel drive 87-91 square body
