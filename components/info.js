@@ -1,5 +1,5 @@
 import styles from '../styles/BodyType.module.css'
-import iframe from '../styles/Home.module.css'
+import styles2 from '../styles/Home.module.css'
 import Image from 'next/image'
 
 export const bodyType = () => {
@@ -100,7 +100,7 @@ export const opg = () => {
 export const returnLabel = () => {
   return (
      <div className={'info'}>
-      <div className={iframe.styleIframe}>
+      <div className={styles2.styleIframe}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2IB5w3jt28UKSCdvMHe2PeZ-N-d9BkOCU5Qv_c5s6ynnjJA/viewform" 
           width="640" 
           height="700" 
@@ -117,7 +117,7 @@ export const returnLabel = () => {
 export const tracer = () => {
   return (
      <div className={'info'}>
-      <div className={iframe.styleIframe}>
+      <div className={styles2.styleIframe}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwr9vxvsd3KIzVdp7C5uPtwXzRVl8CYoO5SdKFTR30Lzvlkg/viewform?gxids=7628" 
           width="640" 
           height="700" 
@@ -134,7 +134,7 @@ export const tracer = () => {
 export const truckFreight = () => {
   return (
      <div className={'info'}>
-      <div className={iframe.styleIframe}>
+      <div className={styles2.styleIframe}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSMXwKpDCXDwSFnJedIKdGgqlHDe3rpBJovE28XisCUoQgyA/viewform" 
           width="640" 
           height="700" 
@@ -178,7 +178,7 @@ export const truckDifferances = () => {
         V- four wheel drive 87-91 square body<br/>
        </h3>
        <h3>Fleetside</h3>
-       <div classname={styles.flexBegin}>
+       <div className={styles2.flexBegin}>
         <Image 
            src={`/60 Truck.webp`}
            alt={'Fleetside'}
@@ -187,7 +187,7 @@ export const truckDifferances = () => {
          />
        </div>
        <h3>Stepside</h3>
-       <div classname={styles.flexBegin}>
+       <div className={styles2.flexBegin}>
         <Image 
            src={`/55 Truck.webp`}
            alt={'Stepside'}
