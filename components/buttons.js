@@ -26,11 +26,13 @@ export const Buttons = (props) => {
     'opg cars', 
     'delivery times',
     "catalog part#'s",
+    'tuck differences',
 //     'extensions',
     'return label',
     'tracer',
     'truck freight',
 //     'parts'
+    
   ])
   
 
