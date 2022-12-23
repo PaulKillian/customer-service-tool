@@ -1,5 +1,3 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
 import Calculator from "awesome-react-calculator";
 
 const style = {
@@ -7,21 +5,24 @@ const style = {
   width: '15rem'
 }
 
-class Cal extends Component {
-  handleInput(input) {
+const Cal () => {
+  const handleInput = input => {
     console.log(`${input.expression} is shown in the calculator, User clicked the ${input.key}`)
   }
 
-  onResultChange(newResult) {
+  const onResultChange = newResult => {
     console.log(newResult)
     console.log(`${newResult.expression} is validated as ${newResult.result} `)
   }
+  
   render() {
-    return <div className='calculator-demo' style={style}>
+    return 
+    <div className='calculator-demo' style={style}>
       <h1>Calculator</h1>
       <Calculator
-        onNewInput={this.handleInput}
-        onResultChange={this.onResultChange}/>
+        onNewInput={handleInput}
+        onResultChange={onResultChange}
+      />
     </div>
   }
 }
