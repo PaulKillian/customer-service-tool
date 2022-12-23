@@ -183,7 +183,7 @@ export const truckDifferances = () => {
            src={`/60 Truck.webp`}
            alt={'Fleetside'}
            width="475" 
-           height="350" 
+           height="300" 
          />
        </div>
        <h3>Stepside</h3>
@@ -192,7 +192,7 @@ export const truckDifferances = () => {
            src={`/55 Truck.webp`}
            alt={'Stepside'}
            width="475" 
-           height="350" 
+           height="300" 
          />
        </div>
     </div>
