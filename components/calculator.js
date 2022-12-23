@@ -15,14 +15,15 @@ const cal = () => {
     console.log(`${newResult.expression} is validated as ${newResult.result} `)
   }
  
-  return 
-  <div className='calculator-demo' style={style}>
-    <h1>Calculator</h1>
-    <Calculator
-      onNewInput={handleInput}
-      onResultChange={onResultChange}
-    />
-  </div>
+  return (
+    <div className='calculator-demo' style={style}>
+      <h1>Calculator</h1>
+      <Calculator
+        onNewInput={handleInput}
+        onResultChange={onResultChange}
+      />
+    </div>
+  )
 }
 
 export default cal
