@@ -16,7 +16,7 @@ const cal = () => {
   }
  
   return (
-    <div className='calculator-demo' style={style}>
+    <div style={style}>
       <h1>Calculator</h1>
       <Calculator
         onNewInput={handleInput}
