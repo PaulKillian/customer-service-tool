@@ -177,22 +177,22 @@ export const truckDifferances = () => {
         R- two wheel drive 87-91 square body<br/>
         V- four wheel drive 87-91 square body<br/>
        </h3>
-       <h3><strong>Fleetside</strong></h3>
+       <h3>Fleetside</h3>
        <div className={styles2.flexBegin}>
         <Image 
            src={`/60 Truck.webp`}
            alt={'Fleetside'}
-           width="525" 
-           height="300" 
+           width="475" 
+           height="350" 
          />
        </div>
-       <h3><strong>Stepside</strong></h3>
+       <h3>Stepside</h3>
        <div className={styles2.flexBegin}>
         <Image 
            src={`/55 Truck.webp`}
            alt={'Stepside'}
-           width="525" 
-           height="300" 
+           width="475" 
+           height="350" 
          />
        </div>
     </div>
