@@ -5,7 +5,7 @@ const style = {
   width: '15rem'
 }
 
-const cal () => {
+const cal = () => {
   const handleInput = input => {
     console.log(`${input.expression} is shown in the calculator, User clicked the ${input.key}`)
   }
