@@ -10,7 +10,7 @@ import {
     catalogPartNumbers,
     truckDifferances
 } from './info.js'
-import Calculator from './calculator.js'
+import cal from './calculator.js'
 
 const InfoRender = (props) => {
     return (
@@ -34,7 +34,7 @@ const InfoRender = (props) => {
          {props.clickedButton === "truck differences" &&
            truckDifferances()}
          {props.clickedButton === "calculator" &&
-           <Calculator />}
+           cal()}
        </div>
    )
 }
