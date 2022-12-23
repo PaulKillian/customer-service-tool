@@ -1,6 +1,6 @@
 import { Calculator } from "react-calculatxr";
 import "react-calculatxr/dist/react-calculatxr.css";
-import styles from '../styles/cal.module.css'
+import styles from '../styles/Cal.module.css'
 
 const cal = () => {
     return (
