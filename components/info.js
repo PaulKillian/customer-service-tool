@@ -1,6 +1,7 @@
 import styles from '../styles/BodyType.module.css'
 import styles2 from '../styles/Home.module.css'
 import Image from 'next/image'
+import Calculator from './calculator.js'
 
 export const bodyType = () => {
   return (

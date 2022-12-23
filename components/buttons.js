@@ -27,6 +27,7 @@ export const Buttons = (props) => {
     'delivery times',
     "catalog part#'s",
     'truck differences',
+    'calculator',
 //     'extensions',
     'return label',
     'tracer',

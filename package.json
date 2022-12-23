@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^1.8.2",
     "@supabase/supabase-js": "^2.0.6",
     "animate.css": "^4.1.1",
+    "awesome-react-calculator": "^1.1.0",
     "axios": "^0.27.2",
     "bootstrap": "^3.4.1",
     "cheerio": "^1.0.0-rc.10",
