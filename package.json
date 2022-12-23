@@ -12,7 +12,6 @@
     "@reduxjs/toolkit": "^1.8.2",
     "@supabase/supabase-js": "^2.0.6",
     "animate.css": "^4.1.1",
-    "awesome-react-calculator": "^1.1.0",
     "axios": "^0.27.2",
     "bootstrap": "^3.4.1",
     "cheerio": "^1.0.0-rc.10",
@@ -21,6 +20,7 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-autosave": "^0.4.0",
+    "react-calculatxr": "^1.0.10",
     "react-dom": "18.1.0",
     "react-redux": "^8.0.2",
     "request-promise": "^4.2.6"
