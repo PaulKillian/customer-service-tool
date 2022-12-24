@@ -211,3 +211,7 @@
   width: 450px;
 }
 
+.calculator__operation-buttons:last-child,
+.calculator__delete {
+  background-color: #2C88D3 !important;
+}
