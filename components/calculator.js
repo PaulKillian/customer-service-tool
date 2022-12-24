@@ -5,7 +5,7 @@ import styles from '../styles/Cal.module.css'
 const cal = () => {
     return (
       <div className={styles.cal}>
-        <Calculator /> 
+        <Calculator className={styles.calculator}/> 
       </div> 
     )
 }
