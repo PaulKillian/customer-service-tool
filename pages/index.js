@@ -103,7 +103,7 @@ export default function Home() {
           <p>{clearedData}</p>
         </div> */}
       </div>
-      <div className={styles.gridItem}>
+      <div className={styles.gridItem2}>
         <div className={styles.flexButtons}>
           <Buttons 
             page={page}
